@@ -13,7 +13,7 @@
   contents:
     - title: PhD
       institution: The University of Tokyo, Tokyo, Japan
-      year: Apr 2013 - Mar 2016
+      year: 2013-2016
       description:
         - Description 1.
         - Description 2.
@@ -23,7 +23,7 @@
             - Sub-description 2.
     - title: MSc
       institution: University of Tsukuba, Tsukuba, Japan
-      year: Apr 2010 - Mar 2013
+      year: 2010-2013
       description:
         - Description 1.
         - Description 2.
@@ -34,7 +34,7 @@
   contents:
     - title: Associate Professor of Atmospheric Sciences
       institution: School of Atmospheric Sciences, Sun Yat-Sen University
-      year: 2019 - now
+      year: 2019-now 
       description:
         - Description 1.
         - Description 2.
@@ -44,7 +44,7 @@
             - Sub-description 2.
     - title: Collaborative research Fellow
       institution: The University of Tokyo, Tokyo, Japan
-      year: 2019 - now
+      year: 2019-now
       description:
         - Description 1.
         - Description 2.
