@@ -8,10 +8,10 @@
     "url": "https://zhongwangwei.github.io/",
     "summary": "*****************",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
+      "address": "Bldg.2 Haiqin, Room A538 Zhuhai Campus, Sun Yat-sen University, Tangjiawan",
+      "postalCode": "519082",
+      "city": "Zhuhai",
+      "countryCode": "CN",
       "region": "Guangdong"
     },
     "profiles": [
@@ -47,8 +47,8 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
+      "institution": "The University of Tokyo, Tokyo, Japan",
+      "location": "Tokyo, Japan",
       "url": "https://www.uzh.ch/",
       "area": "Software Development",
       "studyType": "PhD",
