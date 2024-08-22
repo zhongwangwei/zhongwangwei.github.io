@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: Associate Professor, School of Atmospheric Sciences, Sun Yat-Sen University 
-Collaborative Research Fellow, Institute of Industrial Science, University of Tokyo
+subtitle: Collaborative Research Fellow, Institute of Industrial Science, University of Tokyo
 
 profile:
   align: right
