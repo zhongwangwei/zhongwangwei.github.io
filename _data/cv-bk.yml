@@ -2,18 +2,18 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Zhongwang Wei
     - name: Date of Birth
-      value: 14th March 1879
+      value: 18th Jan 1884
     - name: Languages
-      value: English, German
+      value: Chinese, Japanese, English
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+      institution: The University of Tokyo, Tokyo, Japan
+      year: 2013-2016
       description:
         - Description 1.
         - Description 2.
@@ -21,19 +21,20 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+    - title: MSc
+      institution: University of Tsukuba, Tsukuba, Japan
+      year: 2010-2013
       description:
         - Description 1.
         - Description 2.
+
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Associate Professor of Atmospheric Sciences
+      institution: School of Atmospheric Sciences, Sun Yat-Sen University, Zhuhai, China.
+      year: 2019-now 
       description:
         - Description 1.
         - Description 2.
@@ -41,25 +42,25 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+    - title: Collaborative research Fellow
+      institution: The University of Tokyo, Tokyo, Japan.
+      year: 2019-now
       description:
         - Description 1.
         - Description 2.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+    - title: Scientific assistant
+      institution: ETH Zürich, Zürich, Switzerland.
+      year: 2019-2019
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Project Researcher 
+      institution: The University of Tokyo
+      year: 2018-2019
       description:
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Postdoc Researcher 
+      institution: Yale University, New Haven, USA.
+      year: 2016-2018
 
 - title: Open Source Projects
   type: time_table
