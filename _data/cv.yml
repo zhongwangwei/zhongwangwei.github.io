@@ -33,7 +33,7 @@
   type: time_table
   contents:
     - title: Associate Professor of Atmospheric Sciences
-      institution: School of Atmospheric Sciences, Sun Yat-Sen University
+      institution: School of Atmospheric Sciences, Sun Yat-Sen University, Zhuhai, China.
       year: 2019-now 
       description:
         - Description 1.
@@ -43,7 +43,7 @@
             - Sub-description 1.
             - Sub-description 2.
     - title: Collaborative research Fellow
-      institution: The University of Tokyo, Tokyo, Japan
+      institution: The University of Tokyo, Tokyo, Japan.
       year: 2019-now
       description:
         - Description 1.
@@ -59,7 +59,7 @@
       description:
 
     - title: Postdoc Researcher 
-      institution: Yale University, New Haven, USA
+      institution: Yale University, New Haven, USA.
       year: 2016-2018
 
 - title: Open Source Projects
