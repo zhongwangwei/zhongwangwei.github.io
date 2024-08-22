@@ -49,6 +49,15 @@
     {
       "institution": "The University of Tokyo, Tokyo, Japan",
       "location": "Tokyo, Japan",
+      "url": "https://nenv.k.u-tokyo.ac.jp/index.html",
+      "area": "Department of Natural Environmental Studies",
+      "studyType": "PhD",
+      "startDate": "2013-41-01",
+      "endDate": "2016-03-26",
+    },
+    {
+      "institution": "The University of Tokyo, Tokyo, Japan",
+      "location": "Tokyo, Japan",
       "url": "https://www.uzh.ch/",
       "area": "Software Development",
       "studyType": "PhD",
@@ -56,7 +65,7 @@
       "endDate": "1905-01-01",
       "score": "10",
       "courses": ["Theory of Relativity"]
-    }
+    },
   ],
   "awards": [
     {
