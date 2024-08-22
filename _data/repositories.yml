@@ -4,10 +4,8 @@ github_users:
 repo_description_lines_max: 1
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - zhongwangwei/SiLSM_v3
+  - zhongwangwei/Make_Unstructured_Grid
+  - zhongwangwei/CoLM202X
+  - zhongwangwei/CoLM-Evaluation
+
