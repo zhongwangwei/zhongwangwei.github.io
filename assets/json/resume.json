@@ -47,33 +47,31 @@
   ],
   "education": [
     {
-      "institution": "The University of Tokyo, Tokyo, Japan",
+      "institution": "University of Tokyo, Tokyo, Japan",
       "location": "Tokyo, Japan",
       "url": "https://nenv.k.u-tokyo.ac.jp/index.html",
-      "area": "Department of Natural Environmental Studies",
+      "area": "Natural Environmental Studies",
       "studyType": "PhD",
-      "startDate": "2013-41-01",
+      "startDate": "2013-04-01",
       "endDate": "2016-03-26"
+
     },
     {
-      "institution": "The University of Tokyo, Tokyo, Japan",
-      "location": "Tokyo, Japan",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "The University of Tsukuba, Tsukuba, Japan",
+      "location": "Tsukuba, Japan",
+      "url": "https://www.geoenv.tsukuba.ac.jp/e_about.html",
+      "area": "Geoscience",
+      "studyType": "MSc",
+      "startDate": "2010-04-01",
+      "endDate": "2013-03-26"
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
+      "title": "****",
       "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "awarder": "******",
+      "summary": "*****'"
     }
   ],
   "certificates": [
