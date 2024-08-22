@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Zhongwang Wei",
-    "label": "Associate Professor",
+    "position": "Associate Professor",
     "image": "",
     "email": "zhongwang007@gmail.com",
     "phone": "(+86) 131-1950-1210",
@@ -29,8 +29,7 @@
       "url": "https://atmos.sysu.edu.cn/teacher/2147",
       "startDate": "2019-09-01",
       "endDate": "now",
-      "summary": "*****************",
-      "highlights": ["Relativity"]
+      "summary": "*****************"
     },
     {
       "name": "Institute of Industrial Science, the University of Tokyo",
@@ -38,8 +37,7 @@
       "url": "https://hydro.iis.u-tokyo.ac.jp/~weizw/index.htm",
       "startDate": "2020-01-01",
       "endDate": "now",
-      "summary": "*****************",
-      "highlights": ["Relativity"]
+      "summary": "*****************"
     },
     {
       "name": "Soil and Terrestrial Environmental Physics (Emeritus), ETH Zürich",
@@ -47,8 +45,7 @@
       "url": "https://emeritus.step.ethz.ch/people/scientific-staff/zhongwang-wei.html",
       "startDate": "2019-06-01",
       "endDate": "2019-11-31",
-      "summary": "*****************",
-      "highlights": ["Relativity"]
+      "summary": "*****************"
     },
     {
       "name": "Institute of Industrial Science, the University of Tokyo",
@@ -56,8 +53,7 @@
       "url": "https://hydro.iis.u-tokyo.ac.jp/~weizw/index.htm",
       "startDate": "2018-04-01",
       "endDate": "2019-03-30",
-      "summary": "*****************",
-      "highlights": ["Relativity"]
+      "summary": "*****************"
     },
     {
       "name": "Yale School of the Environment, Yale University",
@@ -65,8 +61,7 @@
       "url": "https://vapor-isotope.yale.edu/",
       "startDate": "2016-03-27",
       "endDate": "2018-03-30",
-      "summary": "*****************",
-      "highlights": ["Relativity"]
+      "summary": "*****************"
     }
   ],
   "education": [
@@ -78,7 +73,6 @@
       "studyType": "PhD",
       "startDate": "2013-04-01",
       "endDate": "2016-03-26"
-
     },
     {
       "institution": "The University of Tsukuba, Tsukuba, Japan",
