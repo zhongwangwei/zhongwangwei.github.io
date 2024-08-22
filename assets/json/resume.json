@@ -151,10 +151,15 @@
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Chinese",
       "fluency": "Native speaker",
       "icon": ""
     },
+    {
+      "language": "Japanese",
+      "fluency": "Fluent",
+      "icon": ""
+    }
     {
       "language": "English",
       "fluency": "Fluent",
