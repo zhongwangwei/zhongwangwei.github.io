@@ -6,7 +6,7 @@ subtitle: Associate Professor, School of Atmospheric Sciences, Sun Yat-Sen Unive
 
 profile:
   align: right
-  image: weizhongwang.jpg
+  image: weizhongwang.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Bldg.2 Haiqin, Room A538</p>
