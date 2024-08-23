@@ -29,7 +29,7 @@
       "url": "https://atmos.sysu.edu.cn/teacher/2147",
       "startDate": "2019-09-01",
       "endDate": "now",
-      "summary": "*****************"
+      "summary": "My research centers on modeling and understanding Earth's surface processes, focusing on land surface interactions, coastal hydrodynamics, and the application of stable isotopes. I utilize numerical models and isotopic tracers to investigate land-atmosphere interactions, simulate coastal processes, and gain insights into environmental dynamics."
     },
     {
       "name": "Institute of Industrial Science, University of Tokyo",
@@ -37,7 +37,7 @@
       "url": "https://hydro.iis.u-tokyo.ac.jp/~weizw/index.htm",
       "startDate": "2020-01-01",
       "endDate": "now",
-      "summary": "*****************"
+      "summary": "My research explores Earth system dynamics through a multidisciplinary lens, combining meteorology, hydrology, data assimilation, and stable isotope techniques. I investigate atmospheric processes, land-atmosphere interactions, and utilize observational data and isotopic tracers to improve our understanding and predictions of Earth's climate and water cycle."
     },
     {
       "name": "Soil and Terrestrial Environmental Physics (Emeritus), ETH Zürich",
@@ -45,7 +45,7 @@
       "url": "https://emeritus.step.ethz.ch/people/scientific-staff/zhongwang-wei.html",
       "startDate": "2019-06-01",
       "endDate": "2019-11-31",
-      "summary": "*****************"
+      "summary": "Investigated whether the improved estimation of soil hydraulic parameters (water retention and hydraulic conductivity) with addition injection of physical constraints and soil structure information improves land surface model performance."
     },
     {
       "name": "Institute of Industrial Science, University of Tokyo",
@@ -53,7 +53,7 @@
       "url": "https://hydro.iis.u-tokyo.ac.jp/~weizw/index.htm",
       "startDate": "2018-04-01",
       "endDate": "2019-03-30",
-      "summary": "*****************"
+      "summary": "explored uncertainties in river routing due to precipitation, and examined dam operation impacts."
     },
     {
       "name": "Yale School of the Environment, Yale University",
@@ -61,7 +61,7 @@
       "url": "https://vapor-isotope.yale.edu/",
       "startDate": "2016-03-27",
       "endDate": "2018-03-30",
-      "summary": "*****************"
+      "summary": "developed an isotope-enabled large eddy simulation model. This involved integrating isotopic tracers into atmospheric simulations to enhance understanding of atmospheric processes and transport."
     }
   ],
   "education": [
@@ -90,50 +90,6 @@
       "date": "1921-11-01",
       "awarder": "******",
       "summary": "*****"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
     }
   ],
   "publications": [
