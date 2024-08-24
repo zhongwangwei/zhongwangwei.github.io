@@ -113,7 +113,7 @@
     "awarder": "Monbukagakusho JASSO Honors Scholarship from Japan Government"
     }
   ],
-  
+
   "languages": [
     {
       "language": "Chinese",
@@ -140,7 +140,7 @@
       "startDate": "2025-01-01",
       "endDate": "2028-12-31" },
      {
-      "name": "Guangdong Provincial General Project (PI, 150,000 RMB)",
+      "name": "Guangdong Provincial General Project (No. 2024A1515010283, PI, 150,000 RMB)",
       "summary": "Development of Canopy Interception Scheme in Land Surface Models",
       "highlights": ["Canopy Interception", "Land Surface Models"],
       "startDate": "2024-01-01",
