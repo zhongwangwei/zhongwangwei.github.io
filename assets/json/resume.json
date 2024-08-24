@@ -85,13 +85,35 @@
   ],
   "awards": [
     {
-      "title": "****",
-      "date": "1921-11-01",
-      "awarder": "******",
-      "summary": "*****"
+      "title": "Inspirational Teacher",
+      "date": "2024",
+      "awarder": "School of Atmospheric Sciences, Sun Yat-Sen University"
+
+    },
+    {
+      "title": "Inspirational Teacher",
+      "date": "2022",
+      "awarder": "School of Atmospheric Sciences, Sun Yat-Sen University"
+    },
+    {
+      "title": "Guangdong Zhujiang River Scholar Youth Top Talent Program",
+      "date": "2021",
+      "awarder": "Science and Technology Department of Guangdong Province"
+    },
+    { "title": "The winner of academic research grant for outstanding students ",
+    "date": "2016",
+    "awarder": "Graduate School of Frontier Sciences Academic Research fund for outstanding students, University of Tokyo"
+    },
+    { "title": "The winner of academic research grant for GSFS Doctor Course Students",
+    "date": "2015",
+    "awarder": "Uchida Ocean Foundation"
+    },
+    { "title": "The winner of JASSO Honors Scholarship",
+    "date": "2011-2015",
+    "awarder": "Monbukagakusho JASSO Honors Scholarship from Japan Government"
     }
   ],
-  "publications": [
+  "selected publications": [
     {
       "name": "Zur Elektrody/namik bewegter Körper",
       "publisher": "Annalen der Physik",
