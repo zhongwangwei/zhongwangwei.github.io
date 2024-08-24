@@ -168,29 +168,43 @@
       "icon": ""
     }
   ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
 
   "projects": [
+     {
+      "name": "National Natural Science Foundation of China General Project (No. 42475172, PI,  480,000 RMB)",
+      "summary": "Development of Land Surface Model Benchmarking Evaluation System",
+      "highlights": ["Benchmarking", "Land Surface Model"],
+      "startDate": "2025-01-01",
+      "endDate": "2028-12-31" },
+     {
+      "name": "Guangdong Provincial General Project (PI, 150,000 RMB)",
+      "summary": "Development of Canopy Interception Scheme in Land Surface Models",
+      "highlights": ["Canopy Interception", "Land Surface Models"],
+      "startDate": "2024-01-01",
+      "endDate": "2027-12-31"},
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
-    }
+      "name": "National Natural Science Foundation of China General Project (No. 42075158, PI,  590,000 RMB)",
+      "summary": "Development of a Three-Dimensional Land Surface Hydrological Model Based on Unstructured Grids",
+      "highlights": ["Unstructured Grid", "Land Surface Hydrological Model"],
+      "startDate": "2020-01-01",
+      "endDate": "2024-12-31" },
+    {
+      "name": "Liaoning Provincial Development and Reform Commission Project(PI, 200,000 RMB)",
+      "summary": "Impact of Climate Change on Agricultural Patterns in Northeast China",
+      "highlights": ["Climate Change", "Agricultural Patterns"],
+      "startDate": "2020-09-01",
+      "endDate": "2020-12-31" },
+    {
+      "name": "Chinese Academy of Sciences Computer Network Information Center Project",
+      "summary": "Earth System Numerical Simulation Device Project (Regional System Model Numerical Simulation System)",
+      "highlights": ["Earth System", "Land Surface Models"],
+      "startDate": "2020-01-01",
+      "endDate": "2024-12-31"},
+    {
+      "name": "Guangdong Provincial Department of Science and Technology Strategic Special Fund for Science and Technology Innovation",
+      "summary": "High-Resolution Land Surface Environment Simulation and Prediction Research",
+      "highlights": ["Earth System", "Land Surface Models"],
+      "startDate": "2021-01-01",
+      "endDate": "2025-12-31"}
   ]
 }
