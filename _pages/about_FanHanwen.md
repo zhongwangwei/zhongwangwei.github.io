@@ -1,6 +1,6 @@
 Name: Hanwen Fan 
 
-Organization： Commercial Aircraft Corporation of China,Ltd. (中国商飞，COMAC) 
+Organization： Commercial Aircraft Corporation of China, Ltd. (中国商飞，COMAC) 
 
 2021 - 2023 : Master degree, Sun Yat-sen University
 
