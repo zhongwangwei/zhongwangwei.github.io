@@ -1,9 +1,16 @@
-Name: Xinyue Luo 
+Name: Hanwen Fan 
 
-Organization： Guangdong Urban & Rural Planning and Design Institute Co., Ltd. (广东省城乡规划设计研究院，GDUPI) 
+Organization： Commercial Aircraft Corporation of China,Ltd. (中国商飞，COMAC) 
 
-2021 -2023 : Master Student, [Sun Yat-sen University]
+2021 - 2023 : Master degree, [Sun Yat-sen University]
 
 
-Xinyue received her BS in Jiangxi Agricultural University, Nanchang, Jiangxi, China. She is a graduate student in Resources and environment
-study in School of Atmospheric Sciences, Sun Yat-Sen University, where her research is understanding the precipitation partitioning over land surface.
+Hanwen received her BS in Wuhan University, Wuhan, China. He completed a graduate degree in Resources and Environment Studies in the School of Atmospheric Sciences, Sun Yat-Sen University, where her research focused on developing an unstructured mesh generation system for land surface models.
+
+
+
+
+
+
+
+
