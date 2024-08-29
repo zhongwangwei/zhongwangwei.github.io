@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-08-29 10:35:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+We are delighted to welcome Zixin Wei, who will be joining our research group starting in August 2024. We look forward to collaborating with Zixin and benefiting from her contributions to our work.
