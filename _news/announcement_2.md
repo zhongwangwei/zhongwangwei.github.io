@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-B z's paper, 
-. Congratulations! :sparkles: :smile:
+ Congratulations! :sparkles: :smile:
