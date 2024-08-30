@@ -112,7 +112,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+#  You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -172,9 +172,13 @@ external_sources:
     rss_url: https://medium.com/@al-folio/feed
   - name: 全球植被毛初级生产力(GPP)新数据
     posts:
-      - url: https://mp.weixin.qq.com/s/2cvHW5dxiLjhcYbySnpmVA
+      -title: 全球植被毛初级生产力(GPP)新数据
+      - url: https://mp.weixin.qq.com/s/2cvHW5dxiLjhcYbySnpmVA/
         published_date: 2024-08-30
-
+  - name: Google Blog
+    posts:
+      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+        published_date: 2024-05-14
 # -----------------------------------------------------------------------------
 # Newsletter
 # -----------------------------------------------------------------------------
