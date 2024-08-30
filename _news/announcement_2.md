@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
- Congratulations! :sparkles: :smile:
+Yaoting Cai's paper, "Reconciling global terrestrial evapotranspiration estimates from multi-product intercomparison and evaluation", has been accepted for publication in Water Resources Research. Congratulations! :sparkles: :smile:
