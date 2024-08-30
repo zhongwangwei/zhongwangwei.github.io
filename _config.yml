@@ -170,10 +170,10 @@ disqus_shortname: al-folio # put your disqus shortname
 external_sources:
   - name: medium.com
     rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
+  - name: 全球植被毛初级生产力(GPP)新数据
     posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+      - url: https://mp.weixin.qq.com/s/2cvHW5dxiLjhcYbySnpmVA
+        published_date: 2024-08-30
 
 # -----------------------------------------------------------------------------
 # Newsletter
