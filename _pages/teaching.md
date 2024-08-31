@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
+permalink: /Teaching/
+title: Teaching
 description: Courses I have taught and teaching materials.
 nav: true
 nav_order: 6
