@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The website is online now! :sparkles: :smile:
+The website is online now!
