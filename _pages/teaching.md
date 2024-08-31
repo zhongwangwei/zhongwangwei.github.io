@@ -105,7 +105,7 @@ nav_order: 6
 
 <div class="row">
     <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/img/land_surface_modelling.jpg" alt="Land Surface Modelling" title="Land Surface Modelling"/>
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/land_surface_modelling.png" alt="Land Surface Modelling" title="Land Surface Modelling"/>
     </div>
     <div class="col-sm-8 mt-3 mt-md-0">
         <p>
@@ -134,7 +134,7 @@ nav_order: 6
 
 <div class="row">
     <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/assets/img/python_scientific_computing.jpg" alt="Python Scientific Computing" title="Python Scientific Computing"/>
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/python_scientific_computing.png" alt="Python Scientific Computing" title="Python Scientific Computing"/>
     </div>
     <div class="col-sm-8 mt-3 mt-md-0">
         <p>
