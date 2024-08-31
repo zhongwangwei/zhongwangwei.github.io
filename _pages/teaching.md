@@ -15,11 +15,11 @@ This course provides a comprehensive overview of the Earth's interconnected syst
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/earth_system.jpg" title="Earth System" class="img-fluid rounded z-depth-1" %}
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/earth_system.jpg' | relative_url }}" alt="Earth System" title="Earth System"/>
     </div>
 </div>
 <div class="caption">
-    The Earth System
+    The Earth System: Atmosphere, Hydrosphere, Geosphere, and Biosphere
 </div>
 
 Key topics include:
