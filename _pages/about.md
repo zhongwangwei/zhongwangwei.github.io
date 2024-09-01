@@ -1,5 +1,5 @@
 ---
-layout: About
+layout: about
 title: About
 permalink: /
 subtitle: Associate Professor, School of Atmospheric Sciences, Sun Yat-Sen University & Collaborative Research Fellow, Institute of Industrial Science, University of Tokyo
