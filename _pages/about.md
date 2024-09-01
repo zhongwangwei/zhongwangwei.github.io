@@ -29,4 +29,4 @@ Complementing these modeling efforts, I harness the power of stable isotopes as 
 
 By integrating these diverse approaches, I aim to contribute to a more comprehensive understanding of Earth's surface processes and their far-reaching implications. Ultimately, my research seeks to inform effective environmental management strategies and foster a more sustainable future for our planet.
 ---
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=DFXcMelYJJetMxfuBhOXW-0yqofOVOuzpfEWVpKKrsc"></script>
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=DFXcMelYJJetMxfuBhOXW-0yqofOVOuzpfEWVpKKrsc&cl=ffffff&w=a"></script>
