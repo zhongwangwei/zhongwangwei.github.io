@@ -1,6 +1,6 @@
 ---
-layout: about
-title: about
+layout: About
+title: About
 permalink: /
 subtitle: Associate Professor, School of Atmospheric Sciences, Sun Yat-Sen University & Collaborative Research Fellow, Institute of Industrial Science, University of Tokyo
 
@@ -28,4 +28,3 @@ Shifting focus to coastal zones, I employ hydrodynamic models to simulate the ph
 Complementing these modeling efforts, I harness the power of stable isotopes as tracers to unravel the mysteries of environmental processes. Through isotopic analysis, I track the sources, pathways, and transformations of water and other substances, shedding light on phenomena like water movement, biogeochemical cycles, and past climate conditions.
 
 By integrating these diverse approaches, I aim to contribute to a more comprehensive understanding of Earth's surface processes and their far-reaching implications. Ultimately, my research seeks to inform effective environmental management strategies and foster a more sustainable future for our planet.
----
