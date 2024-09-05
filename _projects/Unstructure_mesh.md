@@ -38,17 +38,15 @@ We've developed an innovative tool that generates unstructured meshes, allowing 
 
 By coupling our refined unstructured meshes with the Common Land Model (CoLM), we've achieved significant improvements in simulating critical hydrological variables. Runoff, river discharge, and flood inundation are now modeled with greater accuracy, particularly in regions with complex terrain. This has far-reaching implications for disaster prevention, water resource management, and climate change studies.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/hydrological_simulation.gif" title="Hydrological Simulation" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/extreme_events.gif" title="Extreme Events" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/discharge.png" title="Discharge Simulation" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    **Left:** Enhanced hydrological simulations enable better understanding of water flow and distribution. **Right:** Improved prediction of extreme events like floods inundation.
+The KGE values calculated from the GRDC dataset and structured-based (a) and unstructured-based discharge (b) on the monthly time scale. The KGE values difference between two simulations (c) and the Kernel density plots (d) are also shown.
 </div>
+
 
 **The Future of Land Surface Modeling**
 
