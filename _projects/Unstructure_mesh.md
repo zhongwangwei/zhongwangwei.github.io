@@ -5,7 +5,7 @@ description: Enhancing the representation of spatial heterogeneity
 img: /assets/img/hexagon.jpg  # Replace with a relevant image
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
 **Revolutionizing Land Surface Modeling**
