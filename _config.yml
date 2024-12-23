@@ -132,8 +132,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Zhongwang Wei and his group  # blog_name will be displayed in your blog page
-blog_description: 生活不止眼前的苟且，还有诗和远方
+blog_name: 魏忠旺和他的团队（Zhongwang Wei and his group）  # blog_name will be displayed in your blog page
+blog_description: 生活不止眼前的苟且，还有诗和远方（Life is not only about the present, but also about the future and the past）
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
