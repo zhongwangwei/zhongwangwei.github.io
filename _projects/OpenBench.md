@@ -2,7 +2,7 @@
 layout: page
 title: OpenBench
 description: A Universal Land Surface Model Evaluation System
-img: /assets/img/hexagon.jpg  # Replace with a relevant image
+img: /assets/img/openbench/Page_10.jpg  # Replace with a relevant image
 importance: 1
 category: work
 related_publications: false
