@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: Evapotranspiration
+description: Evapotranspiration
 img:
 importance: 3222
-category: fun
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
