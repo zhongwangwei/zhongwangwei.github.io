@@ -3,7 +3,7 @@ layout: page
 title: Earth Mesh
 description: Enhancing the representation of spatial heterogeneity
 img: /assets/img/hexagon.jpg  # Replace with a relevant image
-importance: 1
+importance: 4
 category: work
 related_publications: false
 ---
