@@ -2,7 +2,7 @@
 layout: post
 title: 东京-北海道之行
 date: 2024-07-18 21:01:00
-description: 2024年夏季东京和北海道学术访问
+description: 五味杂陈，物是人非
 tags: 旅行 images
 categories: Travel
 thumbnail: assets/img/2024-07-Tokyo-Hokkaido/IMG_4316.jpeg
