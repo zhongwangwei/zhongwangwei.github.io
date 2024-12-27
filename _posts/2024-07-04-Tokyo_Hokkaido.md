@@ -1,14 +1,14 @@
 ---
 layout: post
 title: 东京-北海道之行
-date: 2024-07-18 21:01:00
+date: 2024-07-04 21:01:00
 description: 五味杂陈，物是人非
 tags: 旅行 images
 categories: Travel
 thumbnail: assets/img/2024-07-Tokyo-Hokkaido/IMG_4316.jpeg
 featured: true
 ---
-2024年7月15日-7月21日的日本之行，有幸作为受邀参加在东京举办的大尺度汇流模式开发者大会并赴北海道参加第九届全球能量和水循环试验国际会议。
+2024年7月04日-7月12日的日本之行，有幸作为受邀参加在东京举办的大尺度汇流模式开发者大会并赴北海道参加第九届全球能量和水循环试验国际会议。
 <div class="row mt-3">
     <div class="col-sm-12 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/2024-07-Tokyo-Hokkaido/IMG_4321.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}
