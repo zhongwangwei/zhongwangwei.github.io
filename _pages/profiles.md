@@ -10,43 +10,43 @@ profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
   - align: right
-    image: wei.jpg
+    image: assets/img/people/wei.jpg
     content: about_me.md
     image_circular: false # crops the image to make it circular
 
   - align: left
-    image: xuxionghui.jpg
+    image: assets/img/people/xuxionghui.jpg
     content: about_XuXionghui.md
     image_circular: false # crops the image to make it circular
 
 
   - align: right
-    image: xuqingchen.jpeg
+    image: assets/img/people/xuqingchen.jpeg
     content: about_Xuqingchen.md
     image_circular: false # crops the image to make it circular
 
   - align: left
-    image: weizixin.jpg
+    image: assets/img/people/weizixin.jpg
     content: about_Weizixin.md
     image_circular: false # crops the image to make it circular
 
   - align: right
-    image: luoxinyue.jpeg
+    image: assets/img/people/luoxinyue.jpeg
     content: about_Luoxinyue.md
     image_circular: false # crops the image to make it circular
 
   - align: left
-    image: Baifan.jpeg
+    image: assets/img/people/Baifan.jpeg
     content: about_Baifan.md
     image_circular: false # crops the image to make it circular
 
   - align: right
-    image: fanhanwen.jpeg
+    image: assets/img/people/fanhanwen.jpeg
     content: about_FanHanwen.md
     image_circular: false # crops the image to make it circular
 
   - align: left
-    image: hezijia.jpg
+    image: assets/img/people/hezijia.jpg
     content: about_Hezijia.md
     image_circular: false # crops the image to make it circular
 ---
