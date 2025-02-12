@@ -1,80 +1,94 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
+title: IsoHysplit
+description: Isotope-enabled HYSPLIT Model for Advanced Atmospheric Transport Analysis
+img: assets/img/research/IsoHysplit/trajectory_delta_Precipitable_Water_18O.png
 importance: 3
-category: fun
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Project Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+IsoHysplit is an innovative extension of the HYSPLIT (Hybrid Single-Particle Lagrangian Integrated Trajectory) model, incorporating isotope physics to track water vapor transport and transformation in the atmosphere. This enhanced model enables researchers to better understand atmospheric water cycles.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" 
+            path="assets/img/projects/isohysplit-1.jpg" 
+            title="IsoHysplit Model Architecture" 
+            class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    System architecture of the IsoHysplit model showing the integration of isotope physics with traditional HYSPLIT components.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Key Features
+
+- **Isotope Physics Integration**: Incorporates δ18O and δD tracking capabilities
+- **Enhanced Trajectory Analysis**: Advanced particle tracking with isotopic fingerprinting
+- **Multi-scale Modeling**: Supports both regional and global atmospheric transport studies
+- **Data Assimilation**: Real-time integration of meteorological and isotopic observations
+- **Validation Framework**: Comprehensive model validation against GNIP database
+
+## Research Applications
+
+The model has been successfully applied to:
+- Tracking moisture sources for precipitation events
+- Understanding atmospheric water vapor transport patterns
+- Investigating climate change impacts on water cycles
+- Validating global circulation models
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+            path="assets/img/projects/isohysplit-2.jpg" 
+            title="Simulation Results" 
+            class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+            path="assets/img/projects/isohysplit-3.jpg" 
+            title="Validation Results" 
+            class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Left: Simulated water vapor transport pathways during a major precipitation event. 
+    Right: Model validation results showing correlation between predicted and observed isotope ratios.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Technical Implementation
 
-{% raw %}
+The model is implemented using:
+- Fortran for core computational modules
+- Python for data processing and visualization
+- NetCDF for data I/O handling
+- Parallel computing support for high-performance calculations
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+## Future Development
+
+Current development focuses on:
+1. Implementing machine learning algorithms for parameter optimization
+2. Expanding the isotope physics framework
+3. Improving computational efficiency
+4. Developing user-friendly interfaces
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/isohysplit-4.jpg" 
+            title="Future Development Roadmap" 
+            class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
+<div class="caption">
+    Development roadmap highlighting planned features and improvements for the next major release.
+</div>
 
-{% endraw %}
+## Publications
+
+1. [Wei et al. (In preparation) "IsoHysplit: An Isotope-enabled Atmospheric Transport Model"](#)
+
+
+For more information or collaboration opportunities, please contact zhongwang007@gmail.com.

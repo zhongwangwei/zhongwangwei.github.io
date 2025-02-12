@@ -2,7 +2,7 @@
 layout: page
 title: CoLM
 description: 通用陆面模式 | Common Land Surface Model
-img: assets/img/9.jpg
+img: assets/img/research/CoLM/CoLM.png
 importance: 2
 category: work
 giscus_comments: true

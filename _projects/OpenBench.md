@@ -2,7 +2,7 @@
 layout: page
 title: OpenBench
 description: A Universal Land Surface Model Evaluation System
-img: /assets/img/openbench/Page_10.jpg  # Replace with a relevant image
+img: /assets/img/research/openbench/Page_10.jpg  # Replace with a relevant image
 importance: 1
 category: work
 related_publications: false
@@ -14,7 +14,7 @@ Land surface models (LSMs) are becoming increasingly sophisticated, incorporatin
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/openbench/Picture1.png" title="General flowchart of the OpenBench " class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research/openbench/Picture1.png" title="General flowchart of the OpenBench " class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -27,7 +27,7 @@ OpenBench represents a significant leap forward in model evaluation methodology.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/openbench/Page_5-02.jpg" title="Multi-model Comparison" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research/openbench/Page_5-02.jpg" title="Multi-model Comparison" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -40,7 +40,7 @@ The power of OpenBench is demonstrated through its diverse applications. From ev
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/openbench/Page_4.jpg" title="Case Studies" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research/openbench/Page_4.jpg" title="Case Studies" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

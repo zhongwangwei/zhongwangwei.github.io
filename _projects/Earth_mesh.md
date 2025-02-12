@@ -2,7 +2,7 @@
 layout: page
 title: Earth Mesh
 description: Enhancing the representation of spatial heterogeneity
-img: /assets/img/hexagon.jpg  # Replace with a relevant image
+img: /assets/img/research/EarthMesh/hexagon.jpg  # Replace with a relevant image
 importance: 4
 category: work
 related_publications: false
@@ -14,7 +14,7 @@ Land surface models (LSMs) play a crucial role in simulating the intricate inter
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/unstructured_mesh.png" title="Unstructured Mesh" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research/EarthMesh/unstructured_mesh.png" title="Unstructured Mesh" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -27,7 +27,7 @@ We've developed an innovative tool that generates unstructured meshes, allowing 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mesh_refinement.jpg" title="Mesh Refinement" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research/EarthMesh/mesh_refinement.jpg" title="Mesh Refinement" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -40,7 +40,7 @@ By coupling our refined unstructured meshes with the Common Land Model (CoLM), w
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/discharge.png" title="Discharge Simulation" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research/EarthMesh/discharge.png" title="Discharge Simulation" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

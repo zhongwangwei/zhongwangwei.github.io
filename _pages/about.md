@@ -6,7 +6,7 @@ subtitle: School of Atmospheric Sciences, Sun Yat-Sen University
 
 profile:
   align: right
-  image: weizhongwang.jpeg
+  image: assets/img/profile/weizhongwang.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Bldg.2 Haiqin, Room A538</p>
