@@ -2,80 +2,81 @@
 layout: page
 title: CoLM
 description: 通用陆面模式 | Common Land Surface Model
-img: assets/img/research/CoLM/CoLM.png
+img: assets/img/research/CoLM/CoLM2024.png
 importance: 2
 category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Project Overview
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The Common Land Model (CoLM) is a powerful and versatile land surface model designed for multi-scale applications, ranging from 1 meter to 100 kilometers. CoLM provides a comprehensive platform for simulating various land surface processes, including hydrology, energy balance, vegetation dynamics, and human activities. Whether your research focuses on weather, climate, hydrology, ecology, urban environments, or agriculture, CoLM offers the tools which need to conduct high-quality land surface modeling.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" 
+            path="assets/img/research/CoLM/CoLM2024.png" 
+            title="CoLM Model Overview" 
+            class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Overview of the CoLM model, highlighting its key components and processes.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Key Features
+
+- **Multi-scale Modeling**: Supports simulations from 1 meter to 100 kilometers.
+- **Comprehensive Processes**: Simulates hydrology, energy balance, vegetation dynamics, and human activities.
+- **Flexible Framework**: Modular design allows for customization and adaptation to various research needs.
+- **Extensive Datasets**: Utilizes a wide range of high-resolution datasets for land cover, soil, vegetation, topography, hydrology, and urban characteristics.
+- **Advanced Parameterizations**: Includes state-of-the-art parameterizations for hydrological and energy processes, including snow, vegetation, and urban environments.
+
+## Research Applications
+
+CoLM has been successfully applied to a variety of research areas, including:
+
+- Numerical weather prediction and climate forecasting
+- Hydrological and water resource modeling
+- Ecological and environmental studies
+- Urban planning and development
+- Agricultural and forestry management
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+            path="assets/img/research/CoLM/CoLM2024.png" 
+            title="Global Simulation Results" 
+            class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+            path="assets/img/research/CoLM/CoLM2024.png" 
+            title="Regional Discharge Simulation Evaluation" 
+            class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Left: Global simulation of land surface evapotranspiration using CoLM. 
+    Right: Regional Discharge Simulation Evaluation for North America.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Technical Implementation
 
-{% raw %}
+CoLM is implemented using Fortran for core computational modules, ensuring high performance and efficiency. The model utilizes MPI for parallel computing, enabling large-scale simulations on supercomputers and clusters. NetCDF is employed for data input/output handling, facilitating data management and compatibility.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+## Future Development
 
-{% endraw %}
+Ongoing development of CoLM focuses on:
+
+- Enhancing the representation of human activities, such as irrigation, land use change, and urban development.
+- Improving the model's performance and scalability for high-resolution simulations.
+- Expanding the model's capabilities to simulate biogeochemical cycles and their interactions with land surface processes.
+- Developing user-friendly interfaces and tools for model setup, execution, and analysis.
+- Integrating with other models, such as the atmospheric model, to simulate the land-atmosphere interaction.
+- Developing python version of CoLM, incorporating with AI technology.
+
+
+
+## Publications
