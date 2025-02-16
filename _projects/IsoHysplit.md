@@ -1,7 +1,7 @@
 ---
 layout: page
 title: IsoHysplit
-description: Isotope-enabled HYSPLIT Model for Advanced Atmospheric Transport Analysis
+description: 同位素耦合的HYSPLIT模型 | Isotope-enabled HYSPLIT Model for Advanced Atmospheric Transport Analysis
 img: assets/img/research/IsoHysplit/trajectory_delta_Precipitable_Water_18O.png
 importance: 6
 category: work

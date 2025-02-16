@@ -1,7 +1,7 @@
 ---
 layout: page
 title: OpenBench
-description: A Universal Land Surface Model Evaluation System
+description: 通用陆面模式评估系统 | A Universal Land Surface Model Evaluation System
 img: /assets/img/research/openbench/Page_10.jpg  # Replace with a relevant image
 importance: 1
 category: work

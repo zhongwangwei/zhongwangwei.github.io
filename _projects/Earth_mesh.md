@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Earth Mesh
-description: Enhancing the representation of spatial heterogeneity
+title: Earth Mesh 
+description: 海陆一体化非结构网格构建 | Unstructured Mesh Generation for Earth Surface Modeling
 img: /assets/img/research/EarthMesh/hexagon.jpg  # Replace with a relevant image
 importance: 4
 category: work
