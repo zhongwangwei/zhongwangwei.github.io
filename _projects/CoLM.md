@@ -14,9 +14,9 @@ giscus_comments: true
 The Common Land Model (CoLM) is a powerful and versatile land surface model designed for multi-scale applications, ranging from 1 meter to 100 kilometers. CoLM provides a comprehensive platform for simulating various land surface processes, including hydrology, energy balance, vegetation dynamics, and human activities. Whether your research focuses on weather, climate, hydrology, ecology, urban environments, or agriculture, CoLM offers the tools which need to conduct high-quality land surface modeling.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" 
-            path="assets/img/research/CoLM/CoLM2024ww.png" 
+            path="assets/img/research/CoLM/CoLM2024.png" 
             title="CoLM Model Overview" 
             class="img-fluid rounded z-depth-1" %}
     </div>
