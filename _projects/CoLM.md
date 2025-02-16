@@ -45,7 +45,7 @@ CoLM has been successfully applied to a variety of research areas, including:
 - Agricultural and forestry management
 
 ### Global Simulation Results
-<div class="row">
+<div class="row justify-content-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/research/CoLM/colm-2.png" 
@@ -58,8 +58,8 @@ CoLM has been successfully applied to a variety of research areas, including:
 </div>
 
 ### Regional Evaluation
-<div class="row">
-    <div class="col-sm-6 mt-3 mt-md-0">
+<div class="row justify-content-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/research/CoLM/colm-3.png" 
             title="Regional Discharge Simulation Evaluation" 
