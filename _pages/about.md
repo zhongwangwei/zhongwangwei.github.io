@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Our research group, led by Associate Professor Zhongwang Wei, focuses on enhancing our understanding of Earth's surface water dynamics. We employ a multi-faceted approach that combines advanced numerical modeling techniques with innovative isotopic methods to unravel the complexities of the global water cycle.
+Our research group, led by Professor Zhongwang Wei, focuses on enhancing our understanding of Earth's surface water dynamics. We employ a multi-faceted approach that combines advanced numerical modeling techniques with innovative isotopic methods to unravel the complexities of the global water cycle.
 
 ## Research Focus
 
