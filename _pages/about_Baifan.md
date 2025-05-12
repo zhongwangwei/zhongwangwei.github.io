@@ -1,7 +1,8 @@
 Name: Fan Bai
 
+Organization：Graduate Student (PHD Program) Tsinghua University (清华大学) 
 
-2022 - present: Graduate Student (Master's Program), Sun Yat-sen University
+2022 - 2025: Graduate Student (Master's Program), Sun Yat-sen University
 
 2018 - 2022: Undergraduate Student, Sun Yat-sen University
 
