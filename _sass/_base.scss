@@ -248,41 +248,6 @@ ul.task-list input[type="checkbox"] {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
-
-  // Optimize container for better spacing
-  .container {
-    max-width: 1200px !important;
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-  }
-
-  // Improve nav item spacing - more elegant approach
-  .navbar-nav {
-    .nav-item {
-      margin-left: 0.3rem !important;
-      margin-right: 0.3rem !important;
-    }
-
-    .nav-link {
-      font-size: 0.9rem !important;
-      padding: 0.5rem 0.8rem !important;
-      white-space: nowrap !important;
-      border-radius: 4px !important;
-      transition: all 0.3s ease !important;
-      
-      &:hover {
-        background-color: var(--global-bg-color) !important;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
-        transform: translateY(-1px) !important;
-      }
-    }
-
-    .nav-item.active .nav-link {
-      background-color: var(--global-bg-color) !important;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.15) !important;
-      font-weight: 600 !important;
-    }
-  }
 }
 
 .navbar .dropdown-menu {

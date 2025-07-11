@@ -1,0 +1,28 @@
+// Navbar spacing customizations for better Chinese text display
+
+.navbar {
+  // Make navbar container wider for better spacing
+  .container {
+    max-width: 1500px !important; // Even wider container
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  // Add more spacing between nav items - use !important to override Bootstrap
+  .navbar-nav .nav-item {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  // Adjust navigation link spacing and padding
+  .navbar-nav .nav-link {
+    font-size: 0.95rem !important;
+    padding: 0.5rem 1.2rem !important; // Increased horizontal padding
+    white-space: nowrap !important; // Prevent text wrapping
+  }
+
+  // Additional spacing for Chinese text
+  .navbar-nav {
+    gap: 0.8rem !important; // Add gap between flex items
+  }
+}
