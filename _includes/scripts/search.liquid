@@ -72,7 +72,7 @@
           {%- endif -%}
         {%- endif -%}
       {%- endfor -%}
-      {%- for post in site.posts -%}
+      {%- for post in site.news -%}
         {
           {%- assign title = post.title | escape | strip -%}
           id: "post-{{ title | slugify }}",
@@ -84,7 +84,7 @@
             title: "{{ title | truncatewords: 13 }}",
           {% endif %}
           description: "{{ post.description | strip_html | strip_newlines | escape | strip }}",
-          section: "Posts",
+          section: "News",
           handler: () => {
             {% if post.redirect == blank %}
               window.location.href = "{{ post.url | relative_url }}";

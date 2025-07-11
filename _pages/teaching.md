@@ -3,8 +3,9 @@ layout: page
 permalink: /Teaching/
 title: Teaching
 description: Courses I have taught and teaching materials.
-nav: true
+nav: false
 nav_order: 6
+lang: en
 ---
 ---
 ## Current Undergraduate Courses

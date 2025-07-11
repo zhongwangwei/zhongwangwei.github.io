@@ -1,0 +1,78 @@
+{% assign current_lang = page.lang | default: site.lang | default: site.default_lang %}
+{% assign current_page_path = page.url | remove_first: "/" %}
+
+<!-- Filter pages by current language -->
+{% assign nav_pages = site.pages | where: "nav", true | where: "lang", current_lang | sort: "nav_order" %}
+
+<!-- About page -->
+{% assign about_page = site.pages | where: "permalink", "/" | first %}
+{% if about_page %}
+  <li class="nav-item {% if page.url == '/' %}active{% endif %}">
+    <a class="nav-link" href="{{ '/' | relative_url }}">
+      {% if current_lang == 'zh' %}
+        关于我们
+      {% else %}
+        About
+      {% endif %}
+      {% if page.url == '/' %}
+        <span class="sr-only">(current)</span>
+      {% endif %}
+    </a>
+  </li>
+{% endif %}
+
+<!-- Other navigation pages -->
+{% for p in nav_pages %}
+  {% unless p.permalink == '/' %}
+    {% if p.dropdown %}
+      {% assign has_active_child = false %}
+      {% for child in p.children %}
+        {% if page.title == child.title %}
+          {% assign has_active_child = true %}
+        {% endif %}
+      {% endfor %}
+      <li class="nav-item dropdown {% if page.title == p.title or has_active_child %}active{% endif %}">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          {{ p.title }}
+          {% if page.title == p.title or has_active_child %}
+            <span class="sr-only">(current)</span>
+          {% endif %}
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          {% for child in p.children %}
+            {% if child.title == 'divider' %}
+              <div class="dropdown-divider"></div>
+            {% else %}
+              <a class="dropdown-item {% if page.title == child.title %}active{% endif %}" href="{{ child.permalink | relative_url }}">
+                {{ child.title }}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </li>
+    {% else %}
+      {% assign parent_link = p.permalink | remove: 'index.html' %}
+      <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
+        {% if p.permalink contains '/blog/' %}
+          {% assign url = '/blog/' %}
+        {% else %}
+          {% assign url = p.permalink | remove: 'index.html' %}
+        {% endif %}
+        <a class="nav-link" href="{{ url | relative_url }}">
+          {{ p.title }}
+          {% if page.url contains parent_link %}
+            <span class="sr-only">(current)</span>
+          {% endif %}
+        </a>
+      </li>
+    {% endif %}
+  {% endunless %}
+{% endfor %}

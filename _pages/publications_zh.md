@@ -1,10 +1,10 @@
 ---
 layout: page
-permalink: /publications/
-title: Publications
-nav: false
+permalink: /zh/publications/
+title: 发表文章
+nav: true
 nav_order: 2
-lang: en
+lang: zh
 ---
 
 <!-- _pages/publications.md -->

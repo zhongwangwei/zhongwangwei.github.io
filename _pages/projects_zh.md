@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
-#description: A growing collection of your cool projects.
-nav: false
+title: 项目
+permalink: /zh/projects/
+#description: 我们正在进行的精彩项目集合。
+nav: true
 nav_order: 3
-lang: en
 display_categories: [work, fun]
 horizontal: false
+lang: zh
 ---
 
 <!-- pages/projects.md -->

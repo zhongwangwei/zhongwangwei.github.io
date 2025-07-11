@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Projects
-permalink: /projects/
+permalink: /en/projects/
 #description: A growing collection of your cool projects.
-nav: false
+nav: true
 nav_order: 3
-lang: en
 display_categories: [work, fun]
 horizontal: false
+lang: en
 ---
 
 <!-- pages/projects.md -->

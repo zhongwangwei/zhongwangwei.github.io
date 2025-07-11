@@ -3,8 +3,9 @@ layout: profiles
 permalink: /people/
 title: People
 description: members of the group
-nav: true
+nav: false
 nav_order: 7
+lang: en
 
 profiles:
   # if you want to include more than one profile, just replicate the following block

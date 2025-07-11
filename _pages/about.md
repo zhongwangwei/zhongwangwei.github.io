@@ -1,8 +1,9 @@
 ---
 layout: about
 title: About
-permalink: /
+permalink: /en/
 subtitle: School of Atmospheric Sciences, Sun Yat-Sen University
+lang: en
 
 profile:
   align: right
@@ -13,7 +14,7 @@ profile:
     <p>Zhuhai Campus, Sun Yat-sen University, Tangjiawan</p>
     <p>Zhuhai, Guangdong Province. China, 519082</p>
 
-news: true # includes a list of news items
+combined_news: true # includes a combined list of news and latest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---

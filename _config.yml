@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Surface Water Dynamics Research Group  # the website title (if blank, full name will be used instead)
+title: blank  # the website title (if blank, full name will be used instead)
 first_name: Zhongwang
 middle_name:
 last_name: Wei
@@ -13,8 +13,13 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+lang: zh # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌍 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+
+# Multi-language support
+languages: ["zh", "en"]
+default_lang: "zh"
+exclude_from_localization: ["javascript", "images", "README.md"]
 
 #url: http://hydro.iis.u-tokyo.ac.jp
 #baseurl: "/~weizw"
@@ -45,13 +50,18 @@ repo_trophies:
 
 rss_icon: true
 
+jekyll-feed:
+  path: feed.xml
+  collections:
+    - news
+
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 bib_search: true
 
@@ -135,9 +145,9 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: 地表水动力研究组 # blog_name will be displayed in your blog page
-blog_description: 地表水动力研究
-permalink: /blog/:year/:title/
+news_name: 地表水动力研究组 # news_name will be displayed in your news page
+news_description: 地表水动力研究
+permalink: /news/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
@@ -282,14 +292,20 @@ plugins:
   - jekyll-twitter-plugin
   - jemoji
 
+
 # Sitemap settings
 defaults:
   - scope:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      type: "pages"
+    values:
+      permalink: /:path/
 
 sass:
+  sass_dir: _sass
   style: compressed
 
 # -----------------------------------------------------------------------------
@@ -312,9 +328,9 @@ jekyll-archives:
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: "/blog/:year/"
-    tag: "/blog/tag/:name/"
-    category: "/blog/category/:name/"
+    year: "/news/:year/"
+    tag: "/news/tag/:name/"
+    category: "/news/category/:name/"
 
 #display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 #display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
@@ -444,7 +460,7 @@ enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
-enable_darkmode: true # enables switching between light/dark modes
+enable_darkmode: false # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)

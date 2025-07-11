@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /publications/
+permalink: /en/publications/
 title: Publications
-nav: false
+nav: true
 nav_order: 2
 lang: en
 ---

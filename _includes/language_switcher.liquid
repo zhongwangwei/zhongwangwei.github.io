@@ -1,0 +1,153 @@
+{% assign current_lang = page.lang | default: site.lang | default: site.default_lang %}
+{% assign current_page = page.url | remove_first: "/" %}
+
+{% comment %} For news pages, determine language based on URL path {% endcomment %}
+{% if page.url contains '/news/' %}
+  {% if page.url contains '/en/news/' %}
+    {% assign current_lang = 'en' %}
+  {% else %}
+    {% assign current_lang = 'zh' %}
+  {% endif %}
+{% endif %}
+
+<div class="language-switcher">
+  <div class="dropdown">
+    <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-expanded="false">
+      <span id="currentLangText">
+        {% if current_lang == 'zh' %}
+          中文
+        {% else %}
+          English
+        {% endif %}
+      </span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+      {% for language in site.languages %}
+        {% if language != current_lang %}
+          <li>
+            <a class="dropdown-item" href="javascript:void(0)" onclick="switchLanguage('{{ language }}')">
+              {% if language == 'zh' %}
+                中文
+              {% else %}
+                English
+              {% endif %}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<script>
+function switchLanguage(lang) {
+  localStorage.setItem('preferred_language', lang);
+  
+  // Get current page path
+  var currentPath = window.location.pathname;
+  var currentSearch = window.location.search;
+  
+  // Define language mappings
+  var languageMappings = {
+    'zh': {
+      '/': '/',
+      '/en/': '/',
+      '/projects/': '/zh/projects/',
+      '/publications/': '/zh/publications/',
+      '/cv/': '/zh/cv/',
+      '/teaching/': '/zh/teaching/',
+      '/people/': '/zh/people/'
+    },
+    'en': {
+      '/': '/en/',
+      '/zh/': '/en/',
+      '/projects/': '/en/projects/',
+      '/publications/': '/en/publications/',
+      '/cv/': '/en/cv/',
+      '/teaching/': '/en/teaching/',
+      '/people/': '/en/people/'
+    }
+  };
+  
+  // Get the mapped path
+  var newPath = languageMappings[lang][currentPath] || currentPath;
+  
+  // If no direct mapping found, try to construct the path
+  if (!languageMappings[lang][currentPath]) {
+    // Remove existing language prefix
+    var cleanPath = currentPath.replace(/^\/(zh|en)\//, '/');
+    
+    if (lang === 'zh') {
+      if (cleanPath === '/') {
+        newPath = '/';
+      } else {
+        newPath = '/zh' + cleanPath;
+      }
+    } else { // lang === 'en'
+      if (cleanPath === '/') {
+        newPath = '/en/';
+      } else {
+        newPath = '/en' + cleanPath;
+      }
+    }
+  }
+  
+  // Redirect to new language version
+  window.location.href = newPath + currentSearch;
+}
+
+// Set language on page load
+document.addEventListener('DOMContentLoaded', function() {
+  var preferredLang = localStorage.getItem('preferred_language');
+  var currentPath = window.location.pathname;
+  
+  // For news pages, update the language switcher display based on preference
+  if (currentPath.startsWith('/news/')) {
+    var currentLangText = document.getElementById('currentLangText');
+    if (currentLangText && preferredLang) {
+      if (preferredLang === 'zh') {
+        currentLangText.textContent = '中文';
+      } else {
+        currentLangText.textContent = 'English';
+      }
+    }
+    // Removed 'return;' statement here to allow further language switching logic
+  }
+  
+  if (preferredLang && preferredLang !== '{{ current_lang }}') {
+    switchLanguage(preferredLang);
+  }
+});
+</script>
+
+<style>
+.language-switcher {
+  margin-left: 10px;
+}
+
+.language-switcher .dropdown-toggle {
+  border: 1px solid var(--global-theme-color);
+  color: var(--global-theme-color);
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.language-switcher .dropdown-toggle:hover {
+  background-color: var(--global-theme-color);
+  color: white;
+}
+
+.language-switcher .dropdown-menu {
+  min-width: 80px;
+}
+
+.language-switcher .dropdown-item {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.language-switcher .dropdown-item:hover {
+  background-color: var(--global-theme-color);
+  color: white;
+}
+</style>
