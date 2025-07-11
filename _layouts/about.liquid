@@ -4,7 +4,9 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
-      {% if site.title == 'blank' %}
+      {% if page.title %}
+        {{ page.title }}
+      {% elsif site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
       {% else %}
@@ -16,7 +18,7 @@ layout: default
 
   <article>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      <div class="profile" style="width: 100% !important; float: none !important; margin: 0 auto 2rem auto; text-align: center;">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
@@ -25,8 +27,8 @@ layout: default
             {% assign profile_image_class = 'img-fluid z-depth-1
       rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 }}px, (min-width: 576px)
+      100vw, 100vw"{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
@@ -43,7 +45,11 @@ layout: default
     <!-- Combined News and Latest Posts -->
     {% if page.combined_news %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">最新动态</a>
+        {% if page.lang == 'zh' %}
+          <a href="{{ '/zh/news/' | relative_url }}" style="color: inherit">最新动态</a>
+        {% else %}
+          <a href="{{ '/en/news/' | relative_url }}" style="color: inherit">Latest News</a>
+        {% endif %}
       </h2>
       {% include combined_news.liquid %}
     {% endif %}
@@ -51,7 +57,11 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        {% if page.lang == 'zh' %}
+          <a href="{{ '/zh/publications/' | relative_url }}" style="color: inherit">精选论文</a>
+        {% else %}
+          <a href="{{ '/en/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
+        {% endif %}
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

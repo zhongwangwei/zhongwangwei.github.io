@@ -1,10 +1,10 @@
 ---
 layout: page
-title: 项目
+title: 课题
 permalink: /zh/projects/
 #description: 我们正在进行的精彩项目集合。
 nav: true
-nav_order: 3
+nav_order: 4
 display_categories: [work, fun]
 horizontal: false
 lang: zh

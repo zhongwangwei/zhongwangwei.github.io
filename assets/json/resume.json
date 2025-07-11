@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Zhongwang Wei",
-    "position": "Associate Professor",
+    "position": "Professor",
     "image": "",
     "email": "zhongwang007@gmail.com",
     "phone": "(+86) 131-1950-1210",
-    "url": "https://zhongwangwei.github.io/",
+    "url": "https://weilab.xyz/",
     "location": {
       "address": "Bldg.2 Haiqin, Room A538 Zhuhai Campus, Sun Yat-sen University, Tangjiawan",
       "postalCode": "519082",
@@ -27,8 +27,16 @@
       "position": "Associate Professor of Atmospheric Sciences",
       "url": "https://atmos.sysu.edu.cn/teacher/2147",
       "startDate": "2019-09-01",
+      "endDate": "2025-03-25",
+      "summary": "My research centers on modeling and understanding Earth's surface processes, focusing on land surface water cycle, land surface model development, coastal hydrodynamics, and the application of stable isotopes. I utilize numerical models and isotopic tracers to investigate land-atmosphere interactions, simulate coastal processes, and gain insights into environmental dynamics."
+    },
+    {
+      "name": "School of Atmospheric Sciences, Sun Yat-Sen University",
+      "position": "Professor of Atmospheric Sciences",
+      "url": "https://atmos.sysu.edu.cn/teacher/2147",
+      "startDate": "2025-03-26",
       "endDate": "now",
-      "summary": "My research centers on modeling and understanding Earth's surface processes, focusing on land surface interactions, coastal hydrodynamics, and the application of stable isotopes. I utilize numerical models and isotopic tracers to investigate land-atmosphere interactions, simulate coastal processes, and gain insights into environmental dynamics."
+      "summary": "My research centers on modeling and understanding Earth's surface processes, focusing on land surface water cycle, land surface model development, coastal hydrodynamics, and the application of stable isotopes. I utilize numerical models and isotopic tracers to investigate land-atmosphere interactions, simulate coastal processes, and gain insights into environmental dynamics."
     },
     {
       "name": "Institute of Industrial Science, University of Tokyo",
@@ -86,9 +94,18 @@
   "awards": [
     {
       "title": "Inspirational Teacher",
+      "date": "2025",
+      "awarder": "School of Atmospheric Sciences, Sun Yat-Sen University"
+    },
+    {
+      "title": "Atmospheric Figure",
+      "date": "2025",
+      "awarder": "School of Atmospheric Sciences, Sun Yat-Sen University"
+    },
+    {
+      "title": "Inspirational Teacher",
       "date": "2024",
       "awarder": "School of Atmospheric Sciences, Sun Yat-Sen University"
-
     },
     {
       "title": "Inspirational Teacher",
@@ -109,7 +126,7 @@
     "awarder": "Uchida Ocean Foundation"
     },
     { "title": "The winner of JASSO Honors Scholarship",
-    "date": "2021 to 2015",
+    "date": "2015 to 2021",
     "awarder": "Monbukagakusho JASSO Honors Scholarship from Japan Government"
     }
   ],

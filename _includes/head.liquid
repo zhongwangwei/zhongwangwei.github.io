@@ -1,3 +1,12 @@
+<!-- Default Language Detection -->
+<script>
+// Check if user is on root path and has no language preference
+if (window.location.pathname === '/' && !localStorage.getItem('preferred_language')) {
+  // Set default language to Chinese
+  localStorage.setItem('preferred_language', 'zh');
+}
+</script>
+
 <!-- Metadata, OpenGraph and Schema.org -->
 {% include metadata.liquid %}
 

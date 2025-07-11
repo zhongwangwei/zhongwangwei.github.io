@@ -1,0 +1,118 @@
+- title: 基本信息
+  type: map
+  contents:
+    - name: 姓名
+      value: 魏忠旺
+    - name: 职位
+      value: 教授
+    - name: 单位
+      value: 中山大学大气科学学院
+    - name: 邮箱
+      value: zhongwang007@gmail.com; weizhw6@mail.sysu.edu.cn
+    - name: 电话
+      value: (+86) 131-1950-1210
+    - name: 网址
+      value: https://weilab.xyz/
+    - name: 地址
+      value: 广东省珠海市中山大学珠海校区海琴楼2号楼A538室
+
+- title: 教育背景
+  type: time_table
+  contents:
+    - title: 博士
+      institution: 东京大学，日本东京
+      year: 2013-2016
+      description:
+        - 专业：地球系统科学
+        - 导师：Professor Kei Yoshimura
+        - 研究方向：同位素水文学
+    - title: 硕士
+      institution: 筑波大学，日本筑波
+      year: 2011-2013
+      description:
+        - 专业：地球系统科学
+        - 导师：Professor Sugita Michiaki
+    - title: 学士
+      institution: 解放军理工大学，中国重庆
+      year: 2003-2007
+      description:
+        - 专业：油气储运工程
+
+- title: 工作经历
+  type: time_table
+  contents:
+    - title: 教授
+      institution: 中山大学大气科学学院
+      year: 2019-至今
+      description:
+        - 我的研究专注于地球表面过程的建模和理解，重点关注陆面相互作用、海岸水动力学和稳定同位素的应用。我利用数值模型和同位素示踪剂来研究陆地-大气相互作用，模拟海岸过程，并获得对环境动力学的深入见解。
+    - title: 合作研究员
+      institution: 东京大学生产技术研究所
+      year: 2020-至今
+      description:
+        - 我的研究通过多学科视角探索地球系统动力学，结合气象学、水文学、数据同化和稳定同位素技术。我研究大气过程、陆地-大气相互作用，并利用观测数据和同位素示踪剂来改善我们对地球气候和水循环的理解和预测。
+    - title: 科学助理
+      institution: 苏黎世联邦理工学院，瑞士苏黎世
+      year: 2019-2019
+      description:
+        - 导师：Professor Dani Or
+        - 我研究了通过添加物理约束和土壤结构信息来改善土壤水力参数（水分保持和水力传导率）估算是否能提高陆面模型性能。
+    - title: 项目研究员
+      institution: 东京大学，日本东京
+      year: 2018-2019
+      description:
+        - 导师：Professor Kei Yoshimura and Professor Koji Ikeuchi
+        - 我探索了由于降水引起的河流路径的不确定性，并研究了大坝运行的影响。
+    - title: 博士后研究员
+      institution: 耶鲁大学，美国康涅狄格州
+      year: 2016-2018
+      description:
+        - 导师：Professor Xuhui Lee
+        - 我开发了一个同位素耦合的大涡模拟模型。这涉及将同位素示踪剂整合到大气模拟中，以增强对大气过程和传输的理解。
+
+- title: 研究兴趣
+  type: nested_list
+  contents:
+    - title: 地表水动力学
+      items:
+        - 陆面过程建模
+        - 水循环动力学
+        - 气候变化影响评估
+    - title: 同位素水文学
+      items:
+        - 稳定同位素示踪
+        - 水汽来源分析
+        - 环境水文过程
+    - title: 数值建模
+      items:
+        - 大涡模拟(LES)
+        - 海岸水动力学
+        - 非结构化网格建模
+
+- title: 获奖与荣誉
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - 中山大学大气科学学院魅力教师奖
+    - year: 2024
+      items:
+        - 中山大学大气科学学院魅力教师奖
+        - 中山大学大气科学学院优秀教师奖
+    - year: 2023
+      items:
+        - 中山大学大气科学学院魅力教师奖
+    - year: 2019
+      items:
+        - 中山大学"百人计划"青年学者
+    - year: 2015
+      items:
+        - 东京大学优秀博士论文奖
+
+- title: 其他兴趣
+  type: list
+  contents:
+    - 户外徒步与摄影
+    - 科学可视化与数据分析
+    - 开源软件开发
+    - 国际学术交流与合作

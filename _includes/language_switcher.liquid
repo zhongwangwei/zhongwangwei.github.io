@@ -22,19 +22,17 @@
       </span>
     </button>
     <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-      {% for language in site.languages %}
-        {% if language != current_lang %}
-          <li>
-            <a class="dropdown-item" href="javascript:void(0)" onclick="switchLanguage('{{ language }}')">
-              {% if language == 'zh' %}
-                中文
-              {% else %}
-                English
-              {% endif %}
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
+      <!-- Always show both languages, let JavaScript determine which one to hide -->
+      <li id="lang-zh">
+        <a class="dropdown-item" href="javascript:void(0)" onclick="switchLanguage('zh')">
+          中文
+        </a>
+      </li>
+      <li id="lang-en">
+        <a class="dropdown-item" href="javascript:void(0)" onclick="switchLanguage('en')">
+          English
+        </a>
+      </li>
     </ul>
   </div>
 </div>
@@ -56,7 +54,9 @@ function switchLanguage(lang) {
       '/publications/': '/zh/publications/',
       '/cv/': '/zh/cv/',
       '/teaching/': '/zh/teaching/',
-      '/people/': '/zh/people/'
+      '/people/': '/zh/people/',
+      '/news/': '/zh/news/',
+      '/en/news/': '/zh/news/'
     },
     'en': {
       '/': '/en/',
@@ -65,7 +65,9 @@ function switchLanguage(lang) {
       '/publications/': '/en/publications/',
       '/cv/': '/en/cv/',
       '/teaching/': '/en/teaching/',
-      '/people/': '/en/people/'
+      '/people/': '/en/people/',
+      '/news/': '/en/news/',
+      '/zh/news/': '/en/news/'
     }
   };
   
@@ -74,20 +76,43 @@ function switchLanguage(lang) {
   
   // If no direct mapping found, try to construct the path
   if (!languageMappings[lang][currentPath]) {
-    // Remove existing language prefix
-    var cleanPath = currentPath.replace(/^\/(zh|en)\//, '/');
-    
-    if (lang === 'zh') {
-      if (cleanPath === '/') {
-        newPath = '/';
-      } else {
-        newPath = '/zh' + cleanPath;
+    // Special handling for news article URLs
+    if (currentPath.startsWith('/news/')) {
+      // Handle news article language switching
+      if (lang === 'zh') {
+        // Convert English news article to Chinese
+        if (currentPath.endsWith('-en/')) {
+          newPath = currentPath.replace(/-en\/$/, '/');
+        } else {
+          newPath = currentPath; // Already Chinese or no language suffix
+        }
+      } else { // lang === 'en'
+        // Convert Chinese news article to English
+        if (currentPath.endsWith('-en/')) {
+          newPath = currentPath; // Already English
+        } else {
+          // Check if this is a Chinese article that needs conversion
+          var pathWithoutSlash = currentPath.replace(/\/$/, '');
+          newPath = pathWithoutSlash + '-en/';
+        }
       }
-    } else { // lang === 'en'
-      if (cleanPath === '/') {
-        newPath = '/en/';
-      } else {
-        newPath = '/en' + cleanPath;
+    } else {
+      // Standard page language switching
+      // Remove existing language prefix
+      var cleanPath = currentPath.replace(/^\/(zh|en)\//, '/');
+      
+      if (lang === 'zh') {
+        if (cleanPath === '/') {
+          newPath = '/';
+        } else {
+          newPath = '/zh' + cleanPath;
+        }
+      } else { // lang === 'en'
+        if (cleanPath === '/') {
+          newPath = '/en/';
+        } else {
+          newPath = '/en' + cleanPath;
+        }
       }
     }
   }
@@ -101,21 +126,64 @@ document.addEventListener('DOMContentLoaded', function() {
   var preferredLang = localStorage.getItem('preferred_language');
   var currentPath = window.location.pathname;
   
-  // For news pages, update the language switcher display based on preference
-  if (currentPath.startsWith('/news/')) {
-    var currentLangText = document.getElementById('currentLangText');
-    if (currentLangText && preferredLang) {
-      if (preferredLang === 'zh') {
-        currentLangText.textContent = '中文';
-      } else {
-        currentLangText.textContent = 'English';
-      }
-    }
-    // Removed 'return;' statement here to allow further language switching logic
+  // Set default language to Chinese if no preference is stored
+  if (!preferredLang) {
+    preferredLang = 'zh';
+    localStorage.setItem('preferred_language', 'zh');
   }
   
-  if (preferredLang && preferredLang !== '{{ current_lang }}') {
-    switchLanguage(preferredLang);
+  // Determine current page language
+  var currentPageLang = '{{ current_lang }}';
+  if (currentPath.startsWith('/news/')) {
+    // For news articles, determine language from URL pattern
+    if (currentPath.endsWith('-en/')) {
+      currentPageLang = 'en';
+    } else {
+      currentPageLang = 'zh';
+    }
+  }
+  
+  // Update language switcher display
+  var currentLangText = document.getElementById('currentLangText');
+  if (currentLangText) {
+    if (currentPageLang === 'zh') {
+      currentLangText.textContent = '中文';
+    } else {
+      currentLangText.textContent = 'English';
+    }
+  }
+  
+  // Hide current language option in dropdown and show the other one
+  var langZhOption = document.getElementById('lang-zh');
+  var langEnOption = document.getElementById('lang-en');
+  if (langZhOption && langEnOption) {
+    if (currentPageLang === 'zh') {
+      // Currently Chinese, hide Chinese option and show English option
+      langZhOption.style.display = 'none';
+      langEnOption.style.display = 'block';
+    } else {
+      // Currently English, hide English option and show Chinese option
+      langEnOption.style.display = 'none';
+      langZhOption.style.display = 'block';
+    }
+  }
+  
+  // IMPORTANT: Do not auto-redirect for news articles to prevent infinite loops
+  // Only redirect for non-news pages and only if there's a language mismatch
+  if (!currentPath.startsWith('/news/')) {
+    // Only redirect if user's preferred language differs from current page language
+    // and if user is not on a language-specific page already
+    if (preferredLang && preferredLang !== currentPageLang) {
+      // Don't redirect if user is already on a language-specific page
+      if (!(currentPath.startsWith('/zh/') || currentPath.startsWith('/en/'))) {
+        switchLanguage(preferredLang);
+      }
+    }
+  }
+  
+  // If user visits root and no language preference, ensure they see Chinese
+  if (currentPath === '/' && !preferredLang) {
+    localStorage.setItem('preferred_language', 'zh');
   }
 });
 </script>
@@ -150,4 +218,5 @@ document.addEventListener('DOMContentLoaded', function() {
   background-color: var(--global-theme-color);
   color: white;
 }
+
 </style>

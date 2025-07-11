@@ -1,0 +1,198 @@
+{
+  "basics": {
+    "name": "魏忠旺",
+    "position": "教授",
+    "image": "",
+    "email": "zhongwang007@gmail.com",
+    "phone": "(+86) 131-1950-1210",
+    "url": "https://weilab.xyz/",
+    "location": {
+      "address": "广东省珠海市中山大学珠海校区海琴楼2号楼A538室",
+      "postalCode": "519082",
+      "city": "珠海",
+      "countryCode": "CN",
+      "region": "广东"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "AlbertEinstein",
+        "url": "https://twitter.com/AlbertEinstein"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "中山大学大气科学学院",
+      "position": "大气科学副教授",
+      "url": "https://atmos.sysu.edu.cn/teacher/2147",
+      "startDate": "2019-09-01",
+      "endDate": "2025-03-25",
+      "summary": "专注于地球表面过程的建模和理解，重点关注陆面水循环、陆面模式建模、海岸水动力学和稳定同位素的应用。我利用数值模型和同位素示踪剂来研究陆地-大气相互作用，模拟海岸过程，并获得对环境动力学的深入见解。"
+    },
+    
+    {
+      "name": "中山大学大气科学学院",
+      "position": "大气科学教授",
+      "url": "https://atmos.sysu.edu.cn/teacher/2147",
+      "startDate": "2025-03-26",
+      "endDate": "至今",
+      "summary": "专注于地球表面过程的建模和理解，重点关注陆面水循环、陆面模式建模、海岸水动力学和稳定同位素的应用。我利用数值模型和同位素示踪剂来研究陆地-大气相互作用，模拟海岸过程，并获得对环境动力学的深入见解。"
+    },
+    {
+      "name": "东京大学生产技术研究所",
+      "position": "合作研究员",
+      "url": "https://hydro.iis.u-tokyo.ac.jp/~weizw/index.htm",
+      "startDate": "2020-01-01",
+      "endDate": "至今",
+      "summary": "通过多学科视角探索地球系统动力学，结合气象学、水文学、数据同化和稳定同位素技术。我研究大气过程、陆地-大气相互作用，并利用观测数据和同位素示踪剂来改善我们对地球气候和水循环的理解和预测。"
+    },
+    {
+      "name": "苏黎世联邦理工学院土壤与陆地环境物理系（名誉）",
+      "position": "科学助理",
+      "url": "https://emeritus.step.ethz.ch/people/scientific-staff/zhongwang-wei.html",
+      "startDate": "2019-06-01",
+      "endDate": "2019-11-31",
+      "summary": "研究了通过添加物理约束和土壤结构信息来改善土壤水力参数（水分保持和水力传导率）估算是否能提高陆面模型性能。"
+    },
+    {
+      "name": "东京大学生产技术研究所",
+      "position": "项目研究员",
+      "url": "https://hydro.iis.u-tokyo.ac.jp/~weizw/index.htm",
+      "startDate": "2018-04-01",
+      "endDate": "2019-03-30",
+      "summary": "探索了由于降水引起的河流路径的不确定性，并研究了大坝运行的影响。"
+    },
+    {
+      "name": "耶鲁大学环境学院",
+      "position": "博士后研究员",
+      "url": "https://vapor-isotope.yale.edu/",
+      "startDate": "2016-03-27",
+      "endDate": "2018-03-30",
+      "summary": "开发了一个同位素耦合的大涡模拟模型。这涉及将同位素示踪剂整合到大气模拟中，以增强对大气过程和传输的理解。"
+    }
+  ],
+  "education": [
+    {
+      "institution": "东京大学，日本东京",
+      "location": "日本东京",
+      "url": "https://nenv.k.u-tokyo.ac.jp/en/",
+      "area": "自然环境学",
+      "studyType": "博士",
+      "startDate": "2013-04-01",
+      "endDate": "2016-03-26"
+    },
+    {
+      "institution": "筑波大学，日本筑波",
+      "location": "日本筑波",
+      "url": "https://www.geoenv.tsukuba.ac.jp/e_about.html",
+      "area": "地球科学",
+      "studyType": "硕士",
+      "startDate": "2010-04-01",
+      "endDate": "2013-03-26"
+    }
+  ],
+  "awards": [
+    {
+      "title": "魅力教师奖",
+      "date": "2025",
+      "awarder": "中山大学大气科学学院"
+    },
+    {
+      "title": "大气人物",
+      "date": "2025",
+      "awarder": "中山大学大气科学学院"
+    },
+    {
+      "title": "魅力教师奖",
+      "date": "2024",
+      "awarder": "中山大学大气科学学院"
+    },
+    {
+      "title": "魅力教师奖",
+      "date": "2022",
+      "awarder": "中山大学大气科学学院"
+    },
+    {
+      "title": "广东省珠江学者青年拔尖人才计划",
+      "date": "2021",
+      "awarder": "广东省科技厅"
+    },
+    {
+      "title": "优秀学生学术研究资助奖",
+      "date": "2016",
+      "awarder": "东京大学前沿科学研究科优秀学生学术研究基金"
+    },
+    {
+      "title": "GSFS博士课程学生学术研究资助奖",
+      "date": "2015",
+      "awarder": "内田海洋基金会"
+    },
+    {
+      "title": "JASSO荣誉奖学金获得者",
+      "date": "2015年至2021年",
+      "awarder": "日本政府文部科学省JASSO荣誉奖学金"
+    }
+  ],
+  "languages": [
+    {
+      "language": "中文",
+      "fluency": "母语",
+      "icon": ""
+    },
+    {
+      "language": "日语",
+      "fluency": "流利",
+      "icon": ""
+    },
+    {
+      "language": "英语",
+      "fluency": "流利",
+      "icon": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "国家自然科学基金面上项目（No. 42475172，主持，48万元）",
+      "summary": "陆面模式基准评价系统开发",
+      "highlights": ["基准评价", "陆面模式"],
+      "startDate": "2025-01-01",
+      "endDate": "2028-12-31"
+    },
+    {
+      "name": "广东省面上项目（No. 2024A1515010283，主持，15万元）",
+      "summary": "陆面模式中冠层截留方案的开发",
+      "highlights": ["冠层截留", "陆面模式"],
+      "startDate": "2024-01-01",
+      "endDate": "2027-12-31"
+    },
+    {
+      "name": "国家自然科学基金面上项目（No. 42075158，主持，59万元）",
+      "summary": "基于非结构化网格的三维陆面水文模型开发",
+      "highlights": ["非结构化网格", "陆面水文模型"],
+      "startDate": "2020-01-01",
+      "endDate": "2024-12-31"
+    },
+    {
+      "name": "辽宁省发展改革委项目（主持，20万元）",
+      "summary": "气候变化对东北地区农业格局的影响",
+      "highlights": ["气候变化", "农业格局"],
+      "startDate": "2020-09-01",
+      "endDate": "2020-12-31"
+    },
+    {
+      "name": "中国科学院计算机网络信息中心项目",
+      "summary": "地球系统数值模拟装置项目（区域系统模式数值模拟系统）",
+      "highlights": ["地球系统", "陆面模式"],
+      "startDate": "2020-01-01",
+      "endDate": "2024-12-31"
+    },
+    {
+      "name": "广东省科技厅科技创新战略专项资金",
+      "summary": "高分辨率陆面环境模拟与预测研究",
+      "highlights": ["地球系统", "陆面模式"],
+      "startDate": "2021-01-01",
+      "endDate": "2025-12-31"
+    }
+  ]
+}
