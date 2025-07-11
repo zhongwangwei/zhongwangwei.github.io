@@ -12,6 +12,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Modified by AI.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: zh # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌍 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -23,7 +24,7 @@ exclude_from_localization: ["javascript", "images", "README.md"]
 
 #url: http://hydro.iis.u-tokyo.ac.jp
 #baseurl: "/~weizw"
-url: https://zhongwangwei.github.io # the base hostname & protocol for your site
+url: https://weilab.xyz # the base hostname & protocol for your site
 baseurl: 
 
 last_updated: false # set to true if you want to display last updated in the footer
@@ -296,6 +297,10 @@ plugins:
 # Sitemap settings
 defaults:
   - scope:
+      path: "sitemap.xml"
+    values:
+      permalink: /sitemap.xml
+  - scope:
       path: "assets"
     values:
       sitemap: false
@@ -369,7 +374,7 @@ scholar:
 enable_publication_badges:
   altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
   dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  google_scholar: false # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
   inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
@@ -661,6 +666,8 @@ third_party_libraries:
 jekyll_get_json:
   - data: resume
     json: assets/json/resume.json # it can also be an url
+  - data: resume_zh
+    json: assets/json/resume_zh.json # Chinese version
 jsonresume:
   - basics
   - work

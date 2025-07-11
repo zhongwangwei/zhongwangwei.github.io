@@ -1,0 +1,14 @@
+// Custom CSS to override default styles
+
+// Make profile image larger on desktop
+@media (min-width: 576px) {
+  .profile {
+    width: 60% !important;
+  }
+}
+
+// Ensure the image fills the container
+.profile img {
+  width: 100%;
+  height: auto;
+}
