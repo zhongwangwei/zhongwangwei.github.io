@@ -1,25 +1,35 @@
 ---
 layout: about
-title: About
+title: Surface Water Dynamics Research Group
 permalink: /en/
-subtitle: School of Atmospheric Sciences, Sun Yat-Sen University
+subtitle: Land Surface Process Model Development Team, School of Atmospheric Sciences, Sun Yat-Sen University
 lang: en
 
-profile:
-  align: right
-  image: people/weizhongwang.jpeg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Bldg.2 Haiqin, Room A538</p>
-    <p>Zhuhai Campus, Sun Yat-sen University, Tangjiawan</p>
-    <p>Zhuhai, Guangdong Province. China, 519082</p>
+# profile disabled - using inline image instead
 
 combined_news: true # includes a combined list of news and latest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
+<style>
+.profile {
+  width: 100% !important;
+  float: none !important;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+.profile img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+
 Our research group, led by Professor Zhongwang Wei, focuses on enhancing our understanding of Earth's surface water dynamics. We employ a multi-faceted approach that combines advanced numerical modeling techniques with innovative isotopic methods to unravel the complexities of the global water cycle.
+
+<div class="team-photo" style="width: 100%; margin: 2rem 0; text-align: center;">
+  <img src="/assets/img/group.jpg" alt="Research Team" class="img-fluid z-depth-1 rounded" style="max-width: 100%; height: auto;">
+</div>
 
 ## Research Focus
 
@@ -47,11 +57,4 @@ For more information about our research or opportunities to join our group, plea
 
 ---
 
-**Location:**  
-Bldg.2 Haiqin, Room A538  
-Zhuhai Campus, Sun Yat-sen University, Tangjiawan  
-Zhuhai, Guangdong Province, China, 519082
-
-
-
-
+**Address:** Room A538, Building 2 Haiqin, Zhuhai Campus, Sun Yat-sen University, Tangjiawan, Zhuhai, Guangdong 519082, China

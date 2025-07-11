@@ -1,3 +1,12 @@
+<!-- Default Language Detection -->
+<script>
+// Check if user is on root path and has no language preference
+if (window.location.pathname === '/' && !localStorage.getItem('preferred_language')) {
+  // Set default language to Chinese
+  localStorage.setItem('preferred_language', 'zh');
+}
+</script>
+
 <!-- Metadata, OpenGraph and Schema.org -->
 {% include metadata.liquid %}
 
@@ -66,6 +75,41 @@
   <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}">
 {% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
+
+<!-- Temporary navbar spacing fix -->
+<style>
+  .navbar .container {
+    max-width: 1200px !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  .navbar .navbar-nav .nav-item {
+    margin-left: 0.3rem !important;
+    margin-right: 0.3rem !important;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    font-size: 0.9rem !important;
+    padding: 0.5rem 0.8rem !important;
+    white-space: nowrap !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    background-color: var(--global-bg-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    transform: translateY(-1px) !important;
+  }
+  
+  .navbar .navbar-nav .nav-item.active .nav-link {
+    background-color: var(--global-bg-color) !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15) !important;
+    font-weight: 600 !important;
+  }
+</style>
+
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
 <!-- Dark Mode -->

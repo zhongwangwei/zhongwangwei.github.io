@@ -3,7 +3,7 @@ layout: post
 date: 2024-08-31 10:35:00-0400
 inline: true
 related_posts: false
-lang: en
+lang: zh
 ---
 
-The website is online now!
+网站现已上线！

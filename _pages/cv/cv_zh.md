@@ -1,0 +1,85 @@
+---
+layout: default
+permalink: /zh/cv/
+title: 简历
+nav: true
+nav_order: 5
+cv_pdf: cv.pdf
+toc:
+  sidebar: left
+lang: zh
+---
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {{ page.title }}
+      {% if page.cv_pdf %}
+        <a
+          href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="float-right"
+          ><i class="fa-solid fa-file-pdf"></i
+        ></a>
+      {% endif %}
+    </h1>
+  </header>
+
+  <article>
+    <div class="cv">
+      {% for data in site.data.resume_zh %}
+        {% if site.jsonresume and site.jsonresume.size > 0 %}
+          {% unless site.jsonresume contains data[0] %}
+            {% continue %}
+          {% endunless %}
+        {% endif %}
+        {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
+        <a class="anchor" id="{{ data[0] }}"></a>
+        <div class="card mt-3 p-3">
+          <h3 class="card-title font-weight-medium">
+            {% case data[0] %}
+              {% when 'basics' %}基本信息
+              {% when 'work' %}工作经历
+              {% when 'education' %}教育背景
+              {% when 'awards' %}获奖与荣誉
+              {% when 'projects' %}科研项目
+              {% when 'languages' %}语言能力
+              {% else %}{{ data[0] | capitalize }}
+            {% endcase %}
+          </h3>
+          <div>
+            {% case data[0] %}
+              {% when 'basics' %}
+                {% include resume/basics.liquid %}
+              {% when 'education' %}
+                {% include resume/education.liquid %}
+              {% when 'work' %}
+                {% include resume/work.liquid %}
+              {% when 'volunteer' %}
+                {% include resume/volunteer.liquid %}
+              {% when 'projects' %}
+                {% include resume/projects.liquid %}
+              {% when 'awards' %}
+                {% include resume/awards.liquid %}
+              {% when 'skills' %}
+                {% include resume/skills.liquid %}
+              {% when 'publications' %}
+                {% include resume/publications.liquid %}
+              {% when 'languages' %}
+                {% include resume/languages.liquid %}
+              {% when 'interests' %}
+                {% include resume/interests.liquid %}
+              {% when 'certificates' %}
+                {% include resume/certificates.liquid %}
+              {% when 'references' %}
+                {% include resume/references.liquid %}
+              {% else %}
+
+            {% endcase %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </article>
+</div>

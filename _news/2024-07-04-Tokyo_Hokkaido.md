@@ -7,6 +7,7 @@ tags: 旅行 images
 categories: Travel
 thumbnail: assets/img/blog/2024-07-Tokyo-Hokkaido/IMG_4316.jpeg
 featured: true
+lang: zh
 ---
 2024年7月04日-7月12日的日本之行，有幸作为受邀参加在东京举办的大尺度汇流模式开发者大会并赴北海道参加第九届全球能量和水循环试验国际会议。
 <div class="row mt-3">
