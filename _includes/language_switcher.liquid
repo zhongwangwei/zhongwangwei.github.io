@@ -190,14 +190,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <style>
 .language-switcher {
-  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .language-switcher .dropdown-toggle {
   border: 1px solid var(--global-theme-color);
   color: var(--global-theme-color);
-  font-size: 0.875rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  height: auto;
+  line-height: 1;
+  vertical-align: middle;
 }
 
 .language-switcher .dropdown-toggle:hover {
@@ -217,6 +224,12 @@ document.addEventListener('DOMContentLoaded', function() {
 .language-switcher .dropdown-item:hover {
   background-color: var(--global-theme-color);
   color: white;
+}
+
+/* Ensure nav-item containing language switcher aligns properly */
+.navbar-nav .nav-item:has(.language-switcher) {
+  display: flex;
+  align-items: center;
 }
 
 </style>

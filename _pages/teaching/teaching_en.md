@@ -44,9 +44,6 @@ lang: en
     </div>
   </div>
   
-  <h2>Teaching Philosophy</h2>
-  <p>We are committed to developing students' scientific thinking and practical abilities through a combination of theory and practice, enabling students to master modern scientific research methods and skills.</p>
-  
   <h2>Student Supervision</h2>
   <p>We welcome students interested in surface water dynamics, hydrological modeling, isotope hydrology and related fields to join our research team.</p>
 </div>
