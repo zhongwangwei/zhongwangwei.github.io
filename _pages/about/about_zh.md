@@ -25,7 +25,7 @@ social: true # includes social icons at the bottom of the page
 }
 </style>
 
-我们的研究团队由魏忠旺教授领导，专注于增进对地球表面水动力学的理解。我们采用多层面的研究方法，结合先进的数值建模技术和创新的同位素方法，致力于揭示全球水循环的复杂性。
+我们的研究团队由魏忠旺教授所带领，专注于增进对地球表面水动力学的理解。我们采用多层面的研究方法，结合先进的数值建模技术和创新的同位素方法，致力于揭示全球水循环的复杂性。
 
 <div class="team-photo" style="width: 100%; margin: 2rem 0; text-align: center;">
   <img src="/assets/img/group.jpg" alt="Research Team" class="img-fluid z-depth-1 rounded" style="max-width: 100%; height: auto;">
