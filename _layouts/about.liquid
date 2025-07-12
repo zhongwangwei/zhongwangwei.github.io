@@ -44,26 +44,30 @@ layout: default
 
     <!-- Combined News and Latest Posts -->
     {% if page.combined_news %}
-      <h2>
-        {% if page.lang == 'zh' %}
-          <a href="{{ '/zh/news/' | relative_url }}" style="color: inherit">最新动态</a>
-        {% else %}
-          <a href="{{ '/en/news/' | relative_url }}" style="color: inherit">Latest News</a>
-        {% endif %}
-      </h2>
-      {% include combined_news.liquid %}
+      <div class="homepage-section news-section">
+        <h2>
+          {% if page.lang == 'zh' %}
+            <a href="{{ '/zh/news/' | relative_url }}" style="color: inherit">最新动态</a>
+          {% else %}
+            <a href="{{ '/en/news/' | relative_url }}" style="color: inherit">Latest News</a>
+          {% endif %}
+        </h2>
+        {% include combined_news.liquid %}
+      </div>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        {% if page.lang == 'zh' %}
-          <a href="{{ '/zh/publications/' | relative_url }}" style="color: inherit">精选论文</a>
-        {% else %}
-          <a href="{{ '/en/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
-        {% endif %}
-      </h2>
-      {% include selected_papers.liquid %}
+      <div class="homepage-section papers-section">
+        <h2>
+          {% if page.lang == 'zh' %}
+            <a href="{{ '/zh/publications/' | relative_url }}" style="color: inherit">精选论文</a>
+          {% else %}
+            <a href="{{ '/en/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
+          {% endif %}
+        </h2>
+        {% include selected_papers.liquid %}
+      </div>
     {% endif %}
 
       <h2>
