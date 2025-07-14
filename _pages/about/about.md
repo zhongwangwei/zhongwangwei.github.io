@@ -1,8 +1,8 @@
 ---
 layout: about
-title: Surface Water Dynamics Research Group
+title: Surface Water Dynamics Research Team
 permalink: /en/
-subtitle: Land Surface Process Model Development Team, School of Atmospheric Sciences, Sun Yat-Sen University
+subtitle: Land Surface Process Model Development Group, School of Atmospheric Sciences, Sun Yat-Sen University
 lang: en
 
 # profile disabled - using inline image instead
@@ -127,7 +127,7 @@ social: true # includes social icons at the bottom of the page
 }
 </style>
 
-Our research group, led by Professor Zhongwang Wei, focuses on enhancing our understanding of Earth's surface water dynamics. We employ a multi-faceted approach that combines advanced numerical modeling techniques with innovative isotopic methods to unravel the complexities of the global water cycle.
+Our research team (belongs to Land surface model development group led by Professor Yongjiu Dai) led by Professor Zhongwang Wei, focuses on enhancing our understanding of Earth's surface water dynamics. We employ a multi-faceted approach that combines advanced numerical modeling techniques with innovative isotopic methods to unravel the complexities of the global water cycle.
 
 <div class="team-photo" style="width: 100%; margin: 2rem 0; text-align: center;">
   <img src="/assets/img/group.jpg" alt="Research Team" class="img-fluid z-depth-1 rounded" style="max-width: 100%; height: auto;">
