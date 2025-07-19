@@ -143,6 +143,10 @@ Our research team (belongs to Land surface model development group led by Profes
   </div>
 
   <div class="research-item">
+    <strong>Artificial Intelligence Applications in Land Surface Hydrology</strong>: We actively explore and apply cutting-edge artificial intelligence methods to advance land surface hydrological research. This includes: utilizing symbolic regression techniques to discover underlying physical laws and empirical formulas in hydrological processes; employing deep learning and machine learning algorithms to generate high-quality hydrological datasets, filling gaps in observational data; developing AI-driven intelligent hydrological models to improve prediction accuracy of complex hydrological processes; and combining physical process understanding with data-driven approaches to construct hybrid AI hydrological models, achieving more accurate and efficient simulation of land surface water cycles.
+  </div>
+
+  <div class="research-item">
     <strong>Hydrological Hydrodynamics</strong>: Employing advanced hydrodynamic models, we investigate the physical processes governing diverse hydrological environments, including coastal regions and river confluences. Our research encompasses the interactions of tides, currents, and waves, as well as river flow convergence and material transport mechanisms, striving to understand the complex dynamics of hydrological systems and their responses to natural and anthropogenic factors.
   </div>
 
