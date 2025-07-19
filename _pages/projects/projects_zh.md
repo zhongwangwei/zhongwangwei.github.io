@@ -10,6 +10,11 @@ horizontal: false
 lang: zh
 ---
 
+<div class="alert alert-info" role="alert" style="margin-bottom: 2rem;">
+  <h4 class="alert-heading">研究项目合作邀请</h4>
+  <p>以下是我们目前正在开展或者拟开展的研究项目。我们热忱欢迎有兴趣的同学或者合作者加入我们的研究团队。如果您对这些项目感兴趣，或者有好的建议和想法，请随时与魏老师联系 (<a href="mailto:zhongwang007@gmail.com">zhongwang007@gmail.com</a>)。</p>
+</div>
+
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}

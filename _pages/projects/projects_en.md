@@ -10,6 +10,11 @@ horizontal: false
 lang: en
 ---
 
+<div class="alert alert-info" role="alert" style="margin-bottom: 2rem;">
+  <h4 class="alert-heading">Research Project Collaboration Invitation</h4>
+  <p>Below are our ongoing and planned research projects. We warmly welcome interested students and collaborators to join our research team. If you are interested in these projects or have valuable suggestions and ideas, please feel free to contact Prof. Wei at <a href="mailto:zhongwang007@gmail.com">zhongwang007@gmail.com</a>.</p>
+</div>
+
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
