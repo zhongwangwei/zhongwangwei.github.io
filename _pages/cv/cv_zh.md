@@ -4,7 +4,7 @@ permalink: /zh/cv/
 title: 简历
 nav: true
 nav_order: 5
-cv_pdf: cv.pdf
+cv_pdf: cv_cn.pdf
 toc:
   sidebar: left
 lang: zh

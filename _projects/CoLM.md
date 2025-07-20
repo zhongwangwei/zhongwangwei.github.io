@@ -5,15 +5,14 @@ description: 通用陆面模式 | Common Land Surface Model
 img: assets/img/research/CoLM/CoLM2024.png
 importance: 2
 category: work
-giscus_comments: true
+giscus_comments: false
 ---
 
+**<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">模型概述</span>**
 
-## Project Overview
 
-The Common Land Model (CoLM) is a powerful and versatile land surface model designed for multi-scale applications, ranging from 1 meter to 100 kilometers. CoLM provides a comprehensive platform for simulating various land surface processes, including hydrology, energy balance, vegetation dynamics, and human activities. Whether your research focuses on weather, climate, hydrology, ecology, urban environments, or agriculture, CoLM offers the tools which need to conduct high-quality land surface modeling.
+CoLM2024（通用陆面模式 2024 版本）是新一代全球高分辨率陆面过程模型，旨在显著增强地球系统模型（ESM），通过改进对地表能量、水文、生物地球化学循环和人类活动过程的模拟。它是一个集模式、数据集、性能评估和高性能计算于一体的综合模拟研究平台，可广泛应用于数值天气预报/气候预测、水文水资源、生态环境、城市、农林牧等行业的科学研究和精细化业务，并支持从超高分辨率（约1米至100米）到粗分辨率（约100公里）的多种空间尺度应用。CoLM2024 秉持开源理念，欢迎全球用户下载和使用。
 
-### Model Overview
 <div class="row justify-content-center">
     <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" 
@@ -23,28 +22,34 @@ The Common Land Model (CoLM) is a powerful and versatile land surface model desi
     </div>
 </div>
 <div class="caption">
-    Overview of the CoLM model, highlighting its key components and processes.
+    模型概述, 高亮部分是他的主要物理过程
 </div>
 
-## Key Features
 
-- **Multi-scale Modeling**: Supports simulations from 1 meter to 100 kilometers.
-- **Comprehensive Processes**: Simulates hydrology, energy balance, vegetation dynamics, and human activities.
-- **Flexible Framework**: Modular design allows for customization and adaptation to various research needs.
-- **Extensive Datasets**: Utilizes a wide range of high-resolution datasets for land cover, soil, vegetation, topography, hydrology, and urban characteristics.
-- **Advanced Parameterizations**: Includes state-of-the-art parameterizations for hydrological and energy processes, including snow, vegetation, and urban environments.
+**<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">核心特性与架构</span>**
 
-## Research Applications
+CoLM2024 支持其多样化建模能力的关键在于其精巧的架构设计和全面且高分辨率的基础数据集：
 
-CoLM has been successfully applied to a variety of research areas, including:
+CoLM2024 具有灵活的网格结构和精密的次网格结构（Patches），将每个网格单元划分为五种主要的地表覆盖类型：植被（含裸土）、城市、湿地、冰川和水体：
 
-- Numerical weather prediction and climate forecasting
-- Hydrological and water resource modeling
-- Ecological and environmental studies
-- Urban planning and development
-- Agricultural and forestry management
+- **经纬度网格**：支持传统的规则网格
+- **非结构网格**：引入三角形和六边形等非结构网格，可根据土地利用类型、叶面积指数（LAI）、坡度、土壤参数等陆面特征自适应地细化分辨率，从而在异质性高的区域加密网格，有效利用计算资源
+- **流域单元网格**：重点考虑地形对陆面过程的影响，建立了流域单元-高度带单元-次网格单元的三级网格结构，有助于更精确地模拟水文连通性和产汇流动力学
+- **植被次网格**：除了传统的地表覆盖类型（LCT）植物功能型（PFT）植物群落（PC）共享环境资源并相互竞争，显式地考虑了植被之间的相互作用，提升了模拟性能
+- **城市次网格**：支持传统的3类城市密度分类和10类局地气候区（LCZ）三维城市建筑群落作为基本结构假设。作物类型则被视为独立的斑块进行模拟，且土壤水热碳氮过程相互独立
 
-### Global Simulation Results
+CoLM2024 致力于构建完备的全球高分辨率陆面属性数据集，并采用了创新的数据整理、异源数据融合和尺度适配方法，以解决数据可信度、来源纷杂、时空不连续和不一致性等问题：
+
+- **地表覆盖/利用数据**：直接基于高分辨率卫星反演数据制作，包括 MODIS IGBP、ESA CCI 和 GLC FCS30 等产品
+- **土壤数据**：采用全球1公里分辨率的土壤属性数据集（如 GSDE 和 SoilGrids），并提供多达8-10个垂直分层。在土壤参数制作方面，集成了8种常用土壤导热率计算方案（默认 Balland & Arp 2005）和超过30种土壤转换函数模型，以拟合最优土壤水力参数，显著提高了土壤水分模拟精度
+- **植被结构及属性数据**：研制了基于 MODIS 和 ESA-CCI 的多套高分辨率（10-100米）长时间序列植被结构及属性数据，包括重新处理的MODIS LAI产品和LAI4g产品，以及树冠深度、宽度和高度数据
+- **地形数据（DEM）**：优先选用 MERIT DEM 和 MERIT Hydro 作为核心数据源，其卓越的精度和专为水文模拟优化的特性，解决了植被冠层高度偏差问题，并提供了无缝连接的全球河网，是模拟地表径流和流域水文响应的基础
+- **水文数据**：更新了 CaMa-Flood 模块所使用的高精度河网数据集（基于 Merit-Hydro），并提供了全球主要大型水库的位置、特征流量和库容数据
+- **城市数据**：涵盖城市覆盖、城市类型、三维建筑形态、辐射与热力属性、生态数据以及人类活动（如人口密度）数据，旨在实现高精度、高分辨率和多时次的城市模拟
+- **作物数据**：包括作物种类分布、施肥数据、播种时间数据和灌溉方式数据，支持对水稻、小麦、玉米、大豆等主要粮食作物生长发育和产量进行模拟
+- **生物地球化学数据**：包括氮沉降、土壤含氧量、闪电频率、社会经济数据（人口密度、GDP）和泥炭地比例等，用于研究陆地生态系统的碳氮循环和火灾影响
+- **人类活动数据**：提供高分辨率、长时间序列的土地利用土地覆盖变化（LULCC）数据，并支持多种地表覆盖产品
+- **离线驱动数据**：能够使用多达18套区域和全球尺度的主流大气驱动数据，并支持站点自定义数据
 <div class="row justify-content-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid 
@@ -54,10 +59,41 @@ CoLM has been successfully applied to a variety of research areas, including:
     </div>
 </div>
 <div class="caption">
-    Global simulation of land surface evapotranspiration using CoLM.
+    基于 CoLM2024 的全球蒸散发模拟
 </div>
 
-### Regional Evaluation
+
+**<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">多样化建模能力</span>**
+
+CoLM2024 在陆面物理、水文、植被生理生态、生物地球化学和人类活动等多个过程的数学建模上进行了全面完善和优化：
+
+- **辐射传输**：新增了三维植被短波和长波辐射模拟，并增加了 SNICAR 积雪辐射传输模块
+- **地表湍流**：在零平面位移、粗糙度和空气动力学阻抗计算上有所发展，并新增了土壤阻抗方案
+- **光合作用与气孔导度**：针对C3植被采用了基于水分利用效率（WUE）最优化的气孔导度模型，C4植物仍采用传统的 Ball-Berry 模型
+- **植被水力模式**：基于土壤-植物-大气连通体概念，模拟植物水势动态、水力导度衰减、地下植被水力过程以及气孔导度的水分胁迫
+- **水文过程**：发展了新的可变饱和流土壤水运动算法，显著提高了数值精度和稳定性。更新或引入了针对不同网格结构的侧向流模拟方案，并实现了 CaMa-Flood 模块的双向耦合，能够准确预测河道流量、洪泛面积和洪水水深。同时，引入了水库模块，并实现了灌溉-水库耦合方案，显著提升了模型对人类活动影响下径流和洪水风险的模拟精度
+- **生物地球化学循环**：建立了详细的植被和土壤碳氮库结构，并引入半解析加速预热方案，将预热效率提高700%。新增了火灾模块（采用Li全球火灾参数化方案）和臭氧生态胁迫模块
+- **城市模式**：基于三维城市建筑群落假设，发展了短波、长波辐射传输及湍流交换方案，并包含了完整的人为热过程（建筑能耗、交通热、新陈代谢热）
+- **作物模式（GPAM1）**：能够模拟多种粮食作物的生长发育关键过程和产量，以及作物对环境气候变化和农田管理的响应及生物、物理、化学动态反馈
+- **尺度转换**：新增大气强迫降尺度模块（基于地形调整、山地辐射理论和机器学习），以及植被属性参数和土壤水热特征参数的尺度转换方案，以支持多尺度精细化模拟
+
+
+
+**<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">评估系统</span>**
+
+CoLM2024 集成了自研的**"CoLM 基准测试与性能评估系统"**，这是一个综合性工具，用于处理数据、评估模型和分析结果。它具有高精度、多平台支持、多功能数据处理、可集成和灵活性等优势，涵盖了50种评估维度，并基于国际陆面模型基准测试项目的方法论，提供了标准化的模型性能评估指标。
+
+
+**<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">应用领域</span>**
+
+CoLM2024 可广泛应用于以下领域：
+
+- 数值天气预报/气候预测
+- 水文水资源管理
+- 生态环境监测与评估
+- 城市规划与发展
+- 农林牧业精细化管理
+
 <div class="row justify-content-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid 
@@ -67,24 +103,124 @@ CoLM has been successfully applied to a variety of research areas, including:
     </div>
 </div>
 <div class="caption">
-    Regional Discharge Simulation Evaluation for North America.
+    北美区域河道径流模拟评估结果（v.s. GRDC）
 </div>
 
-## Technical Implementation
 
-CoLM is implemented using Fortran for core computational modules, ensuring high performance and efficiency. The model utilizes MPI for parallel computing, enabling large-scale simulations on supercomputers and clusters. NetCDF is employed for data input/output handling, facilitating data management and compatibility.
+<style>
+.homepage-section {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
 
-## Future Development
+.homepage-section:last-child {
+  border-bottom: none;
+}
 
-Ongoing development of CoLM focuses on:
+.homepage-section h2 {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  color: var(--global-theme-color);
+  border-bottom: 2px solid var(--global-theme-color);
+  display: inline-block;
+}
 
-- Enhancing the representation of human activities, such as irrigation, land use change, and urban development.
-- Improving the model's performance and scalability for high-resolution simulations.
-- Expanding the model's capabilities to simulate biogeochemical cycles and their interactions with land surface processes.
-- Developing user-friendly interfaces and tools for model setup, execution, and analysis.
-- Integrating with other models, such as the atmospheric model, to simulate the land-atmosphere interaction.
-- Developing python version of CoLM, incorporating with AI technology.
+.homepage-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--global-theme-color) 0%, transparent 100%);
+}
 
+.research-focus {
+  background: linear-gradient(135deg, #e6f3ff 0%, #f0f8ff 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
 
+.research-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8fcff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
 
-## Publications
+.research-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.research-item strong {
+  color: var(--global-theme-color);
+  font-size: 1.1rem;
+}
+
+.dark-mode .homepage-section {
+  border-color: #495057;
+}
+
+.dark-mode .research-focus {
+  background: #2d3748;
+  border-color: var(--global-theme-color);
+}
+
+.dark-mode .research-item {
+  background: #374151;
+}
+</style>
+
+<div class="homepage-section research-focus">
+  <h2>开放研究课题</h2>
+  
+  <p>CoLM2024作为新一代陆面模式，为研究生和合作者提供了丰富的研究机会。以下是我们当前重点关注的研究课题：</p>
+
+  <div class="research-item">
+    <strong>多尺度网格技术的优化与应用</strong>：基于CoLM2024独特的多种网格结构支持能力，探索如何进一步优化非结构网格生成算法和自适应网格细化策略。该课题将重点研究：开发网格优化算法，能够根据地表异质性特征自动确定最优网格分辨率分布；构建多尺度嵌套网格的动态耦合方案，实现从全球到局地的无缝尺度转换；研究非结构网格在复杂地形条件下的水文连通性建模；开发海陆一体化网格在沿海地区精细化模拟中的应用方法，特别关注海岸线变化和海平面上升对陆面过程的影响。
+  </div>
+
+  <div class="research-item">
+    <strong>高分辨率陆面数据集的智能融合</strong>：从高分辨率大气驱动场数据生成和用于模式验证的水循环变量数据生成出发，构建完整的数据链条和验证体系。研究内容包括：开发多源再分析数据的统计降尺度方法，生成公里级分辨率的大气驱动场（降水、温度、湿度、风速、辐射等）；开发径流、蒸散发、土壤湿度等水循环关键变量的高精度融合数据集；建立水循环模拟结果的多尺度验证框架，从点尺度到流域尺度的系统性评估；研究大气驱动数据不确定性对水循环模拟的传播影响机制。
+  </div>
+    <div class="research-item">
+    <strong>新一代物理过程参数化方案</strong>：基于最新的科学认知发展CoLM2024中关键物理过程的创新参数化方案。重点方向包括：开发冠层截留参数化方案，结合植被冠层结构特征，提升降水在植被冠层中的截留、蒸发和穿透过程的模拟精度；构建基于植物功能性状的新型光合作用模型，更好地刻画不同植被类型对环境变化的响应；开发耦合地下水-土壤水的三维水文模型，考虑地形、土壤结构对水分运动的影响；建立湿地甲烷排放模型，考虑厌氧环境下有机物分解、甲烷产生、氧化和传输过程，提升对湿地生态系统温室气体排放的模拟能力；研究人类活动（灌溉、施肥、土地管理）对自然过程的定量影响机制。
+</div>
+  <div class="research-item">  
+  <strong>地球系统模式的多模块耦合和应用</strong>：探索CoLM2024与其他地球系统组件（大气、海洋、冰冻圈）的深度耦合方法，如 MPAS 与 CoLM2024 的耦合。该课题将着重研究：耦合技术的应用；开发陆面-大气相互作用的双向反馈机制，特别是极端天气事件中的陆气耦合过程；构建陆面-湖泊河流-海洋界面的物质和能量交换模型，研究河流径流、地下水排泄对近岸海洋环境的影响；模拟永久冻土退化、冰川消融对下游生态水文的影响。
+  </div>
+
+  <div class="research-item">
+    <strong>人工智能与陆面建模的深度融合</strong>：探索机器学习、深度学习等AI技术在陆面建模中的创新应用。研究重点包括：开发基于神经网络的物理过程代理模型，在保持物理机制合理性的前提下显著提升计算效率；利用机器学习方法从海量观测数据中识别新的经验关系和参数化方案；构建智能参数优化系统，能够针对不同区域和应用目标自动调节模型参数；研究可解释性AI在陆面过程诊断中的应用，帮助理解模型误差的物理成因；开发基于强化学习的自适应建模框架，使模型能够在运行过程中持续学习和改进；探索大语言模型在科学数据挖掘和知识发现中的潜力。
+  </div>
+
+  <div class="research-item">
+    <strong>气候变化适应与减缓的模拟评估（与境外高校合作课题）</strong>：利用CoLM2024的综合建模能力，为气候变化应对策略提供科学支撑。研究方向包括：评估不同土地管理策略（森林保护、农业可持续化、湿地恢复）的气候效益和生态效应；模拟基于自然的解决方案（如城市绿化、流域生态修复）对区域气候的调节作用；研究极端气候事件频发背景下的生态系统韧性和恢复能力；评估碳中和目标下的土地利用优化路径，平衡碳汇功能与粮食安全、生物多样性保护等多重目标；开发气候风险评估工具，为基础设施规划、农业布局、城市发展提供科学依据；研究碳捕获、利用与封存（CCUS）技术的陆地生态环境影响。
+  </div>
+
+  <p><strong>欢迎对以上任何课题感兴趣的研究生和合作者联系我们，共同推进陆面建模科学的发展！</strong></p>
+</div>
+
+**<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">部分相关发表文献(#为通讯作者)：</span>**
+
+- **Li, Q.**, Zhang, C., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Jin, X., Shangguan, W., Yuan, H., Zhu, J., Li, L., Liu, P., Chen, X., et al. (2024). Advancing symbolic regression for earth science with a focus on evapotranspiration modeling. *npj Climate and Atmospheric Science*, 7(1), 321.
+
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Xu, Q., Bai, F., Xu, X., Wei, Z., Dong, W., Liang, H., Wei, N., Lu, X., Li, L., et al. (2025). OpenBench: a land models evaluation system. *Geoscientific Model Development*, 2025, 1-37.
+
+- **Bai, F.**,**<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Wei, N., Lu, X., Yuan, H., Zhang, S., Liu, S., Zhang, Y., Li, X., & Dai, Y. (2024). Global Assessment of Atmospheric Forcing Uncertainties in The Common Land Model 2024 Simulations. *Journal of Geophysical Research: Atmospheres*, 129(23), e2024JD041520.
+
+- **Fan, H.**, Xu, Q., Bai, F., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Zhang, Y., Lu, X., Wei, N., Zhang, S., Yuan, H., Liu, S., Li, X., Li, X., & Dai, Y. (2024). An Unstructured Mesh Generation Tool for Efficient High-Resolution Representation of Spatial Heterogeneity in Land Surface Models. *Geophysical Research Letters*, 51(6), e2023GL107059.
+
+- **Xu, Q.**, Liang, H., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Zhang, Y., Lu, X., Li, F., Wei, N., Zhang, S., Yuan, H., Liu, S., & Dai, Y. (2024). Assessing Climate Change Impacts on Crop Yields and Exploring Adaptation Strategies in Northeast China. *Earth's Future*.
+
+- **Xu, X.**, Liu, L., Wei, N., Lu, X., Yuan, H., Zhang, S., Shangguan, W., Zhang, Y., Li, L., Yang, C., Liu, S., Li, X., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, & Dai, Y. (在审). Global Distribution and Dynamics of Bedrock Water Usage by Woody Vegetation. *Manuscript under consideration*.
+
+- **Wei, Zixin.**, Bai, F.#, **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, & Dai, Y. (在审). Comparative Analysis of JRA-3Q and JRA-55 Reanalysis Datasets as Forcing for Land Surface Model: Implications for Hydrological Processes. *Journal of Hydrology*.
+
+* 更多相关研究成果陆续发表中...

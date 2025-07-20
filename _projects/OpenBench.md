@@ -8,7 +8,7 @@ category: work
 related_publications: false
 ---
 
-**OpenBench的基本原理与架构蓝图**
+**<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">OpenBench的基本原理与架构蓝图</span>**
 
 陆面过程模型（Land Surface Models, LSMs）作为连接地球系统各圈层（大气、海洋、陆地）的关键纽带，其复杂性和分辨率在近几十年中经历了飞速发展。模型已从简单的"水桶"模型演变为包含生物地球化学过程、地球物理过程乃至人类活动的多模块复杂系统，空间分辨率也从传统的几十公里提升至公里甚至亚公里级别。这种复杂性的急剧增加，对模型评估和验证工具提出了前所未有的高要求。然而，现有的评估框架在应对新一代LSMs时，逐渐暴露出其固有的局限性。
 
@@ -45,7 +45,8 @@ OpenBench的系统架构基于六个核心的模块化组件，这种设计是�
 
 为了处理日益增长的数据量和高分辨率模拟带来的计算压力，OpenBench在设计上充分利用了并行处理技术。它巧妙地结合了两个成熟的Python库：针对站点评估中涉及大量独立文件读写的I/O密集型任务，系统使用Joblib库进行高效的任务分发和并行处理；对于大规模网格数据的处理，则采用Dask库的惰性计算（lazy execution）和分块数组处理机制，有效管理内存的同时保证了极高的处理速度。
 _
-**多维度的评估与比较方法学**
+
+**<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">多维度的评估与比较方法学</span>**
 
 为了避免依赖单一"拟合优度"指标而产生的片面结论，OpenBench采用了一种多指标的评估策略，旨在从不同维度提供对模型性能的整体、细致的审视。系统集成的指标库非常广泛，根据其评估的侧重点，可以系统地归纳为以下几类：
 
@@ -68,7 +69,7 @@ _
 
 - **源自ILAMB的评分系统(ILAMB scoring system)**: 在多指标评估的基础上，为了便于模型间的横向比较和结果的综合展示，OpenBench采用了一套源自ILAMB框架的标准化评分指数。这些指数将不同的评估指标值归一化到0到1的区间，其中1代表模型与观测完全一致。尽管OpenBench借鉴了ILAMB的评分体系，但其在具体实施上做出了两项关键的、具有哲学意义的调整。第一个关键区别在于全球平均分的计算方式。与ILAMB强制采用质量加权法不同，OpenBench赋予了用户选择的权力。用户可以根据其研究问题，灵活选择面积加权（确保各区域地理面积的平等贡献）、质量加权（与ILAMB保持一致）或不加权（简单空间平均）。第二个更具根本性的区别在于对多参考数据集的处理。OpenBench采取了截然不同的路径：它允许用户选择一个或多个他们认为可靠的参考数据集，然后独立地报告模型相对于每一个参考数据集的评估结果，而不进行任何形式的融合或加权。
 
-**陆面建模的新前沿：评估人为影响**
+**<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">陆面建模的新前沿：评估人为影响</span>**
 
 与以往的评估系统将人类活动视为次要因素或完全忽略不同，OpenBench将系统性地评估人类活动影响作为其核心设计原则和基础性目标。这并非一个附加功能，而是项目构思的出发点。为了实现这一目标，系统集成了一个规模庞大、种类繁多的基准数据集集合，这些数据集经过精心筛选，专门用于评估各种人为过程。
 
@@ -193,9 +194,10 @@ _
   <p><strong>欢迎对以上任何课题感兴趣的研究生和合作者联系我们，共同推进陆面建模科学的发展！</strong></p>
 </div>
 
-**相关发表文献：**
+**<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">部分相关发表文献(#为通讯作者)：</span>**
 
-* Wei, Z., Xu, Q., Bai, F., Xu, X., Wei, Z., Dong, W., Liang, H., Wei, N., Lu, X., Li, L., et al. (2025). OpenBench: a land models evaluation system. *Geoscientific Model Development*, 2025, 1-37.
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**,, Xu, Q., Bai, F., Xu, X., Wei, Z., Dong, W., Liang, H., Wei, N., Lu, X., Li, L., et al. (2025). OpenBench: a land models evaluation system. *Geoscientific Model Development*, 2025, 1-37.
+
 * 更多相关研究成果陆续发表中...
 
 
