@@ -8,22 +8,56 @@ category: work
 related_publications: false
 ---
 
-**Advancing Land Surface Model Evaluation**
+**OpenBench的基本原理与架构蓝图**
 
-Land surface models (LSMs) are becoming increasingly sophisticated, incorporating complex processes from soil moisture dynamics to human activities. However, evaluating these models comprehensively has remained a significant challenge. Our lab has developed OpenBench, an innovative evaluation system that revolutionizes how we assess and improve LSMs.
+陆面过程模型（Land Surface Models, LSMs）作为连接地球系统各圈层（大气、海洋、陆地）的关键纽带，其复杂性和分辨率在近几十年中经历了飞速发展。模型已从简单的"水桶"模型演变为包含生物地球化学过程、地球物理过程乃至人类活动的多模块复杂系统，空间分辨率也从传统的几十公里提升至公里甚至亚公里级别。这种复杂性的急剧增加，对模型评估和验证工具提出了前所未有的高要求。然而，现有的评估框架在应对新一代LSMs时，逐渐暴露出其固有的局限性。
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/research/openbench/Picture1.png" title="General flowchart of the OpenBench " class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research/openbench/Picture1.png" title="General flowchart of the OpenBench" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    The modular structure of OpenBench enables comprehensive evaluation across multiple scales and processes.
+    OpenBench的模块化架构示意图，展示了系统如何应对现代陆面模式评估的复杂需求
 </div>
 
-**A Universal Evaluation Framework**
+这些局限性体现在多个层面。首先，许多评估工具是为特定模型定制开发的，例如为CLASSIC模型开发的AMBER和为CABLE模型开发的benchcab，这导致研究人员在尝试新模型时必须投入大量时间学习特定的使用方法和数据格式，极大地限制了模型间的横向比较和科学进展的速度。其次，一些通用平台，如国际陆面模型基准测试计划（ILAMB），虽然功能强大，但要求将模型输出转换为严格的CMIP（耦合模式比较计划）标准，这一过程不仅耗时耗力，还可能引入错误，影响评估的可靠性。
 
-OpenBench represents a significant leap forward in model evaluation methodology. Unlike existing tools, it handles both station-based and gridded data at any spatial or temporal resolution. The system incorporates over 40 evaluation metrics and normalized scoring indices, providing unprecedented insight into model performance. Most importantly, it's the first evaluation system to comprehensively assess human impacts on land surface processes.
+然而，一个更为根本的缺口在于，几乎所有现存的评估系统都未能全面地、系统地评估人类活动对陆面过程的影响。在人类世（Anthropocene）背景下，农业灌溉、城市化、水库调度等人类活动已成为地表过程的主导驱动力。这些活动的数据通常尺度小、来源多样且不确定性高，对其进行有效评估是当前LSMs发展面临的核心挑战之一。
+
+**模块化、高性能且易于访问的设计架构**
+
+为了应对上述挑战，OpenBench被设计为一个开源、跨平台、高性能的通用LSM评估系统。其架构选择体现了对未来适应性、社区协作和计算效率的深思熟虑，而不仅仅是技术实现的便利。
+
+OpenBench的系统架构基于六个核心的模块化组件，这种设计是其灵活性和可扩展性的基石：
+
+1. **配置管理模块（Configuration Management）**：支持YAML、JSON和Fortran namelist三种配置格式，允许用户以熟悉的方式定义评估参数、数据源和模型输出，极大地简化了评估场景的定制。
+
+2. **数据处理模块（Data Processing）**：负责对参考数据和模型模拟数据进行预处理，包括时空重采样、坐标变换、单位转换等，确保不同来源、不同分辨率的数据在统一的标准下进行比较。
+
+3. **评估模块（Evaluation）**：实现核心的评估逻辑，应用海量的评估指标和评分体系来量化模型性能。该模块支持对站点数据和网格数据的评估，并能根据数据类型自动调整方法。
+
+4. **比较处理模块（Comparison Processing）**：支持多模型、多参数化方案、多情景的对比分析，是理解模型间差异和不确定性的关键。
+
+5. **统计分析模块（Statistical Analysis）**：集成高级统计技术，提供对模型行为和性能模式的更深层次洞察。
+
+6. **可视化模块（Visualization）**：能够生成高质量、可定制的图表，用于直观地解释和传达复杂的评估结果。
+
+为了处理日益增长的数据量和高分辨率模拟带来的计算压力，OpenBench在设计上充分利用了并行处理技术。它巧妙地结合了两个成熟的Python库：针对站点评估中涉及大量独立文件读写的I/O密集型任务，系统使用Joblib库进行高效的任务分发和并行处理；对于大规模网格数据的处理，则采用Dask库的惰性计算（lazy execution）和分块数组处理机制，有效管理内存的同时保证了极高的处理速度。
+
+**OpenBench与前代评估系统的部分特性比较分析**
+
+| 特性 | OpenBench | ILAMB | LVT | ESMValTool | MetEva |
+|------|-----------|--------|-----|------------|---------|
+| 应用范围 | 通用 (CoLM, CLM5, CMIP-style等) | CMIP-style | 多种模型 | CMIP-style | GRAPES模型 |
+| 任意时空分辨率 | 是 | 否 (通常为月/0.5°) | 是 | 否 | 否 |
+| 跨平台 | 是 (Windows, macOS, Linux) | 否 (Linux) | 否 (Linux) | 否 (Linux) | 是 |
+| 人类活动评估 | 是 (核心功能，含城市、农业、水库等) | 有限/间接 | 有限 | 有限 | 否 |
+| 权重/参考数据哲学 | 灵活 (用户可选权重)；独立评估各参考数据 | 规定 (质量加权)；多参考数据加权融合 | 不适用 | 不适用 | 不适用 |
+
+**多维度的评估与比较方法学**
+
+为了避免依赖单一"拟合优度"指标而产生的片面结论，OpenBench采用了一种多指标的评估策略，旨在从不同维度提供对模型性能的整体、细致的审视。系统集成的指标库非常广泛，根据其评估的侧重点，可以系统地归纳为以下几类：
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -31,12 +65,30 @@ OpenBench represents a significant leap forward in model evaluation methodology.
     </div>
 </div>
 <div class="caption">
-   OpenBench enables sophisticated multi-model comparisons across various performance metrics.
+    OpenBench实现的多模型比较功能，展示了不同评估指标下的模型性能对比
 </div>
 
-**Real-world Applications**
+- **偏差指标（Bias Metrics）**：用于量化模型输出与观测值之间的系统性偏差。包括基础的偏差（BIAS）和百分比偏差（PBIAS），以及针对特定流量情景的指标，如年高峰流量百分比偏差（APFB）和低流量百分比偏差（PBIAS_LF）。
 
-The power of OpenBench is demonstrated through its diverse applications. From evaluating river discharge predictions to assessing urban heat flux simulations, the system provides detailed insights into model performance. Our case studies show significant improvements in model evaluation efficiency and accuracy.
+- **误差指标（Error Metrics）**：用于衡量模型预测误差的绝对大小。核心指标包括均方根误差（RMSE）及其无偏版本（ubRMSE），以及对异常值不敏感的平均绝对误差（MAE）。
+
+- **相关性指标（Correlation Metrics）**：用于评估模型捕捉观测数据变化趋势的能力。包括经典的皮尔逊相关系数（R）和决定系数（R2），以及衡量单调关系的斯皮尔曼等级相关系数（rSpearman）。
+
+- **效率指标（Efficiency Metrics）**：将模型性能与一个基准（通常是观测平均值）进行比较，提供一个相对的性能度量。其中最著名的是纳什效率系数（NSE）和克林-古普塔效率（KGE），后者进一步分解为相关性、偏差和变率三个部分，提供了更具诊断性的信息。
+
+**源自ILAMB的评分系统及其哲学分野**
+
+在多指标评估的基础上，为了便于模型间的横向比较和结果的综合展示，OpenBench采用了一套源自ILAMB框架的标准化评分指数。这些指数将不同的评估指标值归一化到0到1的区间，其中1代表模型与观测完全一致。
+
+尽管OpenBench借鉴了ILAMB的评分体系，但其在具体实施上做出了两项关键的、具有哲学意义的调整。这些调整反映了OpenBench从一个规范性的、旨在提供单一"答案"的基准测试工具，向一个灵活的、由研究者驱动的诊断性分析平台的转变。
+
+第一个关键区别在于全球平均分的计算方式。与ILAMB强制采用质量加权法不同，OpenBench赋予了用户选择的权力。用户可以根据其研究问题，灵活选择面积加权（确保各区域地理面积的平等贡献）、质量加权（与ILAMB保持一致）或不加权（简单空间平均）。
+
+第二个更具根本性的区别在于对多参考数据集的处理。OpenBench采取了截然不同的路径：它允许用户选择一个或多个他们认为可靠的参考数据集，然后独立地报告模型相对于每一个参考数据集的评估结果，而不进行任何形式的融合或加权。
+
+**陆面建模的新前沿：评估人为影响**
+
+与以往的评估系统将人类活动视为次要因素或完全忽略不同，OpenBench将系统性地评估人类活动影响作为其核心设计原则和基础性目标。这并非一个附加功能，而是项目构思的出发点。为了实现这一目标，系统集成了一个规模庞大、种类繁多的基准数据集集合，这些数据集经过精心筛选，专门用于评估各种人为过程。
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -44,17 +96,73 @@ The power of OpenBench is demonstrated through its diverse applications. From ev
     </div>
 </div>
 <div class="caption">
-Evaluation of urban anthropogenic heat flux in Southeast Asia, demonstrating OpenBench's comprehensive evaluation capabilities.
+    OpenBench在东南亚地区城市人为热通量的评估案例，展示了系统对人类活动影响的全面评估能力
 </div>
 
+这些数据集可分为三大类，全面覆盖了人类活动对陆地表层系统最主要的影响方面：
 
-**Future of Model Evaluation**
+- **农业系统**：为了评估农业活动对水、能量和碳循环的影响，OpenBench整合了关于作物产量（如GDHY, SPAM）、农业用水（如GIWUED）、作物物候、种植面积和生产力的数据集。这些数据使得对模型中农业管理（如灌溉、施肥）和作物生长过程的模拟进行验证成为可能。
 
-OpenBench is designed with extensibility in mind, allowing for seamless integration of new models, variables, and evaluation metrics. This flexibility ensures that the system will continue to evolve alongside advances in land surface modeling, providing the scientific community with an ever-more-powerful tool for model evaluation and improvement.
+- **城市环境**：城市化是地表最剧烈的改变形式之一。OpenBench通过整合城市范围（如UEHNL）、地表温度、反照率等数据集来评估城市物理效应。尤为关键的是，它首次系统性地引入了多个**人为热通量（Anthropogenic Heat Flux, AHF）**数据集（如AH4GUC, DONG_AHE），使得对城市热岛效应这一核心问题的直接评估成为现实。
 
-**Related Publications:**
+- **水资源管理**：人类通过修建水库、跨流域调水等工程深刻地改变了全球水文循环。OpenBench集成了关于水库运行（如ResOpsUS）、河流径流（如GRDC）和大规模淹没区（如GIEMS_v2）的观测数据，用以评估模型在人类管理的流域中的水文模拟能力。
 
-* Wei et al. (2024). OpenBench: A Universal and High-performance Land Surface Model Benchmarking System. In preparation
-* More publications coming soon ...
+**部分用于评估人为影响的精选数据集目录**
+
+| 数据集名称 | 变量 | 分辨率/周期 | 人为过程相关性 |
+|-----------|------|------------|---------------|
+| GDHY | 作物产量 | 0.5°/年 | 评估农业生产力及模型中的作物模块 |
+| GIWUED | 灌溉用水量 | 0.25°/月 | 验证模型对农业灌溉需求的模拟能力 |
+| AH4GUC | 人为热通量 | 1 km/小时 | 直接评估城市热岛效应中的人为热排放 |
+| UEHNL | 城市范围 | 1 km/年 | 追踪城市扩张及其对地表特性的影响 |
+| ResOpsUS | 水库入流、出流、库容 | 站点/日 | 评估模型对人类水库调度的模拟能力 |
+| GRDC | 河流径流 | 站点/日-月 | 验证人类活动影响下的流域径流变化 |
+
+**在人类世中量化模型性能：案例研究的启示**
+
+OpenBench的案例研究清晰地展示了其在评估人为影响方面的强大能力。一项研究比较了CoLM2024模型模拟的城市AHF与AH4GUC观测数据，结果不仅在多数地区显示出良好的一致性，更重要的是，它成功地识别出了模型表现不佳的特定区域（如从中国中部延伸至越南北部的廊道），揭示了模型中可能存在的系统性偏差，为后续的模型改进指明了具体方向。
+
+另一项关于农业的案例研究，比较了CoLM2024模拟的美国玉米产量与GDHY数据集。分析揭示了显著的区域性偏差：模型在美国西部低估了产量，而在中部地区则严重高估。这一发现的深刻之处在于，它揭示了问题的根源不仅在于模型物理过程的参数化，还在于模型所依赖的外部数据。
+
+**综合案例研究的应用与性能洞察**
+
+OpenBench的多个案例研究，当被综合审视时，构成了一次对当前LSMs健康状况的全面"诊断性体检"。这些研究并非孤立的，而是共同揭示了一系列关于模型性能的系统性模式，尤其是在地球系统科学的前沿领域。
+
+- **水文学过程**：对河流径流和淹没范围的评估显示，模型在模拟湿润地区（如亚马逊盆地）的自然水文过程方面表现出色，KGESS值较高。然而，一旦进入受人类活动强烈干扰的流域（如因水库调度而径流模式复杂的美国西部）或物理过程特殊的区域（如高纬度地区），模型性能便显著下降。
+
+- **生物地球化学过程**：对总初级生产力（GPP）的评估揭示了类似的模式。模型能够稳健地捕捉温带和寒带森林生态系统的季节性变化，nPhaseScore（相位评分）普遍较高。然而，在两种极端环境下，模型表现出明显的弱点。
+
+- **参数化方案的敏感性**：通过比较CoLM2024模型中三种不同的径流生成方案（SIMTOP、新安江、SimpleVIC），研究发现没有一种方案在所有地区都是最优的。例如，SimpleVIC方案在美国大部分地区表现最佳，而新安江方案则在干旱和半干旱地区显示出其独特的优势。
+
+将这些独立的案例研究结果联系起来，一个清晰且反复出现的模式浮现出来。当前LSMs的性能瓶颈，系统性地出现在地球系统科学最具挑战性的几个前沿界面上：人类活动主导的界面（如城市和农田）、冰冻圈界面（如高纬度和高山地区）以及数据匮乏的复杂生态系统界面（如热带雨林）。
+
+**开放研究课题**
+
+OpenBench作为一个开放、可扩展的科研平台，为研究生和合作者提供了丰富的研究机会。以下是我们当前重点关注的研究课题：
+
+**人工智能驱动的模型评估方法**
+结合机器学习技术重新定义传统模型评估范式。该课题将探索如何利用深度学习算法自动识别模型在不同气候区域和季节的系统性偏差模式，开发基于神经网络的模型性能预测框架，并构建能够自主学习和优化的评估指标体系。研究内容包括：利用卷积神经网络识别模型输出的空间偏差模式；开发基于循环神经网络的时间序列评估方法；构建多模态深度学习框架，同时处理气象、水文、生态等多源观测数据；建立可解释的AI评估系统，为模型改进提供具体的物理过程层面的建议。
+
+**极端气候事件的模型评估框架**
+面对日益频发的极端气候事件，传统的模型评估方法往往关注平均状态而忽略极值表现。该课题致力于开发专门针对极端事件的评估方法学，包括：建立极端干旱事件的多维度评估体系，从干旱强度、持续时间、影响范围等方面全面评估模型表现；开发洪涝事件的动态评估方法，重点关注模型对径流峰值时间、洪峰流量和淹没范围的预测能力；构建热浪事件的复合评估指标，综合考虑温度极值、持续时间和空间连续性；研究模型在复合极端事件（如干热复合事件）中的表现，为气候风险评估提供科学依据。
+
+**城市陆面过程的精细化评估**
+随着全球城市化进程加速，城市陆面过程成为影响区域乃至全球气候的重要因子。该课题将深入研究城市环境下的能量平衡、水循环和碳循环过程，开发城市专用的模型评估体系。研究重点包括：利用高分辨率卫星数据和地面观测网络，构建城市热岛效应的多尺度评估方法；开发城市人为热排放的时空变化评估框架，结合交通流量、建筑能耗等社会经济数据；建立城市雨洪管理效果的模型评估体系，评估绿色基础设施对城市水文循环的影响；研究城市植被对区域气候的调节作用，为城市生态规划提供量化依据。
+
+**高分辨率模型的大数据评估技术**
+随着计算能力提升，陆面模式的分辨率不断提高，传统评估方法面临计算效率和存储容量的双重挑战。该课题将开发适用于公里级甚至更高分辨率模型的评估技术，包括：设计基于云计算和分布式存储的评估架构，实现对TB级模型输出数据的高效处理；开发智能采样和数据压缩算法，在保证评估精度的前提下显著减少计算量；构建流式数据处理管道，实现模型评估的实时化和自动化；建立多尺度嵌套评估方法，从全球到区域再到局地，实现跨尺度的一致性评估。
+
+**陆面模式的不确定性量化与溯源**
+模型不确定性是影响预测可信度的关键因素，但传统评估往往只关注模型与观测的差异而忽略不确定性来源。该课题将建立系统性的不确定性量化框架，包括：开发基于贝叶斯方法的参数不确定性量化技术，识别对模型性能影响最大的关键参数；构建模型结构不确定性的定量评估方法，比较不同物理过程参数化方案的影响；建立驱动数据不确定性的传播分析框架，研究气象强迫数据误差对模型输出的影响；开发集合评估方法，利用多模型、多参数化的集合预测来量化总体不确定性，为决策者提供更可靠的风险评估信息。
+
+**社会-生态耦合系统的综合评估**
+人类活动已成为地球系统变化的主导驱动力，传统的自然科学模型难以全面刻画社会-生态系统的复杂相互作用。该课题将开发集成社会经济因素的模型评估框架，包括：建立农业管理决策的建模与评估体系，考虑农民行为、市场价格、政策激励等因素对作物种植和灌溉的影响；开发水资源管理的多主体评估模型，模拟不同利益相关者（农业、工业、城市、生态）之间的水资源竞争和协调；构建土地利用变化的驱动机制评估框架，结合经济发展、人口增长、政策导向等社会因素；研究气候变化适应措施的有效性评估，为政策制定提供科学支撑。
+
+欢迎对以上任何课题感兴趣的研究生和合作者联系我们，共同推进陆面建模科学的发展！
+
+**相关发表文献：**
+
+* Wei, Z., Xu, Q., Bai, F., Xu, X., Wei, Z., Dong, W., Liang, H., Wei, N., Lu, X., Li, L., et al. (2025). OpenBench: a land models evaluation system. *Geoscientific Model Development*, 2025, 1-37.
+* 更多相关研究成果陆续发表中...
 
 
