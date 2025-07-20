@@ -219,6 +219,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
+  projects_en:
+    output: true
+    permalink: /en/:collection/:title/
 
 announcements:
   enabled: true
