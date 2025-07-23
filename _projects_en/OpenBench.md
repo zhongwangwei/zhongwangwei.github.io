@@ -6,7 +6,6 @@ img: /assets/img/research/openbench/Page_10.jpg  # Replace with a relevant image
 importance: 1
 category: work
 related_publications: false
-permalink: /en/projects/OpenBench/
 lang: en
 ---
 

@@ -6,6 +6,7 @@ img: /assets/img/research/openbench/Page_10.jpg  # Replace with a relevant image
 importance: 1
 category: work
 related_publications: false
+lang: zh
 ---
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">OpenBench的基本原理与架构蓝图</span>**

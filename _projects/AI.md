@@ -6,6 +6,7 @@ img: assets/img/research/AI/AI.jpg
 importance: 3
 category: work
 giscus_comments: false
+lang: zh
 ---
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">人工智能在陆面建模中的应用</span>**

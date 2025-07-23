@@ -51,23 +51,45 @@ function switchLanguage(lang) {
       '/': '/',
       '/en/': '/',
       '/projects/': '/zh/projects/',
+      '/en/projects/': '/zh/projects/',
+      '/zh/projects/': '/zh/projects/',
       '/publications/': '/zh/publications/',
+      '/en/publications/': '/zh/publications/',
+      '/zh/publications/': '/zh/publications/',
       '/cv/': '/zh/cv/',
+      '/en/cv/': '/zh/cv/',
+      '/zh/cv/': '/zh/cv/',
       '/teaching/': '/zh/teaching/',
+      '/en/teaching/': '/zh/teaching/',
+      '/zh/teaching/': '/zh/teaching/',
       '/people/': '/zh/people/',
+      '/en/people/': '/zh/people/',
+      '/zh/people/': '/zh/people/',
       '/news/': '/zh/news/',
-      '/en/news/': '/zh/news/'
+      '/en/news/': '/zh/news/',
+      '/zh/news/': '/zh/news/'
     },
     'en': {
       '/': '/en/',
       '/zh/': '/en/',
       '/projects/': '/en/projects/',
+      '/zh/projects/': '/en/projects/',
+      '/en/projects/': '/en/projects/',
       '/publications/': '/en/publications/',
+      '/zh/publications/': '/en/publications/',
+      '/en/publications/': '/en/publications/',
       '/cv/': '/en/cv/',
+      '/zh/cv/': '/en/cv/',
+      '/en/cv/': '/en/cv/',
       '/teaching/': '/en/teaching/',
+      '/zh/teaching/': '/en/teaching/',
+      '/en/teaching/': '/en/teaching/',
       '/people/': '/en/people/',
+      '/zh/people/': '/en/people/',
+      '/en/people/': '/en/people/',
       '/news/': '/en/news/',
-      '/zh/news/': '/en/news/'
+      '/zh/news/': '/en/news/',
+      '/en/news/': '/en/news/'
     }
   };
   
@@ -94,6 +116,25 @@ function switchLanguage(lang) {
           // Check if this is a Chinese article that needs conversion
           var pathWithoutSlash = currentPath.replace(/\/$/, '');
           newPath = pathWithoutSlash + '-en/';
+        }
+      }
+    } else if (currentPath.match(/^\/projects\/[^\/]+\/$/) || currentPath.match(/^\/en\/projects\/[^\/]+\/$/)) {
+      // Handle individual project pages
+      if (lang === 'zh') {
+        // Convert English project URL to Chinese
+        if (currentPath.startsWith('/en/projects/')) {
+          var projectName = currentPath.replace('/en/projects/', '').replace(/\/$/, '');
+          newPath = '/projects/' + projectName + '/';
+        } else {
+          newPath = currentPath; // Already Chinese
+        }
+      } else { // lang === 'en'
+        // Convert Chinese project URL to English
+        if (currentPath.startsWith('/projects/') && !currentPath.startsWith('/projects_en/')) {
+          var projectName = currentPath.replace('/projects/', '').replace(/\/$/, '');
+          newPath = '/en/projects/' + projectName + '/';
+        } else {
+          newPath = currentPath; // Already English
         }
       }
     } else {

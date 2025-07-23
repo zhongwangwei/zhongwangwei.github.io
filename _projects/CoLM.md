@@ -6,6 +6,7 @@ img: assets/img/research/CoLM/CoLM2024.png
 importance: 2
 category: work
 giscus_comments: false
+lang: zh
 ---
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">模型概述</span>**

@@ -6,6 +6,7 @@ img: assets/img/research/isotope/wc.png
 importance: 4
 category: work
 giscus_comments: false
+lang: zh
 ---
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">同位素水文气象学研究</span>**

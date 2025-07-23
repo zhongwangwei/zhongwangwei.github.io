@@ -6,7 +6,7 @@ img: assets/img/research/AI/AI.jpg
 importance: 3
 category: work
 giscus_comments: false
-permalink: /en/projects/AI/
+lang: en
 ---
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">AI Applications in Land Surface Modeling</span>**

@@ -6,7 +6,7 @@ img: assets/img/research/CoLM/CoLM2024.png
 importance: 2
 category: work
 giscus_comments: false
-permalink: /en/projects/CoLM/
+lang: en
 ---
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Model Overview</span>**

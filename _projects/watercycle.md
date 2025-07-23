@@ -6,6 +6,7 @@ img: assets/img/research/watercycle/luo.png
 importance: 5
 category: work
 giscus_comments: false
+lang: zh
 ---
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">陆地水循环研究</span>**

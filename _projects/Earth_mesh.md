@@ -6,6 +6,7 @@ img: assets/img/research/EarthMesh/hexagon.jpg
 importance: 4
 category: work
 giscus_comments: false
+lang: zh
 ---
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">地球网格系统研究</span>**

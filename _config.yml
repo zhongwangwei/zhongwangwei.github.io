@@ -221,7 +221,7 @@ collections:
     permalink: /:collection/:title/
   projects_en:
     output: true
-    permalink: /en/:collection/:title/
+    permalink: /en/projects/:title/
 
 announcements:
   enabled: true

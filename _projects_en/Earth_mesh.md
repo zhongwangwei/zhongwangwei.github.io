@@ -6,7 +6,6 @@ img: assets/img/research/EarthMesh/hexagon.jpg
 importance: 4
 category: work
 giscus_comments: false
-permalink: /en/projects/Earth_mesh/
 lang: en
 ---
 

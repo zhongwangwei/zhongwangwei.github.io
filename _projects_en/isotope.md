@@ -6,7 +6,6 @@ img: assets/img/research/isotope/wc.png
 importance: 4
 category: work
 giscus_comments: false
-permalink: /en/projects/isotope/
 lang: en
 ---
 

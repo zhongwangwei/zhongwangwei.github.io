@@ -6,7 +6,6 @@ img: assets/img/research/watercycle/luo.png
 importance: 5
 category: work
 giscus_comments: false
-permalink: /en/projects/watercycle/
 lang: en
 ---
 
