@@ -6,7 +6,7 @@ description: Rich in vinegar flavor, long cultural history
 tags: travel images
 categories: Travel
 thumbnail: assets/img/blog/2024-06-01-taiyuan/IMG_4237.jpg
-featured: true
+featured: false
 lang: en
 ---
 The trip to Taiyuan, Shanxi Province from June 1-3, 2024, where I was honored to be invited to participate in the Second China Multi-Agent Systems Conference held in Taiyuan.
