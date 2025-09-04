@@ -14,88 +14,6 @@ lang: zh
 
 <div class="datasets-page">
   
-  <!-- Featured Datasets -->
-  <div class="dataset-section">
-    <h2 class="section-title">主要数据产品</h2>
-    <div class="dataset-grid">
-      
-      <div class="dataset-card featured">
-        <div class="dataset-header">
-          <h3>全球陆面水文数据集</h3>
-          <span class="dataset-badge">重点推荐</span>
-        </div>
-        <div class="dataset-info">
-          <p class="description">基于多源遥感和模型数据融合的全球高分辨率陆面水文要素数据集，时间跨度1980-2023年，空间分辨率0.1°。</p>
-          <div class="dataset-stats">
-            <span class="stat"><i class="fas fa-calendar"></i> 1980-2023</span>
-            <span class="stat"><i class="fas fa-globe"></i> 全球覆盖</span>
-            <span class="stat"><i class="fas fa-expand-arrows-alt"></i> 0.1° 分辨率</span>
-          </div>
-          <div class="dataset-variables">
-            <span class="variable-tag">蒸散发</span>
-            <span class="variable-tag">土壤湿度</span>
-            <span class="variable-tag">径流</span>
-            <span class="variable-tag">地下水</span>
-          </div>
-          <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 技术文档</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="dataset-card">
-        <div class="dataset-header">
-          <h3>中国区域高精度降水数据</h3>
-          <span class="dataset-badge new">最新发布</span>
-        </div>
-        <div class="dataset-info">
-          <p class="description">融合地面观测、雷达和卫星数据的中国区域高精度降水产品，空间分辨率1km，时间分辨率小时级。</p>
-          <div class="dataset-stats">
-            <span class="stat"><i class="fas fa-calendar"></i> 2015-2023</span>
-            <span class="stat"><i class="fas fa-map"></i> 中国区域</span>
-            <span class="stat"><i class="fas fa-expand-arrows-alt"></i> 1km 分辨率</span>
-            <span class="stat"><i class="fas fa-clock"></i> 小时级</span>
-          </div>
-          <div class="dataset-variables">
-            <span class="variable-tag">降水</span>
-            <span class="variable-tag">降水强度</span>
-            <span class="variable-tag">降水频次</span>
-          </div>
-          <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 技术文档</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="dataset-card">
-        <div class="dataset-header">
-          <h3>大涡模拟边界层数据库</h3>
-          <span class="dataset-badge">专业数据</span>
-        </div>
-        <div class="dataset-info">
-          <p class="description">基于大涡模拟的大气边界层湍流数据库，包含不同稳定度条件下的三维湍流场数据。</p>
-          <div class="dataset-stats">
-            <span class="stat"><i class="fas fa-database"></i> 500+ 案例</span>
-            <span class="stat"><i class="fas fa-cube"></i> 三维湍流场</span>
-            <span class="stat"><i class="fas fa-wind"></i> 多稳定度</span>
-          </div>
-          <div class="dataset-variables">
-            <span class="variable-tag">湍流通量</span>
-            <span class="variable-tag">湍流强度</span>
-            <span class="variable-tag">边界层高度</span>
-          </div>
-          <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 申请下载</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 使用说明</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Dataset Categories -->
   <div class="dataset-section">
     <h2 class="section-title">数据分类</h2>
@@ -129,14 +47,179 @@ lang: zh
       
       <div class="category-card">
         <div class="category-icon">
-          <i class="fas fa-satellite"></i>
+          <i class="fas fa-atom"></i>
         </div>
-        <h4>遥感数据</h4>
-        <p>多源卫星遥感数据处理产品和质量控制数据集</p>
-        <a href="#remote" class="category-link">查看数据 <i class="fas fa-arrow-right"></i></a>
+        <h4>同位素数据</h4>
+        <p>水汽同位素、降水同位素等稳定同位素相关数据</p>
+        <a href="#isotope" class="category-link">查看数据 <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </div>
+
+  <!-- Featured Datasets -->
+  <div class="dataset-section">
+    <h2 class="section-title">主要数据产品</h2>
+    <div class="dataset-grid">
+      
+      <div class="dataset-card featured">
+        <div class="dataset-header">
+          <h3>全球多模态机器学习蒸散发数据集</h3>
+          <span class="dataset-badge fusion">数据融合产品</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">基于多模态机器学习框架融合13个先进蒸散发产品的全球高分辨率数据集，涵盖遥感、机器学习、陆面模式和再分析数据，基于462个通量站点观测数据构建。</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-calendar"></i> 1950-2024</span>
+            <span class="stat"><i class="fas fa-globe"></i> 全球覆盖</span>
+            <span class="stat"><i class="fas fa-expand-arrows-alt"></i> 0.1° 分辨率</span>
+            <span class="stat"><i class="fas fa-clock"></i> 日时间步长</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">蒸散发</span>
+            <span class="variable-tag">蒸腾</span>
+            <span class="variable-tag">土壤蒸发</span>
+            <span class="variable-tag">植被截留</span>
+          </div>
+          <div class="dataset-links">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 技术文档</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>中国土壤属性数据集 (第二版)</h3>
+          <span class="dataset-badge model">模型产品</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">基于11,209个多源土壤剖面数据和高分辨率成土环境特征，使用集合机器学习方法生成的中国23种土壤物理化学属性高精度空间分布数据集。</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-map"></i> 中国区域</span>
+            <span class="stat"><i class="fas fa-expand-arrows-alt"></i> 90m 分辨率</span>
+            <span class="stat"><i class="fas fa-layer-group"></i> 6个标准深度层</span>
+            <span class="stat"><i class="fas fa-flask"></i> 23种土壤属性</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">土壤质地</span>
+            <span class="variable-tag">有机碳</span>
+            <span class="variable-tag">土壤密度</span>
+            <span class="variable-tag">pH值</span>
+          </div>
+          <div class="dataset-links">
+            <a href="https://www.scidb.cn/s/ZZJzAz" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 技术文档</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>全球水汽同位素数据库</h3>
+          <span class="dataset-badge observation">站点观测</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">基于红外激光光谱技术的全球高时间分辨率水汽同位素数据库，覆盖35个站点、15个柯本气候区，时间跨度2004-2017年。</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-calendar"></i> 2004-2017</span>
+            <span class="stat"><i class="fas fa-map-marker-alt"></i> 35个站点</span>
+            <span class="stat"><i class="fas fa-globe-americas"></i> 15个气候区</span>
+            <span class="stat"><i class="fas fa-clock"></i> 小时级</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">δ18O</span>
+            <span class="variable-tag">δD</span>
+            <span class="variable-tag">气象要素</span>
+            <span class="variable-tag">ERA5数据</span>
+          </div>
+          <div class="dataset-links">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 数据说明</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>泰国降水同位素观测数据</h3>
+          <span class="dataset-badge observation">站点观测</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">泰国6个站点的降水同位素观测数据，结合同位素大气环流模式和轨迹模型分析，用于研究东南亚地区降水同位素的控制机制。</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-map-marker-alt"></i> 6个站点</span>
+            <span class="stat"><i class="fas fa-map"></i> 泰国区域</span>
+            <span class="stat"><i class="fas fa-calendar"></i> 月尺度</span>
+            <span class="stat"><i class="fas fa-cloud-rain"></i> 降水同位素</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">降水δ18O</span>
+            <span class="variable-tag">降水δD</span>
+            <span class="variable-tag">降水量</span>
+            <span class="variable-tag">气象数据</span>
+          </div>
+          <div class="dataset-links">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 申请下载</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 研究说明</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>全球蒸腾分离数据产品</h3>
+          <span class="dataset-badge model">模型产品</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">基于新的蒸散发分离算法，结合全球蒸散发估算和不同植被类型的叶面积指数关系，将站点尺度测量上尺度到全球的蒸腾分离数据产品。</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-globe"></i> 全球覆盖</span>
+            <span class="stat"><i class="fas fa-percentage"></i> 蒸腾占比57.2%</span>
+            <span class="stat"><i class="fas fa-leaf"></i> 多植被类型</span>
+            <span class="stat"><i class="fas fa-chart-line"></i> 算法创新</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">蒸腾</span>
+            <span class="variable-tag">土壤蒸发</span>
+            <span class="variable-tag">截留蒸发</span>
+            <span class="variable-tag">蒸腾比例</span>
+          </div>
+          <div class="dataset-links">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 算法说明</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>同位素大气环流模式对比数据</h3>
+          <span class="dataset-badge model">模式产品</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">基于三个同位素大气环流模式和三种再分析产品的水同位素模式对比数据，用于评估模式对大气和地表水同位素时空分布的模拟能力。注意：此数据基于现有模式代码生成，非原创产品。</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-layer-group"></i> 3个模式</span>
+            <span class="stat"><i class="fas fa-database"></i> 3种再分析</span>
+            <span class="stat"><i class="fas fa-globe"></i> 全球覆盖</span>
+            <span class="stat"><i class="fas fa-exclamation-triangle"></i> 需申请</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">大气δ18O</span>
+            <span class="variable-tag">地表δ18O</span>
+            <span class="variable-tag">模式对比</span>
+            <span class="variable-tag">质量平衡</span>
+          </div>
+          <div class="dataset-links">
+            <a href="mailto:zhongwang007@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> 联系申请</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 模式说明</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Data Usage Guidelines -->
   <div class="dataset-section">
@@ -256,7 +339,15 @@ lang: zh
   margin-left: 1rem;
 }
 
-.dataset-badge.new {
+.dataset-badge.fusion {
+  background: #17a2b8;
+}
+
+.dataset-badge.model {
+  background: #6c757d;
+}
+
+.dataset-badge.observation {
   background: #28a745;
 }
 

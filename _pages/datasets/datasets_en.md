@@ -14,88 +14,6 @@ lang: en
 
 <div class="datasets-page">
   
-  <!-- Featured Datasets -->
-  <div class="dataset-section">
-    <h2 class="section-title">Featured Datasets</h2>
-    <div class="dataset-grid">
-      
-      <div class="dataset-card featured">
-        <div class="dataset-header">
-          <h3>Global Land Surface Hydrology Dataset</h3>
-          <span class="dataset-badge">Featured</span>
-        </div>
-        <div class="dataset-info">
-          <p class="description">High-resolution global land surface hydrological variables dataset based on multi-source remote sensing and model data fusion, covering 1980-2023 with 0.1° spatial resolution.</p>
-          <div class="dataset-stats">
-            <span class="stat"><i class="fas fa-calendar"></i> 1980-2023</span>
-            <span class="stat"><i class="fas fa-globe"></i> Global Coverage</span>
-            <span class="stat"><i class="fas fa-expand-arrows-alt"></i> 0.1° Resolution</span>
-          </div>
-          <div class="dataset-variables">
-            <span class="variable-tag">Evapotranspiration</span>
-            <span class="variable-tag">Soil Moisture</span>
-            <span class="variable-tag">Runoff</span>
-            <span class="variable-tag">Groundwater</span>
-          </div>
-          <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Documentation</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="dataset-card">
-        <div class="dataset-header">
-          <h3>High-Resolution Precipitation Over China</h3>
-          <span class="dataset-badge new">Latest</span>
-        </div>
-        <div class="dataset-info">
-          <p class="description">High-precision precipitation product over China region integrating ground observations, radar and satellite data, with 1km spatial and hourly temporal resolution.</p>
-          <div class="dataset-stats">
-            <span class="stat"><i class="fas fa-calendar"></i> 2015-2023</span>
-            <span class="stat"><i class="fas fa-map"></i> China Region</span>
-            <span class="stat"><i class="fas fa-expand-arrows-alt"></i> 1km Resolution</span>
-            <span class="stat"><i class="fas fa-clock"></i> Hourly</span>
-          </div>
-          <div class="dataset-variables">
-            <span class="variable-tag">Precipitation</span>
-            <span class="variable-tag">Precipitation Rate</span>
-            <span class="variable-tag">Precipitation Frequency</span>
-          </div>
-          <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Documentation</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="dataset-card">
-        <div class="dataset-header">
-          <h3>LES Boundary Layer Database</h3>
-          <span class="dataset-badge">Specialized</span>
-        </div>
-        <div class="dataset-info">
-          <p class="description">Large Eddy Simulation-based atmospheric boundary layer turbulence database, containing 3D turbulent flow data under different stability conditions.</p>
-          <div class="dataset-stats">
-            <span class="stat"><i class="fas fa-database"></i> 500+ Cases</span>
-            <span class="stat"><i class="fas fa-cube"></i> 3D Turbulent Field</span>
-            <span class="stat"><i class="fas fa-wind"></i> Multi-stability</span>
-          </div>
-          <div class="dataset-variables">
-            <span class="variable-tag">Turbulent Flux</span>
-            <span class="variable-tag">Turbulent Intensity</span>
-            <span class="variable-tag">Boundary Layer Height</span>
-          </div>
-          <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Request Access</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> User Guide</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Dataset Categories -->
   <div class="dataset-section">
     <h2 class="section-title">Dataset Categories</h2>
@@ -129,14 +47,179 @@ lang: en
       
       <div class="category-card">
         <div class="category-icon">
-          <i class="fas fa-satellite"></i>
+          <i class="fas fa-atom"></i>
         </div>
-        <h4>Remote Sensing Data</h4>
-        <p>Multi-source satellite remote sensing data processing products and quality control datasets</p>
-        <a href="#remote" class="category-link">View Datasets <i class="fas fa-arrow-right"></i></a>
+        <h4>Isotope Data</h4>
+        <p>Stable isotope data including water vapor isotopes and precipitation isotopes</p>
+        <a href="#isotope" class="category-link">View Datasets <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </div>
+
+  <!-- Featured Datasets -->
+  <div class="dataset-section">
+    <h2 class="section-title">Featured Datasets</h2>
+    <div class="dataset-grid">
+      
+      <div class="dataset-card featured">
+        <div class="dataset-header">
+          <h3>Multimodal ML Global ET Dataset</h3>
+          <span class="dataset-badge fusion">Data Fusion</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">Global high-resolution evapotranspiration dataset based on multimodal machine learning framework fusing 13 state-of-the-art ET products from remote sensing, machine learning, land surface models, and reanalysis data using 462 flux tower observations.</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-calendar"></i> 1950-2024</span>
+            <span class="stat"><i class="fas fa-globe"></i> Global Coverage</span>
+            <span class="stat"><i class="fas fa-expand-arrows-alt"></i> 0.1° Resolution</span>
+            <span class="stat"><i class="fas fa-clock"></i> Daily</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">Evapotranspiration</span>
+            <span class="variable-tag">Transpiration</span>
+            <span class="variable-tag">Soil Evaporation</span>
+            <span class="variable-tag">Interception</span>
+          </div>
+          <div class="dataset-links">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Documentation</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>China Soil Properties Dataset v2</h3>
+          <span class="dataset-badge model">Model Product</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">High-precision spatial distribution dataset of 23 soil physical and chemical properties over China based on 11,209 multi-source soil profiles and high-resolution soil-forming environment characterization using ensemble machine learning.</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-map"></i> China Region</span>
+            <span class="stat"><i class="fas fa-expand-arrows-alt"></i> 90m Resolution</span>
+            <span class="stat"><i class="fas fa-layer-group"></i> 6 Standard Depths</span>
+            <span class="stat"><i class="fas fa-flask"></i> 23 Properties</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">Soil Texture</span>
+            <span class="variable-tag">Organic Carbon</span>
+            <span class="variable-tag">Bulk Density</span>
+            <span class="variable-tag">pH Value</span>
+          </div>
+          <div class="dataset-links">
+            <a href="https://www.scidb.cn/s/ZZJzAz" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Documentation</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>Global Water Vapor Isotope Database</h3>
+          <span class="dataset-badge observation">Site Observation</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">Global high temporal resolution water vapor isotope database using infrared laser spectroscopy, covering 35 sites in 15 Köppen climate zones from 2004-2017.</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-calendar"></i> 2004-2017</span>
+            <span class="stat"><i class="fas fa-map-marker-alt"></i> 35 Sites</span>
+            <span class="stat"><i class="fas fa-globe-americas"></i> 15 Climate Zones</span>
+            <span class="stat"><i class="fas fa-clock"></i> Hourly</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">δ18O</span>
+            <span class="variable-tag">δD</span>
+            <span class="variable-tag">Meteorology</span>
+            <span class="variable-tag">ERA5 Data</span>
+          </div>
+          <div class="dataset-links">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Description</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>Thailand Precipitation Isotope Data</h3>
+          <span class="dataset-badge observation">Site Observation</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">Precipitation isotope observations from 6 sites in Thailand combined with isotope-incorporated atmospheric circulation model and trajectory analysis for understanding precipitation isotope controls in Southeast Asia.</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-map-marker-alt"></i> 6 Sites</span>
+            <span class="stat"><i class="fas fa-map"></i> Thailand Region</span>
+            <span class="stat"><i class="fas fa-calendar"></i> Monthly Scale</span>
+            <span class="stat"><i class="fas fa-cloud-rain"></i> Precipitation Isotope</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">Precipitation δ18O</span>
+            <span class="variable-tag">Precipitation δD</span>
+            <span class="variable-tag">Rainfall Amount</span>
+            <span class="variable-tag">Meteorological Data</span>
+          </div>
+          <div class="dataset-links">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Request Access</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Research Description</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>Global Transpiration Partitioning Dataset</h3>
+          <span class="dataset-badge model">Model Product</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">Global transpiration partitioning data based on new ET partitioning algorithm combining global evapotranspiration estimates and LAI relationships for different vegetation types, upscaling site-level measurements globally.</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-globe"></i> Global Coverage</span>
+            <span class="stat"><i class="fas fa-percentage"></i> 57.2% Transpiration</span>
+            <span class="stat"><i class="fas fa-leaf"></i> Multiple Vegetation Types</span>
+            <span class="stat"><i class="fas fa-chart-line"></i> Algorithm Innovation</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">Transpiration</span>
+            <span class="variable-tag">Soil Evaporation</span>
+            <span class="variable-tag">Interception</span>
+            <span class="variable-tag">Transpiration Ratio</span>
+          </div>
+          <div class="dataset-links">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Algorithm Description</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>Isotope-enabled AGCM Intercomparison</h3>
+          <span class="dataset-badge model">Model Product</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">Water isotope model intercomparison data based on three isotope-enabled atmospheric general circulation models with three reanalysis products for evaluating model capability in simulating isotope spatiotemporal patterns. Note: This data is generated from existing model codes, not original work.</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-layer-group"></i> 3 Models</span>
+            <span class="stat"><i class="fas fa-database"></i> 3 Reanalyses</span>
+            <span class="stat"><i class="fas fa-globe"></i> Global Coverage</span>
+            <span class="stat"><i class="fas fa-exclamation-triangle"></i> Access Required</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">Atmospheric δ18O</span>
+            <span class="variable-tag">Surface δ18O</span>
+            <span class="variable-tag">Model Intercomparison</span>
+            <span class="variable-tag">Mass Balance</span>
+          </div>
+          <div class="dataset-links">
+            <a href="mailto:zhongwang007@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact for Access</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Model Description</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Data Usage Guidelines -->
   <div class="dataset-section">
@@ -256,7 +339,15 @@ lang: en
   margin-left: 1rem;
 }
 
-.dataset-badge.new {
+.dataset-badge.fusion {
+  background: #17a2b8;
+}
+
+.dataset-badge.model {
+  background: #6c757d;
+}
+
+.dataset-badge.observation {
   background: #28a745;
 }
 
