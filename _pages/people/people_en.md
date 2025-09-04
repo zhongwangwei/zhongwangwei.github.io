@@ -35,7 +35,7 @@ lang: en
 
   <!-- Current PhD Students -->
   <div class="team-section">
-    <h2 class="section-title">Current PhD Students</h2>
+    <h2 class="section-title">Current Students</h2>
     <div class="team-grid">
       <div class="person-card">
         <div class="person-image">
@@ -74,6 +74,20 @@ lang: en
           <p class="affiliation">School of Atmospheric Sciences, Sun Yat-Sen University</p>
           <p class="education">Education: BS Sun Yat-Sen University (2018-2022), MS Sun Yat-Sen University (2022-2024)</p>
           <p class="research">Research interests: Wetland module in land surface models</p>
+        </div>
+      </div>
+      
+      <div class="person-card">
+        <div class="person-image">
+          <img src="{{ '/assets/img/people/wuzz.jpg' | relative_url }}" alt="Zezhen Wu">
+        </div>
+        <div class="person-info">
+          <h3>Zezhen Wu (吴泽臻)</h3>
+          <p class="title">PhD Student (2025-present)</p>
+          <p class="affiliation">School of Atmospheric Sciences, Sun Yat-Sen University</p>
+          <p class="education">Education: BS Sun Yat-Sen University (2019-2023), MS Sun Yat-Sen University (2023-2025)</p>
+          <p class="research">Research interests: Model evaluation metrics and system construction</p>
+          <p class="note" style="font-size: 0.8rem; color: var(--global-text-color-light); font-style: italic; margin-top: 0.5rem;">*Co-supervised with Professor Dai Yongjiu</p>
         </div>
       </div>
     </div>

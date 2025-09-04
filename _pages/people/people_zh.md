@@ -35,7 +35,7 @@ lang: zh
 
   <!-- Current PhD Students -->
   <div class="team-section">
-    <h2 class="section-title">在读博士生</h2>
+    <h2 class="section-title">在读学生</h2>
     <div class="team-grid">
       <div class="person-card">
         <div class="person-image">
@@ -74,6 +74,20 @@ lang: zh
           <p class="affiliation">中山大学大气科学学院</p>
           <p class="education">教育背景：中山大学学士 (2018-2022)，中山大学硕士 (2022-2024)</p>
           <p class="research">研究方向：陆面模式中的湿地模块</p>
+        </div>
+      </div>
+      
+      <div class="person-card">
+        <div class="person-image">
+          <img src="{{ '/assets/img/people/wuzz.jpg' | relative_url }}" alt="吴泽臻">
+        </div>
+        <div class="person-info">
+          <h3>吴泽臻 (Wuzezhen)</h3>
+          <p class="title">博士研究生 (2025-至今)</p>
+          <p class="affiliation">中山大学大气科学学院</p>
+          <p class="education">教育背景：中山大学学士 (2019-2023)，中山大学硕士 (2023-2025)</p>
+          <p class="research">研究方向：模式评估指标与系统构建</p>
+          <p class="note" style="font-size: 0.8rem; color: var(--global-text-color-light); font-style: italic; margin-top: 0.5rem;">*与戴永久教授合作指导</p>
         </div>
       </div>
     </div>
