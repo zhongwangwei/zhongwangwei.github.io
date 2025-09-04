@@ -56,9 +56,9 @@ lang: en
     </div>
   </div>
 
-  <!-- Featured Datasets -->
-  <div class="dataset-section">
-    <h2 class="section-title">Featured Datasets</h2>
+  <!-- Hydrological Datasets -->
+  <div class="dataset-section" id="hydro">
+    <h2 class="section-title"><i class="fas fa-tint"></i> Hydrological Data</h2>
     <div class="dataset-grid">
       
       <div class="dataset-card featured">
@@ -87,6 +87,54 @@ lang: en
           </div>
         </div>
       </div>
+
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>Global Transpiration Partitioning Dataset</h3>
+          <span class="dataset-badge model">Model Product</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">Global transpiration partitioning data based on new ET partitioning algorithm combining global evapotranspiration estimates and LAI relationships for different vegetation types, upscaling site-level measurements globally.</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-globe"></i> Global Coverage</span>
+            <span class="stat"><i class="fas fa-percentage"></i> 57.2% Transpiration</span>
+            <span class="stat"><i class="fas fa-leaf"></i> Multiple Vegetation Types</span>
+            <span class="stat"><i class="fas fa-chart-line"></i> Algorithm Innovation</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">Transpiration</span>
+            <span class="variable-tag">Soil Evaporation</span>
+            <span class="variable-tag">Interception</span>
+            <span class="variable-tag">Transpiration Ratio</span>
+          </div>
+          <div class="dataset-links">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Algorithm Description</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Meteorological Datasets -->
+  <div class="dataset-section" id="meteo">
+    <h2 class="section-title"><i class="fas fa-cloud-rain"></i> Meteorological Data</h2>
+    <div class="dataset-grid">
+      <!-- No meteorological data products yet -->
+      <div class="dataset-card placeholder">
+        <div class="dataset-info">
+          <p class="description" style="text-align: center; color: var(--global-text-color-light); font-style: italic;">
+            Data products in this category are being organized. Stay tuned...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ecological Datasets -->
+  <div class="dataset-section" id="eco">
+    <h2 class="section-title"><i class="fas fa-leaf"></i> Ecological Data</h2>
+    <div class="dataset-grid">
       
       <div class="dataset-card">
         <div class="dataset-header">
@@ -113,6 +161,13 @@ lang: en
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Isotope Datasets -->
+  <div class="dataset-section" id="isotope">
+    <h2 class="section-title"><i class="fas fa-atom"></i> Isotope Data</h2>
+    <div class="dataset-grid">
       
       <div class="dataset-card">
         <div class="dataset-header">
@@ -162,32 +217,6 @@ lang: en
           <div class="dataset-links">
             <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Request Access</a>
             <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Research Description</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="dataset-card">
-        <div class="dataset-header">
-          <h3>Global Transpiration Partitioning Dataset</h3>
-          <span class="dataset-badge model">Model Product</span>
-        </div>
-        <div class="dataset-info">
-          <p class="description">Global transpiration partitioning data based on new ET partitioning algorithm combining global evapotranspiration estimates and LAI relationships for different vegetation types, upscaling site-level measurements globally.</p>
-          <div class="dataset-stats">
-            <span class="stat"><i class="fas fa-globe"></i> Global Coverage</span>
-            <span class="stat"><i class="fas fa-percentage"></i> 57.2% Transpiration</span>
-            <span class="stat"><i class="fas fa-leaf"></i> Multiple Vegetation Types</span>
-            <span class="stat"><i class="fas fa-chart-line"></i> Algorithm Innovation</span>
-          </div>
-          <div class="dataset-variables">
-            <span class="variable-tag">Transpiration</span>
-            <span class="variable-tag">Soil Evaporation</span>
-            <span class="variable-tag">Interception</span>
-            <span class="variable-tag">Transpiration Ratio</span>
-          </div>
-          <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Algorithm Description</a>
           </div>
         </div>
       </div>
@@ -349,6 +378,15 @@ lang: en
 
 .dataset-badge.observation {
   background: #28a745;
+}
+
+.dataset-card.placeholder {
+  border: 2px dashed var(--global-divider-color);
+  background: transparent;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .description {
@@ -538,6 +576,20 @@ lang: en
   font-size: 0.9rem;
   line-height: 1.4;
   margin: 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section anchors */
+.dataset-section {
+  scroll-margin-top: 2rem;
+}
+
+.section-title i {
+  margin-right: 0.5rem;
 }
 
 /* Responsive */

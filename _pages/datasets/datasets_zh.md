@@ -56,9 +56,9 @@ lang: zh
     </div>
   </div>
 
-  <!-- Featured Datasets -->
-  <div class="dataset-section">
-    <h2 class="section-title">主要数据产品</h2>
+  <!-- Hydrological Datasets -->
+  <div class="dataset-section" id="hydro">
+    <h2 class="section-title"><i class="fas fa-tint"></i> 水文数据</h2>
     <div class="dataset-grid">
       
       <div class="dataset-card featured">
@@ -87,6 +87,54 @@ lang: zh
           </div>
         </div>
       </div>
+
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>全球蒸腾分离数据产品</h3>
+          <span class="dataset-badge model">模型产品</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">基于新的蒸散发分离算法，结合全球蒸散发估算和不同植被类型的叶面积指数关系，将站点尺度测量上尺度到全球的蒸腾分离数据产品。</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-globe"></i> 全球覆盖</span>
+            <span class="stat"><i class="fas fa-percentage"></i> 蒸腾占比57.2%</span>
+            <span class="stat"><i class="fas fa-leaf"></i> 多植被类型</span>
+            <span class="stat"><i class="fas fa-chart-line"></i> 算法创新</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">蒸腾</span>
+            <span class="variable-tag">土壤蒸发</span>
+            <span class="variable-tag">截留蒸发</span>
+            <span class="variable-tag">蒸腾比例</span>
+          </div>
+          <div class="dataset-links">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 算法说明</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Meteorological Datasets -->
+  <div class="dataset-section" id="meteo">
+    <h2 class="section-title"><i class="fas fa-cloud-rain"></i> 气象数据</h2>
+    <div class="dataset-grid">
+      <!-- 暂无气象数据产品，可在此添加 -->
+      <div class="dataset-card placeholder">
+        <div class="dataset-info">
+          <p class="description" style="text-align: center; color: var(--global-text-color-light); font-style: italic;">
+            该分类下的数据产品正在整理中，敬请期待...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ecological Datasets -->
+  <div class="dataset-section" id="eco">
+    <h2 class="section-title"><i class="fas fa-leaf"></i> 生态数据</h2>
+    <div class="dataset-grid">
       
       <div class="dataset-card">
         <div class="dataset-header">
@@ -113,6 +161,13 @@ lang: zh
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Isotope Datasets -->
+  <div class="dataset-section" id="isotope">
+    <h2 class="section-title"><i class="fas fa-atom"></i> 同位素数据</h2>
+    <div class="dataset-grid">
       
       <div class="dataset-card">
         <div class="dataset-header">
@@ -162,32 +217,6 @@ lang: zh
           <div class="dataset-links">
             <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 申请下载</a>
             <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 研究说明</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="dataset-card">
-        <div class="dataset-header">
-          <h3>全球蒸腾分离数据产品</h3>
-          <span class="dataset-badge model">模型产品</span>
-        </div>
-        <div class="dataset-info">
-          <p class="description">基于新的蒸散发分离算法，结合全球蒸散发估算和不同植被类型的叶面积指数关系，将站点尺度测量上尺度到全球的蒸腾分离数据产品。</p>
-          <div class="dataset-stats">
-            <span class="stat"><i class="fas fa-globe"></i> 全球覆盖</span>
-            <span class="stat"><i class="fas fa-percentage"></i> 蒸腾占比57.2%</span>
-            <span class="stat"><i class="fas fa-leaf"></i> 多植被类型</span>
-            <span class="stat"><i class="fas fa-chart-line"></i> 算法创新</span>
-          </div>
-          <div class="dataset-variables">
-            <span class="variable-tag">蒸腾</span>
-            <span class="variable-tag">土壤蒸发</span>
-            <span class="variable-tag">截留蒸发</span>
-            <span class="variable-tag">蒸腾比例</span>
-          </div>
-          <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 算法说明</a>
           </div>
         </div>
       </div>
@@ -349,6 +378,15 @@ lang: zh
 
 .dataset-badge.observation {
   background: #28a745;
+}
+
+.dataset-card.placeholder {
+  border: 2px dashed var(--global-divider-color);
+  background: transparent;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .description {
@@ -538,6 +576,20 @@ lang: zh
   font-size: 0.9rem;
   line-height: 1.4;
   margin: 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section anchors */
+.dataset-section {
+  scroll-margin-top: 2rem;
+}
+
+.section-title i {
+  margin-right: 0.5rem;
 }
 
 /* Responsive */
