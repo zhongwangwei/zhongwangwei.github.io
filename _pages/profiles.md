@@ -1,9 +1,9 @@
 ---
 layout: profiles
-permalink: /people/
+permalink: /en/people/
 title: People
 description: members of the group
-nav: false
+nav: true
 nav_order: 7
 lang: en
 
