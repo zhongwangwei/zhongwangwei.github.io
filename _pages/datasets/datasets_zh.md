@@ -85,7 +85,7 @@ lang: zh
             <a href="https://zenodo.org/records/15671245" class="btn btn-primary"><i class="fas fa-download"></i> 国外下载 (1950-1974)</a>
             <a href="https://zenodo.org/records/15671253" class="btn btn-primary"><i class="fas fa-download"></i> 国外下载 (1975-1999)</a>
             <a href="https://zenodo.org/records/15671254" class="btn btn-primary"><i class="fas fa-download"></i> 国外下载 (2000-2024)</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0168192325002655" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
           </div>
         </div>
       </div>
