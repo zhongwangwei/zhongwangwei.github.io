@@ -81,8 +81,10 @@ lang: en
             <span class="variable-tag">Interception</span>
           </div>
           <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Documentation</a>
+            <a href="https://data.tpdc.ac.cn/zh-hans/data/e22aef74-4534-4624-8e2e-f4eab129675b" class="btn btn-primary"><i class="fas fa-download"></i> China Mirror</a>
+            <a href="https://zenodo.org/records/15671245" class="btn btn-primary"><i class="fas fa-download"></i> Global Access (1950-1974)</a>
+            <a href="https://zenodo.org/records/15671253" class="btn btn-primary"><i class="fas fa-download"></i> Global Access (1975-1999)</a>
+            <a href="https://zenodo.org/records/15671254" class="btn btn-primary"><i class="fas fa-download"></i> Global Access (2000-2024)</a>
             <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
           </div>
         </div>
@@ -109,7 +111,7 @@ lang: en
           </div>
           <div class="dataset-links">
             <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Algorithm Description</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
           </div>
         </div>
       </div>
@@ -157,7 +159,7 @@ lang: en
           </div>
           <div class="dataset-links">
             <a href="https://www.scidb.cn/s/ZZJzAz" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Documentation</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
           </div>
         </div>
       </div>
@@ -190,7 +192,7 @@ lang: en
           </div>
           <div class="dataset-links">
             <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Description</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
           </div>
         </div>
       </div>
@@ -216,7 +218,7 @@ lang: en
           </div>
           <div class="dataset-links">
             <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Request Access</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Research Description</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
           </div>
         </div>
       </div>
@@ -242,7 +244,7 @@ lang: en
           </div>
           <div class="dataset-links">
             <a href="mailto:zhongwang007@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact for Access</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Model Description</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
           </div>
         </div>
       </div>

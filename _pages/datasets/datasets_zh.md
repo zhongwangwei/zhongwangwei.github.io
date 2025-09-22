@@ -81,8 +81,10 @@ lang: zh
             <span class="variable-tag">植被截留</span>
           </div>
           <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 技术文档</a>
+            <a href="https://data.tpdc.ac.cn/zh-hans/data/e22aef74-4534-4624-8e2e-f4eab129675b" class="btn btn-primary"><i class="fas fa-download"></i> 国内下载</a>
+            <a href="https://zenodo.org/records/15671245" class="btn btn-primary"><i class="fas fa-download"></i> 国外下载 (1950-1974)</a>
+            <a href="https://zenodo.org/records/15671253" class="btn btn-primary"><i class="fas fa-download"></i> 国外下载 (1975-1999)</a>
+            <a href="https://zenodo.org/records/15671254" class="btn btn-primary"><i class="fas fa-download"></i> 国外下载 (2000-2024)</a>
             <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
           </div>
         </div>
@@ -109,7 +111,7 @@ lang: zh
           </div>
           <div class="dataset-links">
             <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 算法说明</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
           </div>
         </div>
       </div>
@@ -157,7 +159,7 @@ lang: zh
           </div>
           <div class="dataset-links">
             <a href="https://www.scidb.cn/s/ZZJzAz" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 技术文档</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
           </div>
         </div>
       </div>
@@ -190,7 +192,7 @@ lang: zh
           </div>
           <div class="dataset-links">
             <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 数据说明</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
           </div>
         </div>
       </div>
@@ -216,7 +218,7 @@ lang: zh
           </div>
           <div class="dataset-links">
             <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 申请下载</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 研究说明</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
           </div>
         </div>
       </div>
@@ -242,7 +244,7 @@ lang: zh
           </div>
           <div class="dataset-links">
             <a href="mailto:zhongwang007@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> 联系申请</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-file-alt"></i> 模式说明</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
           </div>
         </div>
       </div>
