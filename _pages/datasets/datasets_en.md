@@ -183,6 +183,7 @@ lang: en
           </div>
           <div class="dataset-links">
             <a href="https://doi.org/10.11888/Terre.tpdc.301235" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+            <a href="https://www.scidb.cn/en/s/ZZJzAz" class="btn btn-primary"><i class="fas fa-download"></i> Backup Download</a>
             <a href="https://essd.copernicus.org/articles/17/517/2025/" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
           </div>
         </div>
