@@ -216,8 +216,8 @@ lang: en
             <span class="variable-tag">ERA5 Data</span>
           </div>
           <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
+            <a href="https://vapor-isotope.yale.edu/" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+            <a href="https://www.nature.com/articles/sdata2018302" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
           </div>
         </div>
       </div>
@@ -242,8 +242,8 @@ lang: en
             <span class="variable-tag">Meteorological Data</span>
           </div>
           <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Request Access</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
+            <a href="/assets/data/Precipitation_isotopes_Thailand.xlsx" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0012821X18300773" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
           </div>
         </div>
       </div>
