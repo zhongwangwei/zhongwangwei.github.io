@@ -53,6 +53,15 @@ lang: en
         <p>Stable isotope data including water vapor isotopes and precipitation isotopes</p>
         <a href="#isotope" class="category-link">View Datasets <i class="fas fa-arrow-right"></i></a>
       </div>
+
+      <div class="category-card">
+        <div class="category-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <h4>Static Data</h4>
+        <p>Relatively stable surface characteristics data such as soil properties and terrain data</p>
+        <a href="#static" class="category-link">View Datasets <i class="fas fa-arrow-right"></i></a>
+      </div>
     </div>
   </div>
 
@@ -137,7 +146,22 @@ lang: en
   <div class="dataset-section" id="eco">
     <h2 class="section-title"><i class="fas fa-leaf"></i> Ecological Data</h2>
     <div class="dataset-grid">
-      
+      <!-- No ecological data products yet -->
+      <div class="dataset-card placeholder">
+        <div class="dataset-info">
+          <p class="description" style="text-align: center; color: var(--global-text-color-light); font-style: italic;">
+            Data products in this category are being organized. Stay tuned...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Static Datasets -->
+  <div class="dataset-section" id="static">
+    <h2 class="section-title"><i class="fas fa-database"></i> Static Data</h2>
+    <div class="dataset-grid">
+
       <div class="dataset-card">
         <div class="dataset-header">
           <h3>China Soil Properties Dataset v2</h3>
@@ -158,8 +182,8 @@ lang: en
             <span class="variable-tag">pH Value</span>
           </div>
           <div class="dataset-links">
-            <a href="https://www.scidb.cn/s/ZZJzAz" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
+            <a href="https://doi.org/10.11888/Terre.tpdc.301235" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+            <a href="https://essd.copernicus.org/articles/17/517/2025/" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
           </div>
         </div>
       </div>

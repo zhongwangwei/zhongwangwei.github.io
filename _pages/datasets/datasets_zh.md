@@ -53,6 +53,15 @@ lang: zh
         <p>水汽同位素、降水同位素等稳定同位素相关数据</p>
         <a href="#isotope" class="category-link">查看数据 <i class="fas fa-arrow-right"></i></a>
       </div>
+
+      <div class="category-card">
+        <div class="category-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <h4>静态数据</h4>
+        <p>土壤属性、地形数据等相对稳定的地表特征数据</p>
+        <a href="#static" class="category-link">查看数据 <i class="fas fa-arrow-right"></i></a>
+      </div>
     </div>
   </div>
 
@@ -137,7 +146,22 @@ lang: zh
   <div class="dataset-section" id="eco">
     <h2 class="section-title"><i class="fas fa-leaf"></i> 生态数据</h2>
     <div class="dataset-grid">
-      
+      <!-- 暂无生态数据产品，可在此添加 -->
+      <div class="dataset-card placeholder">
+        <div class="dataset-info">
+          <p class="description" style="text-align: center; color: var(--global-text-color-light); font-style: italic;">
+            该分类下的数据产品正在整理中，敬请期待...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Static Datasets -->
+  <div class="dataset-section" id="static">
+    <h2 class="section-title"><i class="fas fa-database"></i> 静态数据</h2>
+    <div class="dataset-grid">
+
       <div class="dataset-card">
         <div class="dataset-header">
           <h3>中国土壤属性数据集 (第二版)</h3>
@@ -158,8 +182,8 @@ lang: zh
             <span class="variable-tag">pH值</span>
           </div>
           <div class="dataset-links">
-            <a href="https://www.scidb.cn/s/ZZJzAz" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
+            <a href="https://doi.org/10.11888/Terre.tpdc.301235" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
+            <a href="https://essd.copernicus.org/articles/17/517/2025/" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
           </div>
         </div>
       </div>
