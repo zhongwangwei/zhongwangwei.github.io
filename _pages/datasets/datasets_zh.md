@@ -250,26 +250,26 @@ lang: zh
 
       <div class="dataset-card">
         <div class="dataset-header">
-          <h3>同位素大气环流模式对比数据</h3>
+          <h3>同位素大气环流模式IsoGSM0.5度模拟数据（nudged with ERA5）</h3>
           <span class="dataset-badge model">模式产品</span>
         </div>
         <div class="dataset-info">
-          <p class="description">基于三个同位素大气环流模式和三种再分析产品的水同位素模式对比数据，用于评估模式对大气和地表水同位素时空分布的模拟能力。注意：此数据基于现有模式代码生成，非原创产品。</p>
+          <p class="description">基于IsoGSM同位素大气环流模式，使用ERA5再分析数据进行nudging的0.5度分辨率全球水同位素模拟数据。该数据集提供高时空分辨率的大气和地表水同位素分布，可用于水循环示踪、气候变化研究等。注意：此数据基于现有模式代码生成，非原创产品。</p>
           <div class="dataset-stats">
-            <span class="stat"><i class="fas fa-layer-group"></i> 3个模式</span>
-            <span class="stat"><i class="fas fa-database"></i> 3种再分析</span>
+            <span class="stat"><i class="fas fa-expand-arrows-alt"></i> 0.5° 分辨率</span>
+            <span class="stat"><i class="fas fa-database"></i> ERA5驱动</span>
             <span class="stat"><i class="fas fa-globe"></i> 全球覆盖</span>
             <span class="stat"><i class="fas fa-exclamation-triangle"></i> 需申请</span>
           </div>
           <div class="dataset-variables">
             <span class="variable-tag">大气δ18O</span>
+            <span class="variable-tag">降水δ18O</span>
+            <span class="variable-tag">水汽δ18O</span>
             <span class="variable-tag">地表δ18O</span>
-            <span class="variable-tag">模式对比</span>
-            <span class="variable-tag">质量平衡</span>
           </div>
           <div class="dataset-links">
             <a href="mailto:zhongwang007@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> 联系申请</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023JD038719" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
           </div>
         </div>
       </div>

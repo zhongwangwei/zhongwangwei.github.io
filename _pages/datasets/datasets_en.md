@@ -250,26 +250,26 @@ lang: en
 
       <div class="dataset-card">
         <div class="dataset-header">
-          <h3>Isotope-enabled AGCM Intercomparison</h3>
+          <h3>IsoGSM 0.5-degree Simulation Data (nudged with ERA5)</h3>
           <span class="dataset-badge model">Model Product</span>
         </div>
         <div class="dataset-info">
-          <p class="description">Water isotope model intercomparison data based on three isotope-enabled atmospheric general circulation models with three reanalysis products for evaluating model capability in simulating isotope spatiotemporal patterns. Note: This data is generated from existing model codes, not original work.</p>
+          <p class="description">Global water isotope simulation data at 0.5-degree resolution based on the IsoGSM isotope-enabled atmospheric general circulation model, nudged with ERA5 reanalysis. This dataset provides high spatiotemporal resolution atmospheric and surface water isotope distributions for water cycle tracing and climate change research. Note: This data is generated from existing model codes, not original work.</p>
           <div class="dataset-stats">
-            <span class="stat"><i class="fas fa-layer-group"></i> 3 Models</span>
-            <span class="stat"><i class="fas fa-database"></i> 3 Reanalyses</span>
+            <span class="stat"><i class="fas fa-expand-arrows-alt"></i> 0.5° Resolution</span>
+            <span class="stat"><i class="fas fa-database"></i> ERA5 Driven</span>
             <span class="stat"><i class="fas fa-globe"></i> Global Coverage</span>
             <span class="stat"><i class="fas fa-exclamation-triangle"></i> Access Required</span>
           </div>
           <div class="dataset-variables">
             <span class="variable-tag">Atmospheric δ18O</span>
+            <span class="variable-tag">Precipitation δ18O</span>
+            <span class="variable-tag">Water Vapor δ18O</span>
             <span class="variable-tag">Surface δ18O</span>
-            <span class="variable-tag">Model Intercomparison</span>
-            <span class="variable-tag">Mass Balance</span>
           </div>
           <div class="dataset-links">
             <a href="mailto:zhongwang007@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact for Access</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023JD038719" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
           </div>
         </div>
       </div>
