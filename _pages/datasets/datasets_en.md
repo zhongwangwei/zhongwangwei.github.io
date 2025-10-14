@@ -119,8 +119,8 @@ lang: en
             <span class="variable-tag">Transpiration Ratio</span>
           </div>
           <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
+            <a href="/assets/data/global_ETI.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2016GL072235" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
           </div>
         </div>
       </div>

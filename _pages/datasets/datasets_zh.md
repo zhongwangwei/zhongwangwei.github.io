@@ -119,8 +119,8 @@ lang: zh
             <span class="variable-tag">蒸腾比例</span>
           </div>
           <div class="dataset-links">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
+            <a href="/assets/data/global_ETI.zip" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2016GL072235" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
           </div>
         </div>
       </div>
