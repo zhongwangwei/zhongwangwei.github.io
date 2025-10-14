@@ -6,4 +6,4 @@ related_posts: false
 lang: zh
 ---
 
-恭喜徐清晨获得国家奖学金！！
+恭喜徐清晨同学获得国家奖学金！！

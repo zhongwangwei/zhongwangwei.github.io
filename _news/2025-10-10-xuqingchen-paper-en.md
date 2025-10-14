@@ -6,4 +6,4 @@ related_posts: false
 lang: en
 ---
 
-Congratulations to Xu Qixin for receiving the National Scholarship!!
+Congratulations to Xu Qingchen for receiving the National Scholarship!!
