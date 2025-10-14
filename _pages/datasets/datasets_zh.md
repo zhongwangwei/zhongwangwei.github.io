@@ -188,6 +188,34 @@ lang: zh
           </div>
         </div>
       </div>
+
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>CoLM2024内置河道汇流模块CaMa-Flood河网数据集</h3>
+          <span class="dataset-badge model">模型产品</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">为CoLM2024陆面模式耦合CaMa-Flood河道汇流模块提供的综合河网数据集,包含全球、美国和中国三个区域,每个区域提供15分和06分两种分辨率,并区分考虑水库影响和自然径流两种版本,共12个数据产品。数据源自CaMa-Flood原始数据集的二次开发。</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-globe"></i> 三大区域</span>
+            <span class="stat"><i class="fas fa-expand-arrows-alt"></i> 15分/06分分辨率</span>
+            <span class="stat"><i class="fas fa-water"></i> 河网参数</span>
+            <span class="stat"><i class="fas fa-database"></i> 12个数据产品</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">河道宽度</span>
+            <span class="variable-tag">河道深度</span>
+            <span class="variable-tag">河道长度</span>
+            <span class="variable-tag">洪泛区高程</span>
+            <span class="variable-tag">流向</span>
+            <span class="variable-tag">水库参数</span>
+          </div>
+          <div class="dataset-links">
+            <a href="https://data.tpdc.ac.cn/en/data/14541aee-2d9b-4ff8-82c2-aa7c320695b5" class="btn btn-primary"><i class="fas fa-download"></i> 数据下载</a>
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2024JD041520" class="btn btn-secondary"><i class="fas fa-book"></i> 相关论文</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

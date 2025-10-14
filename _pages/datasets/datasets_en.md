@@ -188,6 +188,34 @@ lang: en
           </div>
         </div>
       </div>
+
+      <div class="dataset-card">
+        <div class="dataset-header">
+          <h3>CoLM2024 CaMa-Flood River Network Dataset</h3>
+          <span class="dataset-badge model">Model Product</span>
+        </div>
+        <div class="dataset-info">
+          <p class="description">Comprehensive river network maps designed for CoLM2024 land surface model coupled with CaMa-Flood river routing component. The dataset encompasses three geographical domains (Global, US, and China), each provided at two spatial resolutions (15-minute and 06-minute), with variants including dam parameterization and naturalized flow conditions, totaling 12 data products derived from the original CaMa-Flood dataset.</p>
+          <div class="dataset-stats">
+            <span class="stat"><i class="fas fa-globe"></i> Three Regions</span>
+            <span class="stat"><i class="fas fa-expand-arrows-alt"></i> 15min/06min Resolution</span>
+            <span class="stat"><i class="fas fa-water"></i> River Parameters</span>
+            <span class="stat"><i class="fas fa-database"></i> 12 Data Products</span>
+          </div>
+          <div class="dataset-variables">
+            <span class="variable-tag">River Width</span>
+            <span class="variable-tag">River Depth</span>
+            <span class="variable-tag">River Length</span>
+            <span class="variable-tag">Floodplain Elevation</span>
+            <span class="variable-tag">Flow Direction</span>
+            <span class="variable-tag">Reservoir Parameters</span>
+          </div>
+          <div class="dataset-links">
+            <a href="https://data.tpdc.ac.cn/en/data/14541aee-2d9b-4ff8-82c2-aa7c320695b5" class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2024JD041520" class="btn btn-secondary"><i class="fas fa-book"></i> Related Papers</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
