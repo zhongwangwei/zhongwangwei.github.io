@@ -91,6 +91,7 @@ lang: zh
           </div>
           <div class="dataset-links">
             <a href="https://data.tpdc.ac.cn/zh-hans/data/e22aef74-4534-4624-8e2e-f4eab129675b" class="btn btn-primary"><i class="fas fa-download"></i> 国内下载</a>
+            <a href="https://pan.baidu.com/s/1nzepPRBfaE7_xOqOxp2t7g?pwd=7iz6" class="btn btn-primary"><i class="fas fa-download"></i> 百度网盘</a>
             <a href="https://zenodo.org/records/15671245" class="btn btn-primary"><i class="fas fa-download"></i> 国外下载 (1950-1974)</a>
             <a href="https://zenodo.org/records/15671253" class="btn btn-primary"><i class="fas fa-download"></i> 国外下载 (1975-1999)</a>
             <a href="https://zenodo.org/records/15671254" class="btn btn-primary"><i class="fas fa-download"></i> 国外下载 (2000-2024)</a>
