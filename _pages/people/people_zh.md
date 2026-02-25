@@ -27,7 +27,7 @@ lang: zh
         <p class="research">研究方向：地表水动力学、同位素水文学、陆面建模、大涡模拟</p>
         <div class="person-links">
           <a href="mailto:zhongwang007@gmail.com"><i class="fas fa-envelope"></i> 邮箱</a>
-          <a href="/zh/"><i class="fas fa-user"></i> 个人主页</a>
+          <a href="/"><i class="fas fa-user"></i> 个人主页</a>
         </div>
       </div>
     </div>
