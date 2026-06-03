@@ -90,6 +90,20 @@ lang: en
           <p class="note" style="font-size: 0.8rem; color: var(--global-text-color-light); font-style: italic; margin-top: 0.5rem;">*Co-supervised with Professor Dai Yongjiu</p>
         </div>
       </div>
+
+      <div class="person-card">
+        <div class="person-image">
+          <img src="{{ '/assets/img/people/zhangrui.png' | relative_url }}" alt="Rui Zhang">
+        </div>
+        <div class="person-info">
+          <h3>Rui Zhang (张睿)</h3>
+          <p class="title">PhD Student (2025-present)</p>
+          <p class="affiliation">School of Atmospheric Sciences, Sun Yat-Sen University</p>
+          <p class="education">Education: BS Nanjing University of Information Science and Technology (2019-2023), MS Sun Yat-Sen University (2023-2025)</p>
+          <p class="research">Research interests: Land-sea coupling mechanisms and modeling techniques</p>
+          <p class="note" style="font-size: 0.8rem; color: var(--global-text-color-light); font-style: italic; margin-top: 0.5rem;">*Co-supervised with Professor Dai Yongjiu</p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -276,6 +290,10 @@ lang: en
 .person-image img[alt="Xinyue Luo"] {
   object-position: center 5%; /* 再往上移动一些 */
   transform: scale(1.15);
+}
+
+.person-image img[alt="Rui Zhang"] {
+  object-position: center 15%; /* 证件照 - 居中显示面部 */
 }
 
 .person-info h3 {
