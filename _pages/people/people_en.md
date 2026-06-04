@@ -143,7 +143,7 @@ lang: en
         </div>
         <div class="person-info">
           <h3>Xinyue Luo (罗欣月)</h3>
-          <p class="title">Shantou Meteorological Bureau, Guangdong Province</p>
+          <p class="title">Ganzhou Meteorological Bureau, Jiangxi Province</p>
           <p class="affiliation">Sun Yat-Sen University Graduate (2021-2025)</p>
           <p class="education">Education: BS Jiangxi Agricultural University, MS Sun Yat-Sen University (2021-2025)</p>
           <p class="research">Research interests: Precipitation partitioning over land surfaces</p>

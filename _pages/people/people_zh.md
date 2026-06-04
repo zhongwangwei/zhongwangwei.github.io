@@ -143,7 +143,7 @@ lang: zh
         </div>
         <div class="person-info">
           <h3>罗欣月 (Xinyue Luo)</h3>
-          <p class="title">广东省汕头市气象局</p>
+          <p class="title">江西省赣州市气象局</p>
           <p class="affiliation">中山大学硕士毕业生 (2021-2025)</p>
           <p class="education">教育背景：江西农业大学学士，中山大学硕士 (2021-2025)</p>
           <p class="research">研究方向：陆地表面降水分配</p>
