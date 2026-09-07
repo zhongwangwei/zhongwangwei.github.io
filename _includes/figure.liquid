@@ -1,4 +1,4 @@
-{% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
+{% assign img_path = include.path | regex_replace: '(?i)\.(jpg|jpeg|png|tiff|gif)$', '' %}
 
 <figure
   {% if include.slot %}

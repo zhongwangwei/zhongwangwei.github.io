@@ -44,7 +44,7 @@ lang: zh
 - 全球尺度同位素循环建模
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/research/isotope/isoles-1.jpeg" title="Resolved vapor 18O/16O ratio and relative humidity at 12:00 at 200 m (left) and 1,000 m (right)" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research/isotope/isoles-1.jpg" title="Resolved vapor 18O/16O ratio and relative humidity at 12:00 at 200 m (left) and 1,000 m (right)" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

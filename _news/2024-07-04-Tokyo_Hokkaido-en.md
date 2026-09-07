@@ -9,6 +9,7 @@ thumbnail: assets/img/blog/2024-07-Tokyo-Hokkaido/IMG_4316.jpeg
 featured: true
 lang: en
 ---
+
 The trip to Japan from July 4-12, 2024, where I was honored to be invited to participate in the Large-scale Runoff Model Developers Conference in Tokyo and the 9th International Conference on Global Energy and Water Cycle Experiment in Hokkaido.
 
 <div class="row mt-3">
@@ -21,13 +22,7 @@ Returning to Tokyo after a long absence, it still feels quite familiar. But I ha
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/blog/2024-07-Tokyo-Hokkaido/IMG_4322.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/blog/2024-07-Tokyo-Hokkaido/IMG_4323.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/blog/2024-07-Tokyo-Hokkaido/IMG_4324.jpeg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/blog/2024-07-Tokyo-Hokkaido/IMG_4314.jpeg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -43,7 +38,7 @@ The hotel location was excellent with great views.
 
 <div class="row mt-3">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/blog/2024-07-Tokyo-Hokkaido/IMG_4325.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/blog/2024-07-Tokyo-Hokkaido/IMG_4366.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 

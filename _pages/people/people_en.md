@@ -122,7 +122,7 @@ lang: en
         <div class="person-image" aria-hidden="true" style="height: 150px;"></div>
         <div class="person-info">
           <h3>Xinye Zhang (张新烨)</h3>
-          <p class="title">Direct-entry PhD Student</p>
+          <p class="title">Direct-entry PhD Student (2026-present)</p>
           <p class="affiliation">School of Atmospheric Sciences, Sun Yat-Sen University</p>
           <p class="education">Education: East China Normal University (2022-2026)</p>
           <p class="research">Research interests:</p>

@@ -9,6 +9,7 @@ thumbnail: assets/img/blog/2024-06-01-taiyuan/IMG_4237.jpg
 featured: false
 lang: en
 ---
+
 The trip to Taiyuan, Shanxi Province from June 1-3, 2024, where I was honored to be invited to participate in the Second China Multi-Agent Systems Conference held in Taiyuan.
 
 <div class="row mt-3">
@@ -24,10 +25,7 @@ I was invited as a keynote speaker for the sub-forum "Complex Systems Modeling a
         {% include figure.liquid loading="eager" path="assets/img/blog/2024-06-01-taiyuan/IMG_4237.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/blog/2024-06-01-taiyuan/IMG_4238.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/blog/2024-06-01-taiyuan/IMG_4239.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/blog/2024-06-01-taiyuan/IMG_4239.jpeg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -35,7 +33,7 @@ I also visited the famous Jinci Temple and deeply felt the cultural heritage the
 
 <div class="row mt-3">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/blog/2024-06-01-taiyuan/IMG_4241.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/blog/2024-06-01-taiyuan/IMG_4242.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 

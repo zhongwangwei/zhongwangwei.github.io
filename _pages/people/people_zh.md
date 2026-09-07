@@ -122,7 +122,7 @@ lang: zh
         <div class="person-image" aria-hidden="true" style="height: 150px;"></div>
         <div class="person-info">
           <h3>张新烨 (Xinye Zhang)</h3>
-          <p class="title">直博生</p>
+          <p class="title">直博生 (2026-至今)</p>
           <p class="affiliation">中山大学大气科学学院</p>
           <p class="education">教育背景：华东师范大学 (2022-2026)</p>
           <p class="research">研究方向：</p>
