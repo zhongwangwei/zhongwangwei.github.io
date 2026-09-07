@@ -16,6 +16,7 @@ lang: zh
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">核心研究方向</span>**
 
 **蒸散发过程与机制**
+
 - 植物蒸腾与土壤蒸发的分离与量化
 - 蒸散发对气候变化的响应机制
 - 不同植被类型的水分利用策略
@@ -49,6 +50,7 @@ lang: zh
 </div>
 
 **水循环对气候变化的响应**
+
 - 气候变化对水循环各环节的影响
 - 极端气候事件的水文效应
 - 水循环变化对生态系统的影响
@@ -57,18 +59,21 @@ lang: zh
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">技术特色</span>**
 
 **多尺度观测能力**
+
 - 站点尺度高频观测网络
 - 区域尺度遥感监测
 - 全球尺度水循环数据集
 - 多平台观测技术融合
 
 **先进数值模拟**
+
 - 高分辨率陆面水文模式
 - 同位素示踪技术应用
 - 数据同化与参数优化
 - 不确定性量化分析
 
 **理论创新与应用**
+
 - 水循环理论的新发展
 - 水循环在气候变化研究中的应用
 - 水循环在生态水文研究中的应用
@@ -177,15 +182,22 @@ lang: zh
   </div>
 
   <p><strong>欢迎对以上任何课题感兴趣的研究生和合作者联系我们，共同推进陆地水循环研究的创新发展！</strong></p>
-</div> 
+</div>
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">部分相关发表文献(#为通讯作者)：</span>**
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Yoshimura, K., Wang, L., Miralles, D. G., Jasechko, S., Lee, X. (2017). Revisiting the contribution of transpiration to global terrestrial evapotranspiration. *Geophysical Research Letters*, 44(6), 2792-2801.
+- **Li, Q.**, Jin, X., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Zhang, C., Shangguan, W., Zhu, J., Zhang, Z., Li, X., Yan, Y., Wang, J., et al. (2026). Three-dimensional canopy morphology and wind dynamics govern global rainfall interception. _Communications Earth &amp; Environment_, 7(1), 699. [DOI](https://doi.org/10.1038/s43247-026-03694-7)
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Miyano, A., Sugita, M. (2016). Drag and Bulk Transfer Coefficients Over Water Surfaces in Light Winds. *Boundary-Layer Meteorology*, 160(2), 319-346.
+- **Li, Q.**, Xiao, Q., Li, Q., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, & Dai, Y. (2026). Improving latent heat flux prediction via enhanced cross-variable interaction and temporal dependence learning. _Journal of Hydrology_, 672, 135388. [DOI](https://doi.org/10.1016/j.jhydrol.2026.135388)
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, He, X., Zhang, Y., Pan, M., Sheffield, J., Peng, L., Yamazaki, D., Moiz, A., Liu, Y., Ikeuchi, K. (2020). Identification of uncertainty sources in quasi-global discharge and inundation simulations using satellite-based precipitation products. *Journal of Hydrology*, 589, 125180.
+- **Wang, W.**, Feng, S., Zhang, Y., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Dong, J., Weihermüller, L., Liu, C.-Q., & Vereecken, H. (2026). Fusing ERA5-Land and SMAP L4 for an improved global soil moisture product (1950–2025). _Earth System Science Data_, 18(2), 1061–1088. [DOI](https://doi.org/10.5194/essd-18-1061-2026)
 
+- **谭澳博**, **<span style="color: #3498db; font-weight: bold;">魏忠旺</span>**, & 戴永久 (2026). 基于多源观测与陆面模式模拟的雨雪拆分研究. _高原气象_, 45(3), 907–919. [DOI](https://doi.org/10.7522/j.issn.1000-0534.2025.00108)
+
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Yoshimura, K., Wang, L., Miralles, D. G., Jasechko, S., Lee, X. (2017). Revisiting the contribution of transpiration to global terrestrial evapotranspiration. _Geophysical Research Letters_, 44(6), 2792-2801.
+
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Miyano, A., Sugita, M. (2016). Drag and Bulk Transfer Coefficients Over Water Surfaces in Light Winds. _Boundary-Layer Meteorology_, 160(2), 319-346.
+
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, He, X., Zhang, Y., Pan, M., Sheffield, J., Peng, L., Yamazaki, D., Moiz, A., Liu, Y., Ikeuchi, K. (2020). Identification of uncertainty sources in quasi-global discharge and inundation simulations using satellite-based precipitation products. _Journal of Hydrology_, 589, 125180.
 
 * 更多相关研究成果陆续发表中...

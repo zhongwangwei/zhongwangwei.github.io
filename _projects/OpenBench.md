@@ -2,7 +2,7 @@
 layout: page
 title: OpenBench
 description: 通用陆面模式评估系统 | A Universal Land Surface Model Evaluation System
-img: /assets/img/research/openbench/Page_10.jpg  # Replace with a relevant image
+img: /assets/img/research/openbench/Page_10.jpg # Replace with a relevant image
 importance: 1
 category: work
 related_publications: false
@@ -45,7 +45,7 @@ OpenBench的系统架构基于六个核心的模块化组件，这种设计是�
 6. **可视化模块（Visualization）**：能够生成高质量、可定制的图表，用于直观地解释和传达复杂的评估结果。
 
 为了处理日益增长的数据量和高分辨率模拟带来的计算压力，OpenBench在设计上充分利用了并行处理技术。它巧妙地结合了两个成熟的Python库：针对站点评估中涉及大量独立文件读写的I/O密集型任务，系统使用Joblib库进行高效的任务分发和并行处理；对于大规模网格数据的处理，则采用Dask库的惰性计算（lazy execution）和分块数组处理机制，有效管理内存的同时保证了极高的处理速度。
-_
+\_
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">多维度的评估与比较方法学</span>**
 
@@ -90,8 +90,6 @@ _
 - **城市环境**：城市化是地表最剧烈的改变形式之一。OpenBench通过整合城市范围（如UEHNL）、地表温度、反照率等数据集来评估城市物理效应。尤为关键的是，它首次系统性地引入了多个**人为热通量（Anthropogenic Heat Flux, AHF）**数据集（如AH4GUC, DONG_AHE），使得对城市热岛效应这一核心问题的直接评估成为现实。
 
 - **水资源管理**：人类通过修建水库、跨流域调水等工程深刻地改变了全球水文循环。OpenBench集成了关于水库运行（如ResOpsUS）、河流径流（如GRDC）和大规模淹没区（如GIEMS_v2）的观测数据，用以评估模型在人类管理的流域中的水文模拟能力。
-
-
 
 <style>
 .homepage-section {
@@ -197,8 +195,10 @@ _
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">部分相关发表文献(#为通讯作者)：</span>**
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**,, Xu, Q., Bai, F., Xu, X., Wei, Z., Dong, W., Liang, H., Wei, N., Lu, X., Li, L., et al. (2025). OpenBench: a land models evaluation system. *Geoscientific Model Development*, 2025, 1-37.
+- **Wu, Z.**, **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Lu, X., Wei, N., Li, L., Zhang, S., Yuan, H., Liu, S., & Dai, Y. (2026). Introducing the Model Fidelity Metric (MFM) for robust and diagnostic land surface model evaluation. _Hydrology and Earth System Sciences_, 30(9), 2651–2666. [DOI](https://doi.org/10.5194/hess-30-2651-2026)
+
+- **Wei, Zixin**, Bai, F.#, **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, & Dai, Y. (2026). Comparative analysis of JRA-3Q and JRA-55 reanalysis datasets as forcing for land surface model: implications for hydrological processes. _Journal of Hydrology_, 675, 135616. [DOI](https://doi.org/10.1016/j.jhydrol.2026.135616)
+
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Xu, Q., Bai, F., Xu, X., Wei, Z., Dong, W., Liang, H., Wei, N., Lu, X., Li, L., et al. (2025). OpenBench: a land model evaluation system. _Geoscientific Model Development_, 18(18), 6517–6540. [DOI](https://doi.org/10.5194/gmd-18-6517-2025)
 
 * 更多相关研究成果陆续发表中...
-
-

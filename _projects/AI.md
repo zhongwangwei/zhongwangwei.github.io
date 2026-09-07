@@ -16,6 +16,7 @@ lang: zh
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">核心研究方向</span>**
 
 **机器学习驱动的参数化方案**
+
 - 利用深度学习技术开发物理过程代理模型，在保持物理机制合理性的前提下显著提升计算效率
 - 基于神经网络的气象要素降尺度方法，生成高分辨率大气驱动场数据
 - 智能参数优化系统，能够针对不同区域和应用目标自动调节模型参数
@@ -30,11 +31,13 @@ science" class="img-fluid rounded z-depth-1" %}
 </div>
 
 **符号回归在地球科学中的应用**
+
 - 自动发现陆面过程中的物理规律和数学关系
 - 基于符号回归的蒸散发建模，提升蒸散发过程的模拟精度
 - 开发可解释的AI模型，帮助理解复杂陆面过程的物理机制
 
 **多源数据融合与质量控制**
+
 - 利用机器学习方法从海量观测数据中识别新的经验关系和参数化方案
 - 基于深度学习的多源数据融合技术
 - 智能数据质量控制算法，自动识别和处理异常数据
@@ -48,19 +51,17 @@ science" class="img-fluid rounded z-depth-1" %}
 </div>
 
 **智能评估与诊断系统**
+
 - 可解释性AI在陆面过程诊断中的应用，帮助理解模型误差的物理成因
 - 基于强化学习的自适应建模框架，使模型能够在运行过程中持续学习和改进
 
-
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">应用领域</span>**
-
 
 - **气候预测**：提升数值天气预报和气候预测的精度
 - **水文模拟**：改进径流、蒸散发等水文过程的模拟
 - **农业应用**：作物产量预测和农业管理决策支持
 - **环境监测**：生态系统变化监测和评估
 - **城市气候**：城市热岛效应和城市气候模拟
-
 
 <style>
 .homepage-section {
@@ -156,18 +157,27 @@ science" class="img-fluid rounded z-depth-1" %}
     <strong>AI驱动的参数化方案优化</strong>：利用AI技术优化陆面模式中的参数化方案，提升模型精度和计算效率。研究重点包括：开发基于强化学习的参数优化方法，自动调节模型参数；构建参数敏感性分析的AI方法，识别关键参数；研究参数化方案的自动发现方法，从数据中学习最优的参数化形式；开发参数空间探索的智能算法；构建参数不确定性对模型输出的影响评估框架；研究参数化方案在不同气候条件下的适应性。
   </div>
 
-
-
   <p><strong>欢迎对以上任何课题感兴趣的研究生和合作者联系我们，共同推进AI技术在陆面建模中的创新应用！</strong></p>
-</div> 
+</div>
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">部分相关发表文献(#为通讯作者)：</span>**
 
+- **Li, Q.**, Wu, M., Zhang, C., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Shangguan, W., Zhu, J., Wang, J., Li, X., Yan, Y., Zhang, Z., et al. (2026). A dependency-guided symbolic regression framework for overcoming error compensation in hybrid AI–physical models. _Journal of Hydrology_, 679, 136201. [DOI](https://doi.org/10.1016/j.jhydrol.2026.136201)
 
-- **Li, Q.#**, Zhang, C.,**<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**,, Jin, X., Shangguan, W., Yuan, H., Zhu, J., Li, L., Liu, P., Chen, X., et al. (2024). Advancing symbolic regression for earth science with a focus on evapotranspiration modeling. *npj Climate and Atmospheric Science*, 7(1), 321.
+- **Li, Q.**, Jin, X., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Zhang, C., Shangguan, W., Zhu, J., Zhang, Z., Li, X., Yan, Y., Wang, J., et al. (2026). Three-dimensional canopy morphology and wind dynamics govern global rainfall interception. _Communications Earth &amp; Environment_, 7(1), 699. [DOI](https://doi.org/10.1038/s43247-026-03694-7)
 
-- **Xu, Q.**, Li, L., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**,, Lu, X., Wei, N., Lee, X., Dai, Y. (2025). A multimodal machine learning fused global 0.1° daily evapotranspiration dataset from 1950-2022. *Agricultural and Forest Meteorology*, 372, 110645.
+- **Li, Q.**, Hong, J., Zhang, C., Shangguan, W., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Li, L., Dong, W., Zhu, J., Chen, X., Yan, Y., et al. (2026). Physical process-based attention encoder-decoder LSTM model to improve global soil moisture prediction. _Agricultural and Forest Meteorology_, 384, 111161. [DOI](https://doi.org/10.1016/j.agrformet.2026.111161)
 
-- **Cai, Y.**, Xu, Q., Bai, F., Cao, X., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**,, Lu, X.#, Wei, N., Yuan, H., Zhang, S., Liu, S., et al. (2024). Reconciling global terrestrial evapotranspiration estimates from multi-product intercomparison and evaluation. *Water Resources Research*, 60(9), e2024WR037608.
+- **Li, Q.**, Xiao, Q., Li, Q., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, & Dai, Y. (2026). Improving latent heat flux prediction via enhanced cross-variable interaction and temporal dependence learning. _Journal of Hydrology_, 672, 135388. [DOI](https://doi.org/10.1016/j.jhydrol.2026.135388)
+
+- **Zhang, C.**, **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Shangguan, W., Bai, F., Dong, W., Xiao, Q., Zhao, H., Liu, P., Li, Q., & Dai, Y. (2026). Soil hydraulic pedotransfer functions for estimating saturated hydraulic conductivity: a deep symbolic regression approach with mean shift clustering. _Journal of Hydrology_, 669, 135173. [DOI](https://doi.org/10.1016/j.jhydrol.2026.135173)
+
+- **Huang, F.**, Zhang, Y., Lu, X., Shangguan, W., Li, Q., Qin, Z., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Yuan, H., Li, L., & Dai, Y. (2026). Plant carbon fluxes govern soil organic carbon dynamics under climate change: Machine learning reveals critical GPP thresholds. _Ecological Indicators_, 187, 114925. [DOI](https://doi.org/10.1016/j.ecolind.2026.114925)
+
+- **Li, Q.#**, Zhang, C., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Jin, X., Shangguan, W., Yuan, H., Zhu, J., Li, L., Liu, P., Chen, X., et al. (2024). Advancing symbolic regression for earth science with a focus on evapotranspiration modeling. _npj Climate and Atmospheric Science_, 7(1), 321.
+
+- **Xu, Q.**, Li, L., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Lu, X., Wei, N., Lee, X., Dai, Y. (2025). A multimodal machine learning fused global 0.1° daily evapotranspiration dataset from 1950-2022. _Agricultural and Forest Meteorology_, 372, 110645.
+
+- **Cai, Y.**, Xu, Q., Bai, F., Cao, X., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Lu, X.#, Wei, N., Yuan, H., Zhang, S., Liu, S., et al. (2024). Reconciling global terrestrial evapotranspiration estimates from multi-product intercomparison and evaluation. _Water Resources Research_, 60(9), e2024WR037608.
 
 * 更多相关研究成果陆续发表中...

@@ -59,12 +59,14 @@ lang: zh
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">EarthMesh：新一代网格生成工具</span>**
 
 我们正在开发EarthMesh，这是一个专为陆面、海洋和大气模式设计的网格生成工具。该工具支持多种地球系统模式，包括但不限于：
+
 - **通用陆面模式2024版（CoLM2024）**：新一代陆面模式
 - **FVCOM**：有限体积海岸海洋模式
 - **MPAS**：模式预测跨尺度模式
 - **OLAM**：海洋-陆地-大气模式
 
 EarthMesh具备以下核心功能：
+
 - **自适应网格细化**：基于各种地表特征进行智能网格细化
 - **用户指定细化**：根据用户意图进行精确的网格控制
 - **多类型网格生成**：支持陆面、海洋和大气网格的统一生成
@@ -75,30 +77,32 @@ EarthMesh具备以下核心功能：
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">核心研究方向</span>**
 
 **多模式网格生成技术**
+
 - 陆面、海洋、大气网格的统一生成算法
 - 不同介质网格的边界处理技术
 - 多模式网格的质量评估体系
 - 网格类型配置与管理系统
 
 **自适应网格细化技术**
+
 - 基于多种特征的网格自适应细化
 - 多尺度网格分辨率优化算法
 - 网格质量评估与质量控制
 - 大规模并行网格生成技术
 
 **网格与模式耦合技术**
+
 - 非结构网格与不同模式的接口开发
 - 网格数据与模式变量的映射算法
 - 网格分辨率对模式精度的影响评估
 - 多物理过程耦合的网格优化
 
 **高性能计算应用**
+
 - 大规模网格的并行生成算法
 - 网格数据的分布式存储与访问
 - 网格计算的高效并行策略
 - 网格系统的可扩展性优化
-
-
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">应用领域</span>**
 
@@ -201,11 +205,12 @@ EarthMesh具备以下核心功能：
   <p><strong>欢迎对以上任何课题感兴趣的研究生和合作者联系我们，共同推进地球网格系统研究的创新发展！</strong></p>
 </div>
 
-
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">相关发表文献(#为通讯作者)：</span>**
 
+- **Xiang, J.**, Yuan, H., Dong, W., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Shangguan, W., Lin, W., Liu, Z., Yu, X., & Dai, Y. (2026). A global 500 m dataset of tree crown morphology to advance vegetation modeling and management. _International Journal of Applied Earth Observation and Geoinformation_, 151, 105401. [DOI](https://doi.org/10.1016/j.jag.2026.105401)
 
-- **Fan, H.**, Xu, Q., Bai, F., Wei, Z.#, Zhang, Y., Lu, X., Wei, N., Zhang, S., Yuan, H., Liu, S., Li, X., Li, X., Dai, Y. (2024). An unstructured mesh generation tool for efficient high-resolution representation of spatial heterogeneity in land surface models. *Geophysical Research Letters*, 51(6), e2023GL107059.
+- **Shi, G.**, Song, Z., Sun, W., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Liu, Y., Xu, N., Wang, J., Gobin, A., Li, Q., Shangguan, W., et al. (2026). Diagnosing global soil organic carbon mapping discrepancies with interpretable machine learning: A comparison of soil type linkage and digital soil mapping. _Geoderma_, 473, 117998. [DOI](https://doi.org/10.1016/j.geoderma.2026.117998)
 
+- **Fan, H.**, Xu, Q., Bai, F., Wei, Z.#, Zhang, Y., Lu, X., Wei, N., Zhang, S., Yuan, H., Liu, S., Li, X., Li, X., Dai, Y. (2024). An unstructured mesh generation tool for efficient high-resolution representation of spatial heterogeneity in land surface models. _Geophysical Research Letters_, 51(6), e2023GL107059.
 
 * 更多相关研究成果陆续发表中...

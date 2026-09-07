@@ -59,12 +59,14 @@ Our unstructured mesh generation tool represents a significant advancement in th
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">EarthMesh: Next-Generation Mesh Generation Tool</span>**
 
 We are developing EarthMesh, a mesh generation tool designed for land surface, ocean, and atmospheric models. This tool supports various Earth system models, including but not limited to:
+
 - **Common Land Model 2024 (CoLM2024)**: Next-generation land surface model
 - **FVCOM**: Finite Volume Community Ocean Model
 - **MPAS**: Model for Prediction Across Scales
 - **OLAM**: Ocean-Land-Atmosphere Model
 
 EarthMesh features the following core capabilities:
+
 - **Adaptive mesh refinement**: Intelligent mesh refinement based on various surface features
 - **User-specified refinement**: Precise mesh control according to user intent
 - **Multi-type mesh generation**: Unified generation of land surface, ocean, and atmospheric meshes
@@ -75,24 +77,28 @@ The development of this tool marks our significant leap from single land surface
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Core Research Directions</span>**
 
 **Multi-Model Mesh Generation Technology**
+
 - Unified generation algorithms for land surface, ocean, and atmospheric meshes
 - Boundary processing techniques for meshes of different media
 - Quality assessment system for multi-model meshes
 - Configuration and management system for mesh types
 
 **Adaptive Mesh Refinement Technology**
+
 - Feature-based adaptive mesh refinement
 - Multi-scale mesh resolution optimization algorithms
 - Mesh quality assessment and quality control
 - Large-scale parallel mesh generation technology
 
 **Mesh and Model Coupling Technology**
+
 - Interface development between unstructured meshes and different models
 - Mapping algorithms between mesh data and model variables
 - Impact assessment of mesh resolution on model accuracy
 - Mesh optimization for multi-physics process coupling
 
 **High-Performance Computing Applications**
+
 - Parallel generation algorithms for large-scale meshes
 - Distributed storage and access of mesh data
 - Efficient parallel strategies for mesh computation
@@ -201,6 +207,10 @@ The development of this tool marks our significant leap from single land surface
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Related Publications (# indicates corresponding author):</span>**
 
-- **Fan, H.**, Xu, Q., Bai, F., Wei, Z.#, Zhang, Y., Lu, X., Wei, N., Zhang, S., Yuan, H., Liu, S., Li, X., Li, X., Dai, Y. (2024). An unstructured mesh generation tool for efficient high-resolution representation of spatial heterogeneity in land surface models. *Geophysical Research Letters*, 51(6), e2023GL107059.
+- **Xiang, J.**, Yuan, H., Dong, W., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Shangguan, W., Lin, W., Liu, Z., Yu, X., & Dai, Y. (2026). A global 500 m dataset of tree crown morphology to advance vegetation modeling and management. _International Journal of Applied Earth Observation and Geoinformation_, 151, 105401. [DOI](https://doi.org/10.1016/j.jag.2026.105401)
+
+- **Shi, G.**, Song, Z., Sun, W., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Liu, Y., Xu, N., Wang, J., Gobin, A., Li, Q., Shangguan, W., et al. (2026). Diagnosing global soil organic carbon mapping discrepancies with interpretable machine learning: A comparison of soil type linkage and digital soil mapping. _Geoderma_, 473, 117998. [DOI](https://doi.org/10.1016/j.geoderma.2026.117998)
+
+- **Fan, H.**, Xu, Q., Bai, F., Wei, Z.#, Zhang, Y., Lu, X., Wei, N., Zhang, S., Yuan, H., Liu, S., Li, X., Li, X., Dai, Y. (2024). An unstructured mesh generation tool for efficient high-resolution representation of spatial heterogeneity in land surface models. _Geophysical Research Letters_, 51(6), e2023GL107059.
 
 * More related research results will be published successively...

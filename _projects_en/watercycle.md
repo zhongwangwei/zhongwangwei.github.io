@@ -16,6 +16,7 @@ The terrestrial water cycle is a core process in Earth system science, involving
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Core Research Directions</span>**
 
 **Evapotranspiration Processes and Mechanisms**
+
 - Separation and quantification of plant transpiration and soil evaporation
 - Response mechanisms of evapotranspiration to climate change
 - Water use strategies of different vegetation types
@@ -34,6 +35,7 @@ The terrestrial water cycle is a core process in Earth system science, involving
 </div>
 
 **Precipitation-Runoff Processes**
+
 - Precipitation infiltration and soil moisture movement
 - Formation mechanisms of surface runoff and subsurface runoff
 - Hydrological responses to extreme precipitation events
@@ -52,6 +54,7 @@ The terrestrial water cycle is a core process in Earth system science, involving
 </div>
 
 **Water Cycle Responses to Climate Change**
+
 - Impacts of climate change on various components of the water cycle
 - Hydrological effects of extreme climate events
 - Impacts of water cycle changes on ecosystems
@@ -60,18 +63,21 @@ The terrestrial water cycle is a core process in Earth system science, involving
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Technical Features</span>**
 
 **Multi-Scale Observation Capabilities**
+
 - Site-scale high-frequency observation networks
 - Regional-scale remote sensing monitoring
 - Global-scale water cycle datasets
 - Multi-platform observation technology integration
 
 **Advanced Numerical Simulation**
+
 - High-resolution land surface hydrological models
 - Isotope tracer technology applications
 - Data assimilation and parameter optimization
 - Uncertainty quantification analysis
 
 **Theoretical Innovation and Applications**
+
 - New developments in water cycle theory
 - Applications of water cycle in climate change research
 - Applications of water cycle in eco-hydrology research
@@ -180,14 +186,22 @@ The terrestrial water cycle is a core process in Earth system science, involving
   </div>
 
   <p><strong>We welcome graduate students and collaborators interested in any of the above topics to contact us and jointly advance the innovative development of terrestrial water cycle research!</strong></p>
-</div> 
+</div>
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Selected Related Publications (# indicates corresponding author):</span>**
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Yoshimura, K., Wang, L., Miralles, D. G., Jasechko, S., Lee, X. (2017). Revisiting the contribution of transpiration to global terrestrial evapotranspiration. *Geophysical Research Letters*, 44(6), 2792-2801.
+- **Li, Q.**, Jin, X., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Zhang, C., Shangguan, W., Zhu, J., Zhang, Z., Li, X., Yan, Y., Wang, J., et al. (2026). Three-dimensional canopy morphology and wind dynamics govern global rainfall interception. _Communications Earth &amp; Environment_, 7(1), 699. [DOI](https://doi.org/10.1038/s43247-026-03694-7)
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Miyano, A., Sugita, M. (2016). Drag and Bulk Transfer Coefficients Over Water Surfaces in Light Winds. *Boundary-Layer Meteorology*, 160(2), 319-346.
+- **Li, Q.**, Xiao, Q., Li, Q., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, & Dai, Y. (2026). Improving latent heat flux prediction via enhanced cross-variable interaction and temporal dependence learning. _Journal of Hydrology_, 672, 135388. [DOI](https://doi.org/10.1016/j.jhydrol.2026.135388)
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, He, X., Zhang, Y., Pan, M., Sheffield, J., Peng, L., Yamazaki, D., Moiz, A., Liu, Y., Ikeuchi, K. (2020). Identification of uncertainty sources in quasi-global discharge and inundation simulations using satellite-based precipitation products. *Journal of Hydrology*, 589, 125180.
+- **Wang, W.**, Feng, S., Zhang, Y., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Dong, J., Weihermüller, L., Liu, C.-Q., & Vereecken, H. (2026). Fusing ERA5-Land and SMAP L4 for an improved global soil moisture product (1950–2025). _Earth System Science Data_, 18(2), 1061–1088. [DOI](https://doi.org/10.5194/essd-18-1061-2026)
+
+- **谭澳博**, **<span style="color: #3498db; font-weight: bold;">魏忠旺</span>**, & 戴永久 (2026). 基于多源观测与陆面模式模拟的雨雪拆分研究. _高原气象_, 45(3), 907–919. [DOI](https://doi.org/10.7522/j.issn.1000-0534.2025.00108)
+
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Yoshimura, K., Wang, L., Miralles, D. G., Jasechko, S., Lee, X. (2017). Revisiting the contribution of transpiration to global terrestrial evapotranspiration. _Geophysical Research Letters_, 44(6), 2792-2801.
+
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Miyano, A., Sugita, M. (2016). Drag and Bulk Transfer Coefficients Over Water Surfaces in Light Winds. _Boundary-Layer Meteorology_, 160(2), 319-346.
+
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, He, X., Zhang, Y., Pan, M., Sheffield, J., Peng, L., Yamazaki, D., Moiz, A., Liu, Y., Ikeuchi, K. (2020). Identification of uncertainty sources in quasi-global discharge and inundation simulations using satellite-based precipitation products. _Journal of Hydrology_, 589, 125180.
 
 * More related research results will be published successively...

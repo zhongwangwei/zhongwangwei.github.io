@@ -2,7 +2,7 @@
 layout: page
 title: OpenBench
 description: A Universal Land Surface Model Evaluation System
-img: /assets/img/research/openbench/Page_10.jpg  # Replace with a relevant image
+img: /assets/img/research/openbench/Page_10.jpg # Replace with a relevant image
 importance: 1
 category: work
 related_publications: false
@@ -194,6 +194,10 @@ These datasets can be divided into three major categories, comprehensively cover
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Selected Related Publications (# indicates corresponding author):</span>**
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Xu, Q., Bai, F., Xu, X., Wei, Z., Dong, W., Liang, H., Wei, N., Lu, X., Li, L., et al. (2025). OpenBench: a land models evaluation system. *Geoscientific Model Development*, 2025, 1-37.
+- **Wu, Z.**, **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Lu, X., Wei, N., Li, L., Zhang, S., Yuan, H., Liu, S., & Dai, Y. (2026). Introducing the Model Fidelity Metric (MFM) for robust and diagnostic land surface model evaluation. _Hydrology and Earth System Sciences_, 30(9), 2651–2666. [DOI](https://doi.org/10.5194/hess-30-2651-2026)
+
+- **Wei, Zixin**, Bai, F.#, **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, & Dai, Y. (2026). Comparative analysis of JRA-3Q and JRA-55 reanalysis datasets as forcing for land surface model: implications for hydrological processes. _Journal of Hydrology_, 675, 135616. [DOI](https://doi.org/10.1016/j.jhydrol.2026.135616)
+
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Xu, Q., Bai, F., Xu, X., Wei, Z., Dong, W., Liang, H., Wei, N., Lu, X., Li, L., et al. (2025). OpenBench: a land model evaluation system. _Geoscientific Model Development_, 18(18), 6517–6540. [DOI](https://doi.org/10.5194/gmd-18-6517-2025)
 
 * More related research results will be published successively...

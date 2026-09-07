@@ -9,7 +9,6 @@ zh:
     blog: "博客"
     teaching: "教学"
     people: "团队成员"
-    resources: "团队资源"
   about_page:
     title: "关于我们"
     research_interests: "研究兴趣"
@@ -50,7 +49,6 @@ en:
     blog: "Blog"
     teaching: "Teaching"
     people: "People"
-    resources: "Resources"
   about_page:
     title: "About Us"
     research_interests: "Research Interests"

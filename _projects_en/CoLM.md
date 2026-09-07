@@ -11,7 +11,6 @@ lang: en
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Model Overview</span>**
 
-
 CoLM2024 (Common Land Model 2024 version) is a new generation global high-resolution land surface process model, designed to significantly enhance Earth System Models (ESM) by improving the simulation of surface energy, hydrological, biogeochemical cycles, and human activity processes. It is a comprehensive simulation research platform integrating modeling, datasets, performance evaluation, and high-performance computing, which can be widely applied in scientific research and refined operations in numerical weather prediction/climate forecasting, hydrology and water resources, ecological environment, urban, agriculture, forestry and animal husbandry industries, supporting applications across various spatial scales from ultra-high resolution (approximately 1 meter to 100 meters) to coarse resolution (approximately 100 kilometers). CoLM2024 adheres to the open-source philosophy and welcomes global users to download and use it.
 
 <div class="row justify-content-center">
@@ -25,7 +24,6 @@ CoLM2024 (Common Land Model 2024 version) is a new generation global high-resolu
 <div class="caption">
     Model overview, with highlighted sections showing its main physical processes
 </div>
-
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Core Features and Architecture</span>**
 
@@ -63,7 +61,6 @@ CoLM2024 is committed to building a complete global high-resolution land surface
     Global evapotranspiration simulation based on CoLM2024
 </div>
 
-
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Diverse Modeling Capabilities</span>**
 
 CoLM2024 has been comprehensively improved and optimized in mathematical modeling of multiple processes including land surface physics, hydrology, vegetation physiology and ecology, biogeochemistry, and human activities:
@@ -78,12 +75,9 @@ CoLM2024 has been comprehensively improved and optimized in mathematical modelin
 - **Crop model (GPAM1)**: Can simulate key growth and development processes and yields of various food crops, as well as crop responses to environmental climate change and farmland management and biological, physical, and chemical dynamic feedbacks
 - **Scale conversion**: Added atmospheric forcing downscaling module (based on terrain adjustment, mountain radiation theory, and machine learning), as well as scale conversion schemes for vegetation attribute parameters and soil water and heat characteristic parameters to support multi-scale refined simulation
 
-
-
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Evaluation System</span>**
 
 CoLM2024 integrates the self-developed **"CoLM Benchmarking and Performance Evaluation System"**, a comprehensive tool for processing data, evaluating models, and analyzing results. It offers advantages such as high precision, multi-platform support, multi-functional data processing, integration, and flexibility, covering 50 evaluation dimensions, and provides standardized model performance evaluation indicators based on the methodology of international land surface model benchmarking projects.
-
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Application Areas</span>**
 
@@ -106,7 +100,6 @@ CoLM2024 can be widely applied in the following fields:
 <div class="caption">
     North American regional river discharge simulation evaluation results (v.s. GRDC)
 </div>
-
 
 <style>
 .homepage-section {
@@ -210,18 +203,26 @@ CoLM2024 can be widely applied in the following fields:
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Selected Related Publications (# corresponding author):</span>**
 
-- **Li, Q.**, Zhang, C., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Jin, X., Shangguan, W., Yuan, H., Zhu, J., Li, L., Liu, P., Chen, X., et al. (2024). Advancing symbolic regression for earth science with a focus on evapotranspiration modeling. *npj Climate and Atmospheric Science*, 7(1), 321.
+- **Wei, Zixin**, Bai, F.#, **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, & Dai, Y. (2026). Comparative analysis of JRA-3Q and JRA-55 reanalysis datasets as forcing for land surface model: implications for hydrological processes. _Journal of Hydrology_, 675, 135616. [DOI](https://doi.org/10.1016/j.jhydrol.2026.135616)
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Xu, Q., Bai, F., Xu, X., Wei, Z., Dong, W., Liang, H., Wei, N., Lu, X., Li, L., et al. (2025). OpenBench: a land models evaluation system. *Geoscientific Model Development*, 2025, 1-37.
+- **Li, Q.**, Jin, X., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Zhang, C., Shangguan, W., Zhu, J., Zhang, Z., Li, X., Yan, Y., Wang, J., et al. (2026). Three-dimensional canopy morphology and wind dynamics govern global rainfall interception. _Communications Earth &amp; Environment_, 7(1), 699. [DOI](https://doi.org/10.1038/s43247-026-03694-7)
 
-- **Bai, F.**,**<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Wei, N., Lu, X., Yuan, H., Zhang, S., Liu, S., Zhang, Y., Li, X., & Dai, Y. (2024). Global Assessment of Atmospheric Forcing Uncertainties in The Common Land Model 2024 Simulations. *Journal of Geophysical Research: Atmospheres*, 129(23), e2024JD041520.
+- **Xiang, J.**, Yuan, H., Dong, W., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Shangguan, W., Lin, W., Liu, Z., Yu, X., & Dai, Y. (2026). A global 500 m dataset of tree crown morphology to advance vegetation modeling and management. _International Journal of Applied Earth Observation and Geoinformation_, 151, 105401. [DOI](https://doi.org/10.1016/j.jag.2026.105401)
 
-- **Fan, H.**, Xu, Q., Bai, F., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Zhang, Y., Lu, X., Wei, N., Zhang, S., Yuan, H., Liu, S., Li, X., Li, X., & Dai, Y. (2024). An Unstructured Mesh Generation Tool for Efficient High-Resolution Representation of Spatial Heterogeneity in Land Surface Models. *Geophysical Research Letters*, 51(6), e2023GL107059.
+- **Zhang, C.**, **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Shangguan, W., Bai, F., Dong, W., Xiao, Q., Zhao, H., Liu, P., Li, Q., & Dai, Y. (2026). Soil hydraulic pedotransfer functions for estimating saturated hydraulic conductivity: a deep symbolic regression approach with mean shift clustering. _Journal of Hydrology_, 669, 135173. [DOI](https://doi.org/10.1016/j.jhydrol.2026.135173)
 
-- **Xu, Q.**, Liang, H., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Zhang, Y., Lu, X., Li, F., Wei, N., Zhang, S., Yuan, H., Liu, S., & Dai, Y. (2024). Assessing Climate Change Impacts on Crop Yields and Exploring Adaptation Strategies in Northeast China. *Earth's Future*.
+- **谭澳博**, **<span style="color: #3498db; font-weight: bold;">魏忠旺</span>**, & 戴永久 (2026). 基于多源观测与陆面模式模拟的雨雪拆分研究. _高原气象_, 45(3), 907–919. [DOI](https://doi.org/10.7522/j.issn.1000-0534.2025.00108)
 
-- **Xu, X.**, Liu, L., Wei, N., Lu, X., Yuan, H., Zhang, S., Shangguan, W., Zhang, Y., Li, L., Yang, C., Liu, S., Li, X., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, & Dai, Y. (under review). Global Distribution and Dynamics of Bedrock Water Usage by Woody Vegetation. *Manuscript under consideration*.
+- **Li, Q.**, Zhang, C., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Jin, X., Shangguan, W., Yuan, H., Zhu, J., Li, L., Liu, P., Chen, X., et al. (2024). Advancing symbolic regression for earth science with a focus on evapotranspiration modeling. _npj Climate and Atmospheric Science_, 7(1), 321.
 
-- **Wei, Zixin.**, Bai, F.#, **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, & Dai, Y. (under review). Comparative Analysis of JRA-3Q and JRA-55 Reanalysis Datasets as Forcing for Land Surface Model: Implications for Hydrological Processes. *Journal of Hydrology*.
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Xu, Q., Bai, F., Xu, X., Wei, Z., Dong, W., Liang, H., Wei, N., Lu, X., Li, L., et al. (2025). OpenBench: a land model evaluation system. _Geoscientific Model Development_, 18(18), 6517–6540. [DOI](https://doi.org/10.5194/gmd-18-6517-2025)
+
+- **Bai, F.**,**<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Wei, N., Lu, X., Yuan, H., Zhang, S., Liu, S., Zhang, Y., Li, X., & Dai, Y. (2024). Global Assessment of Atmospheric Forcing Uncertainties in The Common Land Model 2024 Simulations. _Journal of Geophysical Research: Atmospheres_, 129(23), e2024JD041520.
+
+- **Fan, H.**, Xu, Q., Bai, F., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Zhang, Y., Lu, X., Wei, N., Zhang, S., Yuan, H., Liu, S., Li, X., Li, X., & Dai, Y. (2024). An Unstructured Mesh Generation Tool for Efficient High-Resolution Representation of Spatial Heterogeneity in Land Surface Models. _Geophysical Research Letters_, 51(6), e2023GL107059.
+
+- **Xu, Q.**, Liang, H., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Zhang, Y., Lu, X., Li, F., Wei, N., Zhang, S., Yuan, H., Liu, S., & Dai, Y. (2024). Assessing Climate Change Impacts on Crop Yields and Exploring Adaptation Strategies in Northeast China. _Earth's Future_, 12(4), e2023EF004063. [DOI](https://doi.org/10.1029/2023EF004063)
+
+- **Xu, X.**, Liu, L., Wei, N., Lu, X., Yuan, H., Zhang, S., Shangguan, W., Zhang, Y., Li, L., Yang, C., Liu, S., Li, X., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, & Dai, Y. (under review). Global Distribution and Dynamics of Bedrock Water Usage by Woody Vegetation. _Manuscript under consideration_.
 
 * More related research results are being published...

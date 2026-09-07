@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2026-06-04 10:00:02-0400
+permalink: /news/2026/liqingliang-paper-en/
 inline: true
 related_posts: false
 lang: en

@@ -33,7 +33,7 @@ lang: en
     </div>
   </div>
 
-  <!-- Current PhD Students -->
+  <!-- Current Students -->
   <div class="team-section">
     <h2 class="section-title">Current Students</h2>
     <div class="team-grid">
@@ -104,7 +104,32 @@ lang: en
           <p class="note" style="font-size: 0.8rem; color: var(--global-text-color-light); font-style: italic; margin-top: 0.5rem;">*Co-supervised with Professor Dai Yongjiu</p>
         </div>
       </div>
+
+      <div class="person-card">
+        <div class="person-image">
+          <img src="{{ '/assets/img/people/liuchengze.jpg' | relative_url }}" alt="Chengze Liu">
+        </div>
+        <div class="person-info">
+          <h3>Chengze Liu (刘丞泽)</h3>
+          <p class="title">Master's Student (2026-present)</p>
+          <p class="affiliation">School of Atmospheric Sciences, Sun Yat-Sen University</p>
+          <p class="education">Education: BS Fujian Normal University (2022-2026), MS Sun Yat-Sen University (2026-present)</p>
+          <p class="research">Research interests: Machine learning and hydrology</p>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <div class="person-image" aria-hidden="true" style="height: 150px;"></div>
+        <div class="person-info">
+          <h3>Xinye Zhang (张新烨)</h3>
+          <p class="title">Direct-entry PhD Student</p>
+          <p class="affiliation">School of Atmospheric Sciences, Sun Yat-Sen University</p>
+          <p class="education">Education: East China Normal University (2022-2026)</p>
+          <p class="research">Research interests:</p>
+        </div>
+      </div>
     </div>
+
   </div>
 
   <!-- Alumni -->

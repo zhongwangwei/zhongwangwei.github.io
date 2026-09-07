@@ -33,7 +33,7 @@ lang: zh
     </div>
   </div>
 
-  <!-- Current PhD Students -->
+  <!-- Current Students -->
   <div class="team-section">
     <h2 class="section-title">在读学生</h2>
     <div class="team-grid">
@@ -104,7 +104,32 @@ lang: zh
           <p class="note" style="font-size: 0.8rem; color: var(--global-text-color-light); font-style: italic; margin-top: 0.5rem;">*与戴永久教授合作指导</p>
         </div>
       </div>
+
+      <div class="person-card">
+        <div class="person-image">
+          <img src="{{ '/assets/img/people/liuchengze.jpg' | relative_url }}" alt="刘丞泽">
+        </div>
+        <div class="person-info">
+          <h3>刘丞泽 (Chengze Liu)</h3>
+          <p class="title">硕士研究生 (2026-至今)</p>
+          <p class="affiliation">中山大学大气科学学院</p>
+          <p class="education">教育背景：福建师范大学学士 (2022-2026)，中山大学硕士 (2026-)</p>
+          <p class="research">研究方向：机器学习与水文学</p>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <div class="person-image" aria-hidden="true" style="height: 150px;"></div>
+        <div class="person-info">
+          <h3>张新烨 (Xinye Zhang)</h3>
+          <p class="title">直博生</p>
+          <p class="affiliation">中山大学大气科学学院</p>
+          <p class="education">教育背景：华东师范大学 (2022-2026)</p>
+          <p class="research">研究方向：</p>
+        </div>
+      </div>
     </div>
+
   </div>
 
   <!-- Alumni -->

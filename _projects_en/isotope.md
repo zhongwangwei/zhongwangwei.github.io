@@ -16,12 +16,14 @@ Isotope hydrology and meteorology is an important discipline that studies isotop
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Core Research Directions</span>**
 
 **Isotope Fractionation Mechanisms and Processes**
+
 - Isotope fractionation mechanisms during evapotranspiration processes
 - Isotopic distinction between plant transpiration and soil evaporation
 - Isotope fractionation effects in cloud physics processes
 - Isotope fractionation patterns during precipitation processes
 
 **Isotope Tracer Technology Applications**
+
 - Using isotope techniques to partition evapotranspiration components (transpiration vs evaporation)
 - Water source identification and pathway tracing
 - Watershed-scale water cycle isotope tracing
@@ -36,6 +38,7 @@ Isotope hydrology and meteorology is an important discipline that studies isotop
 </div>
 
 **Isotope Modeling and Simulation**
+
 - Isotope process parameterization in land surface models
 - Atmospheric boundary layer isotope transport simulation
 - Global-scale isotope cycle modeling
@@ -50,6 +53,7 @@ Isotope hydrology and meteorology is an important discipline that studies isotop
 </div>
 
 **Observation Techniques and Methods**
+
 - High-frequency isotope observation technology development
 - Multi-scale isotope observation network construction
 - Isotope observation quality control methods
@@ -67,18 +71,21 @@ Isotope hydrology and meteorology is an important discipline that studies isotop
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Technical Features</span>**
 
 **IsoLESC Coupled Modeling System**
+
 - Coupling of Large Eddy Simulation (LES) with isotope transport
 - Isotope processes in Land Surface Models (LSM)
 - Isotope fractionation in cloud microphysics processes
 - High-resolution simulation of boundary layer isotope transport
 
 **Multi-Scale Observation Capabilities**
+
 - Site-scale high-frequency isotope observations
 - Regional-scale isotope observation networks
 - Global isotope database construction
 - Multi-platform isotope observation technology
 
 **Theoretical Innovation and Applications**
+
 - New developments in isotope fractionation theory
 - Applications of isotopes in climate change research
 - Applications of isotopes in eco-hydrology research
@@ -189,26 +196,30 @@ Isotope hydrology and meteorology is an important discipline that studies isotop
   </div>
 
   <p><strong>We welcome graduate students and collaborators interested in any of the above topics to contact us and jointly advance the innovative development of isotope hydrology and meteorology research!</strong></p>
-</div> 
+</div>
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">Selected Related Publications (# indicates corresponding author):</span>**
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Lee, X., Patton, E. G. (2018). IsoLESC: A coupled isotope-LSM-LES-cloud modeling system to investigate the water budget in the atmospheric boundary layer. *Journal of Advances in Modeling Earth Systems*, 10, 2589-2617.
+- **Yang, J.**, Yao, T., Acharya, S., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Danzeng, L., Qu, D., Suolang, T., Nima, C., et al. (2026). Negative Indian Ocean Dipole amplifies the altitude gradient of precipitation stable isotopes in the southeastern Tibetan Plateau. _Journal of Hydrology_, 674, 135516. [DOI](https://doi.org/10.1016/j.jhydrol.2026.135516)
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Yoshimura, K., Okazaki, A., Kim, W., Liu, Z., Yokoi, M. (2015). Partitioning of evapotranspiration using high-frequency water vapor isotopic measurement over a rice paddy field. *Water Resources Research*, 51(5), 3716-3729.
+- **Peng, P.**, Xu, D., Peng, Y., Chen, J., Zhang, S., Der Woude, A., Zhang, Y., Shi, X., Diao, W., Wang, S., et al. (2026). A modified isotopic mixing model for estimating the contribution of advected moisture to precipitation: A case study in southwest China. _Journal of Hydrology: Regional Studies_, 64, 103307. [DOI](https://doi.org/10.1016/j.ejrh.2026.103307)
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Lee, X., Aemisegger, F., Benetti, M., Berkelhammer, M., Casado, M., Caylor, K., Christner, E., Dyroff, C., Garcia, O., González, Y., Griffis, T., Kurita, N., Liang, J., Liang, M.-C., Lin, G., Noone, D., Gribanov, K., Munksgaard, N., Schneider, M., Ritter, F., Steen-Larsen, H., Vallet Coulomb, C., Wen, X., Wright, J. S., Xiao, W., Yoshimura, K. (2019). A global database of water vapor isotopes measured with high temporal resolution infrared laser spectroscopy. *Scientific Data*, 6, 180302.
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Lee, X., Patton, E. G. (2018). IsoLESC: A coupled isotope-LSM-LES-cloud modeling system to investigate the water budget in the atmospheric boundary layer. _Journal of Advances in Modeling Earth Systems_, 10, 2589-2617.
 
-- **Xiao, W.#**, <span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>, Wen, X. (2018). Evapotranspiration partitioning at the ecosystem scale using the stable isotope method - A review. *Agricultural and Forest Meteorology*, 263, 346-361.
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Yoshimura, K., Okazaki, A., Kim, W., Liu, Z., Yokoi, M. (2015). Partitioning of evapotranspiration using high-frequency water vapor isotopic measurement over a rice paddy field. _Water Resources Research_, 51(5), 3716-3729.
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Lee, X., Xiao, W., Wen, X. (2018). Evapotranspiration partitioning for three agro-ecosystems with contrasting moisture conditions: a comparison of an isotope method and a two-source model calculation. *Agricultural and Forest Meteorology*, 252, 296-310.
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Lee, X., Aemisegger, F., Benetti, M., Berkelhammer, M., Casado, M., Caylor, K., Christner, E., Dyroff, C., Garcia, O., González, Y., Griffis, T., Kurita, N., Liang, J., Liang, M.-C., Lin, G., Noone, D., Gribanov, K., Munksgaard, N. C., Schneider, M., Ritter, F., Steen-Larsen, H. C., Vallet-Coulomb, C., Wen, X., Wright, J. S., Xiao, W., Yoshimura, K. (2019). A global database of water vapor isotopes measured with high temporal resolution infrared laser spectroscopy. _Scientific Data_, 6, 180302. [DOI](https://doi.org/10.1038/sdata.2018.302)
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Lee, X., Seeboonruang, U., Koike, M., Yoshimura, K. (2018). Influences of large-scale convection and moisture source on monthly precipitation isotope ratios observed in Thailand, Southeast Asia. *Earth and Planetary Science Letters*, 488, 181-192.
+- **Xiao, W.#**, <span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>, Wen, X. (2018). Evapotranspiration partitioning at the ecosystem scale using the stable isotope method - A review. _Agricultural and Forest Meteorology_, 263, 346-361.
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Lee, X. (2019). The utility of near-surface water vapor deuterium excess as an indicator of atmospheric moisture source. *Journal of Hydrology*, 577, 123923.
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Lee, X., Xiao, W., Wen, X. (2018). Evapotranspiration partitioning for three agro-ecosystems with contrasting moisture conditions: a comparison of an isotope method and a two-source model calculation. _Agricultural and Forest Meteorology_, 252, 296-310.
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Yoshimura, K., Okazaki, A., Ono, K., Kim, W., Yokoi, M., Lai, C.-T. (2016). Understanding the variability of water isotopologues in near-surface atmospheric moisture over a humid subtropical rice paddy in Tsukuba, Japan. *Journal of Hydrology*, 533, 91-102.
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Lee, X., Seeboonruang, U., Koike, M., Yoshimura, K. (2018). Influences of large-scale convection and moisture source on monthly precipitation isotope ratios observed in Thailand, Southeast Asia. _Earth and Planetary Science Letters_, 488, 181-192.
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Yoshimura, K., Okazaki, A., Kim, W., Liu, Z., Yokoi, M. (2014). INVESTIGATING VEGETATION-ATMOSPHERE WATER EXCHANGE BY USING HIGH FREQUENCY SPECTROSCOPY VAPOR ISOTOPE OBSERVATIONS. *JSCE*, 58, 181-186.
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Lee, X. (2019). The utility of near-surface water vapor deuterium excess as an indicator of atmospheric moisture source. _Journal of Hydrology_, 577, 123923.
+
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Yoshimura, K., Okazaki, A., Ono, K., Kim, W., Yokoi, M., Lai, C.-T. (2016). Understanding the variability of water isotopologues in near-surface atmospheric moisture over a humid subtropical rice paddy in Tsukuba, Japan. _Journal of Hydrology_, 533, 91-102.
+
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Yoshimura, K., Okazaki, A., Kim, W., Liu, Z., Yokoi, M. (2014). INVESTIGATING VEGETATION-ATMOSPHERE WATER EXCHANGE BY USING HIGH FREQUENCY SPECTROSCOPY VAPOR ISOTOPE OBSERVATIONS. _JSCE_, 58, 181-186.
 
 * More related research results will be published successively...

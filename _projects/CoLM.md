@@ -11,7 +11,6 @@ lang: zh
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">模型概述</span>**
 
-
 CoLM2024（通用陆面模式 2024 版本）是新一代全球高分辨率陆面过程模型，旨在显著增强地球系统模型（ESM），通过改进对地表能量、水文、生物地球化学循环和人类活动过程的模拟。它是一个集模式、数据集、性能评估和高性能计算于一体的综合模拟研究平台，可广泛应用于数值天气预报/气候预测、水文水资源、生态环境、城市、农林牧等行业的科学研究和精细化业务，并支持从超高分辨率（约1米至100米）到粗分辨率（约100公里）的多种空间尺度应用。CoLM2024 秉持开源理念，欢迎全球用户下载和使用。
 
 <div class="row justify-content-center">
@@ -25,7 +24,6 @@ CoLM2024（通用陆面模式 2024 版本）是新一代全球高分辨率陆面
 <div class="caption">
     模型概述, 高亮部分是他的主要物理过程
 </div>
-
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">核心特性与架构</span>**
 
@@ -63,7 +61,6 @@ CoLM2024 致力于构建完备的全球高分辨率陆面属性数据集，并�
     基于 CoLM2024 的全球蒸散发模拟
 </div>
 
-
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">多样化建模能力</span>**
 
 CoLM2024 在陆面物理、水文、植被生理生态、生物地球化学和人类活动等多个过程的数学建模上进行了全面完善和优化：
@@ -78,12 +75,9 @@ CoLM2024 在陆面物理、水文、植被生理生态、生物地球化学和�
 - **作物模式（GPAM1）**：能够模拟多种粮食作物的生长发育关键过程和产量，以及作物对环境气候变化和农田管理的响应及生物、物理、化学动态反馈
 - **尺度转换**：新增大气强迫降尺度模块（基于地形调整、山地辐射理论和机器学习），以及植被属性参数和土壤水热特征参数的尺度转换方案，以支持多尺度精细化模拟
 
-
-
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">评估系统</span>**
 
 CoLM2024 集成了自研的**"CoLM 基准测试与性能评估系统"**，这是一个综合性工具，用于处理数据、评估模型和分析结果。它具有高精度、多平台支持、多功能数据处理、可集成和灵活性等优势，涵盖了50种评估维度，并基于国际陆面模型基准测试项目的方法论，提供了标准化的模型性能评估指标。
-
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">应用领域</span>**
 
@@ -106,7 +100,6 @@ CoLM2024 可广泛应用于以下领域：
 <div class="caption">
     北美区域河道径流模拟评估结果（v.s. GRDC）
 </div>
-
 
 <style>
 .homepage-section {
@@ -210,18 +203,26 @@ CoLM2024 可广泛应用于以下领域：
 
 **<span style="color: #27ae60; font-weight: bold; font-size: 1.1em;">部分相关发表文献(#为通讯作者)：</span>**
 
-- **Li, Q.**, Zhang, C., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Jin, X., Shangguan, W., Yuan, H., Zhu, J., Li, L., Liu, P., Chen, X., et al. (2024). Advancing symbolic regression for earth science with a focus on evapotranspiration modeling. *npj Climate and Atmospheric Science*, 7(1), 321.
+- **Wei, Zixin**, Bai, F.#, **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, & Dai, Y. (2026). Comparative analysis of JRA-3Q and JRA-55 reanalysis datasets as forcing for land surface model: implications for hydrological processes. _Journal of Hydrology_, 675, 135616. [DOI](https://doi.org/10.1016/j.jhydrol.2026.135616)
 
-- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Xu, Q., Bai, F., Xu, X., Wei, Z., Dong, W., Liang, H., Wei, N., Lu, X., Li, L., et al. (2025). OpenBench: a land models evaluation system. *Geoscientific Model Development*, 2025, 1-37.
+- **Li, Q.**, Jin, X., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Zhang, C., Shangguan, W., Zhu, J., Zhang, Z., Li, X., Yan, Y., Wang, J., et al. (2026). Three-dimensional canopy morphology and wind dynamics govern global rainfall interception. _Communications Earth &amp; Environment_, 7(1), 699. [DOI](https://doi.org/10.1038/s43247-026-03694-7)
 
-- **Bai, F.**,**<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Wei, N., Lu, X., Yuan, H., Zhang, S., Liu, S., Zhang, Y., Li, X., & Dai, Y. (2024). Global Assessment of Atmospheric Forcing Uncertainties in The Common Land Model 2024 Simulations. *Journal of Geophysical Research: Atmospheres*, 129(23), e2024JD041520.
+- **Xiang, J.**, Yuan, H., Dong, W., **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Shangguan, W., Lin, W., Liu, Z., Yu, X., & Dai, Y. (2026). A global 500 m dataset of tree crown morphology to advance vegetation modeling and management. _International Journal of Applied Earth Observation and Geoinformation_, 151, 105401. [DOI](https://doi.org/10.1016/j.jag.2026.105401)
 
-- **Fan, H.**, Xu, Q., Bai, F., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Zhang, Y., Lu, X., Wei, N., Zhang, S., Yuan, H., Liu, S., Li, X., Li, X., & Dai, Y. (2024). An Unstructured Mesh Generation Tool for Efficient High-Resolution Representation of Spatial Heterogeneity in Land Surface Models. *Geophysical Research Letters*, 51(6), e2023GL107059.
+- **Zhang, C.**, **<span style="color: #3498db; font-weight: bold;">Wei, Z.</span>**, Shangguan, W., Bai, F., Dong, W., Xiao, Q., Zhao, H., Liu, P., Li, Q., & Dai, Y. (2026). Soil hydraulic pedotransfer functions for estimating saturated hydraulic conductivity: a deep symbolic regression approach with mean shift clustering. _Journal of Hydrology_, 669, 135173. [DOI](https://doi.org/10.1016/j.jhydrol.2026.135173)
 
-- **Xu, Q.**, Liang, H., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Zhang, Y., Lu, X., Li, F., Wei, N., Zhang, S., Yuan, H., Liu, S., & Dai, Y. (2024). Assessing Climate Change Impacts on Crop Yields and Exploring Adaptation Strategies in Northeast China. *Earth's Future*.
+- **谭澳博**, **<span style="color: #3498db; font-weight: bold;">魏忠旺</span>**, & 戴永久 (2026). 基于多源观测与陆面模式模拟的雨雪拆分研究. _高原气象_, 45(3), 907–919. [DOI](https://doi.org/10.7522/j.issn.1000-0534.2025.00108)
 
-- **Xu, X.**, Liu, L., Wei, N., Lu, X., Yuan, H., Zhang, S., Shangguan, W., Zhang, Y., Li, L., Yang, C., Liu, S., Li, X., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, & Dai, Y. (在审). Global Distribution and Dynamics of Bedrock Water Usage by Woody Vegetation. *Manuscript under consideration*.
+- **Li, Q.**, Zhang, C., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Jin, X., Shangguan, W., Yuan, H., Zhu, J., Li, L., Liu, P., Chen, X., et al. (2024). Advancing symbolic regression for earth science with a focus on evapotranspiration modeling. _npj Climate and Atmospheric Science_, 7(1), 321.
 
-- **Wei, Zixin.**, Bai, F.#, **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, & Dai, Y. (在审). Comparative Analysis of JRA-3Q and JRA-55 Reanalysis Datasets as Forcing for Land Surface Model: Implications for Hydrological Processes. *Journal of Hydrology*.
+- **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Xu, Q., Bai, F., Xu, X., Wei, Z., Dong, W., Liang, H., Wei, N., Lu, X., Li, L., et al. (2025). OpenBench: a land model evaluation system. _Geoscientific Model Development_, 18(18), 6517–6540. [DOI](https://doi.org/10.5194/gmd-18-6517-2025)
+
+- **Bai, F.**,**<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Wei, N., Lu, X., Yuan, H., Zhang, S., Liu, S., Zhang, Y., Li, X., & Dai, Y. (2024). Global Assessment of Atmospheric Forcing Uncertainties in The Common Land Model 2024 Simulations. _Journal of Geophysical Research: Atmospheres_, 129(23), e2024JD041520.
+
+- **Fan, H.**, Xu, Q., Bai, F., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Zhang, Y., Lu, X., Wei, N., Zhang, S., Yuan, H., Liu, S., Li, X., Li, X., & Dai, Y. (2024). An Unstructured Mesh Generation Tool for Efficient High-Resolution Representation of Spatial Heterogeneity in Land Surface Models. _Geophysical Research Letters_, 51(6), e2023GL107059.
+
+- **Xu, Q.**, Liang, H., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, Zhang, Y., Lu, X., Li, F., Wei, N., Zhang, S., Yuan, H., Liu, S., & Dai, Y. (2024). Assessing Climate Change Impacts on Crop Yields and Exploring Adaptation Strategies in Northeast China. _Earth's Future_, 12(4), e2023EF004063. [DOI](https://doi.org/10.1029/2023EF004063)
+
+- **Xu, X.**, Liu, L., Wei, N., Lu, X., Yuan, H., Zhang, S., Shangguan, W., Zhang, Y., Li, L., Yang, C., Liu, S., Li, X., **<span style="color: #3498db; font-weight: bold;">Wei, Z.#</span>**, & Dai, Y. (在审). Global Distribution and Dynamics of Bedrock Water Usage by Woody Vegetation. _Manuscript under consideration_.
 
 * 更多相关研究成果陆续发表中...
